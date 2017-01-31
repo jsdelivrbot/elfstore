@@ -1,0 +1,33 @@
+@import './variables.styl'
+
+*,
+*::before,
+*::after
+	box-sizing border-box
+
+html, body
+	width 100%
+	height auto
+	min-height 100%
+
+.likearts-content
+	font-family 'ProximaNova', sans-serif
+	font-weight 400
+	background-color $color-bg
+	color $color-text
+	-webkit-font-smoothing antialiased
+	-webkit-overflow-scrolling touch
+
+.likearts-content a
+	&:hover,
+	&:active,
+	&:focus
+		text-decoration none
+
+.likearts-content .icon
+	display inline-block
+
+.likearts-content .main-layout
+	position relative
+	max-width $container-width
+	margin 0 auto
