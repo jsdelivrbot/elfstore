@@ -16,33 +16,3 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-confirm {
-  background-image: url(sprite.png);
-  background-position: -25px -58px;
-  width: 24px;
-  height: 24px;
-}
-.icon-notice--w {
-  background-image: url(sprite.png);
-  background-position: -70px 0px;
-  width: 51px;
-  height: 51px;
-}
-.icon-phone--w {
-  background-image: url(sprite.png);
-  background-position: 0px -58px;
-  width: 25px;
-  height: 25px;
-}
-.icon-sales {
-  background-image: url(sprite.png);
-  background-position: 0px 0px;
-  width: 70px;
-  height: 58px;
-}
-.icon-upload--w {
-  background-image: url(sprite.png);
-  background-position: -49px -58px;
-  width: 12px;
-  height: 22px;
-}

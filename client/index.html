@@ -7,15 +7,24 @@
 		name="viewport" 
 		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 	<title>Elfstore</title>
-	<link rel="stylesheet" href="./bower_components/normalize-css/normalize.css">
-	<link rel="stylesheet" href="./fonts/fonts.css?rev=a3a7b00bbf1b0e260495ad62312e674e">
-	<link rel="stylesheet" href="./images/icons/sprite/sprite.css?rev=3d897fa8a9f1e0d0d6263246c9eeaa91">
-	<link rel="stylesheet" href="./dist/bundle.css?rev=19da24a17e4b85845a2f4c8eb69718fe">
-	<!--?rev=@@hash-->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+	<!-- endinject -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="fonts/fonts.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="images/icons/sprite/sprite.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="dist/bundle.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<!-- endinject -->
 </head>
 
 <body class="likearts-content">
 	Hello world! Привет мир!
+
+	<!-- bower:js -->
+	<!-- endinject -->
+	<!-- inject:js -->
+	<script src="shared/polyfills.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<!-- endinject -->
 </body>
 
 </html>
