@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+.likearts-content {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+.likearts-content a:hover,
+.likearts-content a:active,
+.likearts-content a:focus {
+  text-decoration: none;
+}
+.likearts-content .icon {
+  display: inline-block;
+}
+.likearts-content .main-layout {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+}
