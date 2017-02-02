@@ -4,7 +4,6 @@ const ROOT = 'client';
 
 module.exports = {
   root: ROOT,
-  port: 3000,
   development: process.env.NODE_ENV === 'development',
   production: process.env.NODE_ENV === 'production',
   tinyPngApiKey: 'qxIGxLiWrmjcSr4aVcby1RzsZoK-HFML',

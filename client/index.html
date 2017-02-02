@@ -7,6 +7,7 @@
 		name="viewport" 
 		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 	<title>Elfstore</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 	<!-- endinject -->
@@ -15,15 +16,130 @@
 	<link rel="stylesheet" href="images/icons/sprite/sprite.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="dist/bundle.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<!-- endinject -->
+	<!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    background-image: none;
+  }
+	@media ( min-width: 970px) {
+    HTML {
+      background-image: url( "temp/pixelglass/img/index-970.png" );
+    }
+  }
+  @media ( min-width: 1170px ) {
+    HTML {
+      background-image: url( "temp/pixelglass/img/index-1170.png" );
+    }
+  }
+
+  BODY {
+    opacity: .5;
+  }
+</style>
+<link rel="stylesheet" href="temp/pixelglass/styles.css">
+<script src="temp/pixelglass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 
 <body class="likearts-content">
-	Hello world! Привет мир!
+	<header class="header">
+		<div class="main-layout">
+			<div class="header__panel panel">
+				<div class="panel__left">
+					<div class="header__menu header__menu--desktop menu-desktop">
+						<ul class="menu-desktop__list">
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Главная
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Каталог
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Доставка
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Оплата
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Отзывы
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Контакты
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Художникам
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__menu header__menu--mobile menu-mobile">
+						<div id="menuBtn" class="menu-mobile__btn">
+							<i id="menuBtnIcon" class="material-icons menu-mobile__icon">menu</i>
+						</div>
+						<ul id="menuContent" class="menu-mobile__list">
+							<li aria-haspopup="true" class="menu-mobile__list-item">
+								<a href="#" class="menu-mobile__list-link">Главная</a>
+							</li>
+							<li aria-haspopup="true" class="menu-mobile__list-item is-active">
+								<a href="#" class="menu-mobile__list-link">Каталог</a>
+							</li>
+							<li aria-haspopup="true" class="menu-mobile__list-item">
+								<a href="#" class="menu-mobile__list-link">Доставка</a>
+							</li>
+							<li aria-haspopup="true" class="menu-mobile__list-item">
+								<a href="#" class="menu-mobile__list-link">Оплата</a>
+							</li>
+							<li aria-haspopup="true" class="menu-mobile__list-item">
+								<a href="#" class="menu-mobile__list-link">Отзывы</a>
+							</li>
+							<li aria-haspopup="true" class="menu-mobile__list-item">
+								<a href="#" class="menu-mobile__list-link">Контакты</a>
+							</li>
+							<li aria-haspopup="true" class="menu-mobile__list-item">
+								<a href="#" class="menu-mobile__list-link">Художникам</a>
+							</li>
+						</ul>
+						<div id="menuOverlay" class="menu-mobile__overlay"></div>
+					</div>
+				</div>
+				<div class="panel__right">
+					<div class="header__entrance entrance">
+						<div class="entrance__user">
+							<i class="icon icon-user entrance__icon"></i>
+							<span class="entrance__user-mail">Konstantinovskiy@gmail.com</span>
+						</div>
+						<div class="entrance__links">
+							<a href="#" class="entrance__link">Выйти</a>
+							<span class="entrance__separator">/</span>
+							<a href="#" class="entrance__link">Зарегистрироваться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
 	<!-- bower:js -->
+	<script src="bower_components/hammerjs/hammer.js"></script>
 	<!-- endinject -->
 	<!-- inject:js -->
 	<script src="shared/polyfills.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/menu/menu.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<!-- endinject -->
 </body>
 
