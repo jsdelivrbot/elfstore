@@ -1,4 +1,5 @@
 .likearts-content .header
+	position relative
 	width 100%
 	height auto
 	min-height 255px
@@ -8,6 +9,7 @@
 	background-size cover
 	background-repeat no-repeat
 	color #fff
+	z-index 10
 
 	&__menu 
 		&--desktop
@@ -16,6 +18,23 @@
 		&--mobile
 			@media all and (min-width: 768px)
 				display none
+
+	&__logo
+		width 276px
+		height 57px
+		background-image url('../../images/header/logo.png')
+		background-size cover
+		background-position center
+		background-repeat no-repeat
+
+	.l-logo
+		position relative
+		top -8px
+		left -1px
+		@media (max-width: 970px)
+			top 0
+			left 0
+			margin 10px 0
 
 	.panel
 		display flex
@@ -28,6 +47,8 @@
 			padding 0 18px 0 8px
 		@media (max-width: 970px)
 			padding 0 8px
+		@media (max-width: 920px)
+			flex-flow column wrap
 
 		&__left
 			@media (max-width: 970px)
@@ -48,6 +69,7 @@
 				padding 16px 0 0 0
 
 	.entrance
+		position relative
 		display flex
 		flex-flow row wrap
 		justify-content space-between
@@ -56,9 +78,9 @@
 		color #a0a9b2 
 		margin-top -1px
 		font-weight 300
-		@media (max-width: $phone)
+		@media (max-width: 768px)
 			flex-flow column wrap
-			align-items stretch
+			justify-content center
 
 		&__user 
 			display flex
@@ -71,6 +93,13 @@
 			flex-flow row wrap
 			justify-content space-between
 			align-items center
+			@media (max-width: 1170px)
+				position relative
+				top 0
+				left 16px
+			@media (max-width: 768px)
+				top 0
+				left 0
 
 		&__icon
 			margin-right 9px
@@ -81,6 +110,8 @@
 			white-space nowrap
 			overflow hidden
 			text-overflow ellipsis
+			@media (max-width: 1170px)
+				margin-right 1px
 
 		&__separator
 			color $color-primary
@@ -95,3 +126,299 @@
 				color #fff
 			@media (max-width: 768px)
 				padding 16px 0
+
+	.content
+		width 100%
+		height auto
+		min-height 144px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+		@media (max-width: 970px)
+			flex-flow column wrap
+
+		&__mobile-staff
+			@media (min-width: 971px)
+				display none
+
+	.l-contacts
+		position relative
+		left 17px
+		top -5px
+		@media (max-width: 1170px)
+			left -11px
+		@media (max-width: 970px)
+			left 0
+			top 0
+			margin-bottom 20px
+
+	.contacts
+		display flex
+		flex-flow row nowrap
+		justify-content center
+		align-items stretch
+
+		&__list
+			display flex
+			flex-flow column wrap
+			justify-content center
+			align-items flex-start
+
+		&__icon
+			margin-right 18px
+			@media (max-width: 970px)
+				display none
+
+		&__phone
+			font-weight 700
+			font-size calc(18 / 16 * 1em)
+			line-height 1.3
+
+		&__link
+			display inline-block
+			color $color-primary
+			font-size calc(12 / 16 * 1em)
+			line-height 1.8
+			transition color .2s ease-in-out
+			&:hover
+				color #fff
+				text-decoration underline
+			@media (max-width: 970px)
+				display none
+
+		&__sign
+			font-size calc(12 / 16 * 1em)
+			@media (max-width: 970px)
+				display none
+
+	.l-cart
+		position relative
+		left 72px
+		top 3px
+		@media (max-width: 1170px)
+			left -3px
+		@media (max-width: 970px)
+			left 0px
+			top 0px
+			margin-bottom 20px
+
+	.cart
+		position relative
+		display flex
+		flex-flow row nowrap
+		justify-content center
+		align-items center
+
+		&__icon
+			position relative
+			margin-right 33px
+
+		&__icon-circle
+			position absolute
+			top -10px
+			right -25px
+			display flex
+			justify-content center
+			align-items center
+			font-style normal
+			font-weight 700
+			font-size calc(15 / 16 * 1em)
+			color $color-primary
+
+		&__list
+			position relative
+			top -7px
+			left 4px
+			display flex
+			flex-flow column wrap
+			justify-content center
+			align-items flex-start
+			@media (max-width: 970px)
+				display none
+
+		&__sign
+			font-weight 300
+			font-size calc(13 / 16 * 1em)
+			margin-bottom 3px
+
+		&__sum
+			color $color-primary
+			font-style 400
+			font-size calc(18 / 16 * 1em)
+
+	.l-controls
+		position relative
+		top -5px
+		left -3px
+		@media (max-width: 1170px)
+			top -10px
+			left 1px
+		@media (max-width: 970px)
+			top 0
+			left 0
+			margin-bottom 20px
+
+	.controls
+		position relative
+		&__box
+			height auto
+			min-height 61px
+			display flex
+			align-items center
+			border 1px solid #2a2b2d
+			padding 0 36px 0 27px
+			border-radius 0 12px 12px 12px
+			@media (max-width: 1170px)
+				padding 0 21px
+				min-height 52px
+
+		&__links
+			position relative
+			top -3px
+			left -1px
+			display flex
+			flex-flow column wrap
+			justify-content center
+			align-items flex-start
+			@media (max-width: 1170px)
+				display none
+
+		&__link
+			color $color-primary
+			font-size calc(13 / 16 * 1em)
+			transition color .2s ease-in-out
+			padding-top 3px
+			&:hover
+				color #fff
+				text-decoration underline
+
+		&__search
+			display flex
+			flex-flow row wrap
+			justify-content flex-start
+			align-items center
+			@media (min-width: 1171px)
+				display none
+
+		&__input
+			max-width 134px
+			padding-right 19px
+			font-size calc(13 / 16 * 1em)
+			background-color transparent
+			color #fff
+			border none
+			@media (max-width: 970px)
+				max-width none
+				padding 19px 
+			&::-webkit-input-placeholder
+				color #fff!important
+
+			&::-moz-placeholder
+				color #fff!important
+
+			&:-moz-placeholder
+				color #fff!important
+
+			&:-ms-input-placeholder
+				color #fff!important
+
+		&__icon-search
+			margin-left -19px
+
+	.submenu
+		width 100%
+		height auto
+		min-height 56px
+		background-color #fff
+		box-shadow 3px 4px 5px rgba(0, 0, 0, 0.07)
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items stretch
+		@media (max-width: 970px)
+			padding 12px 0
+
+		&__list
+			display flex
+			flex-flow row wrap
+			justify-content flex-start
+			align-items center
+			margin 0
+			list-style none
+			padding 0 25px 0 15px
+			@media (max-width: 1170px)
+					padding 0 20px 0 20px
+
+		&__list-item
+			padding 0 2px 0 10px
+			margin-top 3px
+			@media (max-width: 1170px)
+				padding 0 0 0 9px
+
+		&__list-link
+			display inline-block
+			padding 3px 6px
+			font-size calc(13 / 16 * 1em)
+			border-radius: 0 3px 3px 3px
+			text-transform uppercase
+			font-weight 700
+			color $color-text
+			transition background-color .2s ease-in-out
+			&:hover
+				background-color $color-primary
+				text-decoration none
+
+		&__list-link.is-active
+			background-color $color-primary
+			text-decoration none
+
+		&__search
+			position relative
+			flex-grow 1
+			background-color #2e3234
+			display flex
+			flex-flow row wrap
+			justify-content center
+			align-items center
+			@media (max-width: 1170px)
+				display none
+
+	.l-submenu-search
+		position relative
+		top 0
+		left 0
+
+	.search
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+
+		&__input
+			max-width 151px
+			padding-right 19px
+			font-size calc(15 / 16 * 1em)
+			background-color transparent
+			color #fff
+			border none
+			@media (max-width: 970px)
+				max-width none
+				padding 19px 
+			&::-webkit-input-placeholder
+				color #fff!important
+
+			&::-moz-placeholder
+				color #fff!important
+
+			&:-moz-placeholder
+				color #fff!important
+
+			&:-ms-input-placeholder
+				color #fff!important
+
+		&__icon
+			margin-left -19px
+
+
+

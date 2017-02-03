@@ -51,7 +51,7 @@
 					<div class="header__menu header__menu--desktop menu-desktop">
 						<ul class="menu-desktop__list">
 							<li class="menu-desktop__list-item">
-								<a href="#" class="menu-desktop__list-link">
+								<a href="#" class="menu-desktop__list-link is-active">
 									Главная
 								</a>
 							</li>
@@ -87,35 +87,6 @@
 							</li>
 						</ul>
 					</div>
-					<div class="header__menu header__menu--mobile menu-mobile">
-						<div id="menuBtn" class="menu-mobile__btn">
-							<i id="menuBtnIcon" class="material-icons menu-mobile__icon">menu</i>
-						</div>
-						<ul id="menuContent" class="menu-mobile__list">
-							<li aria-haspopup="true" class="menu-mobile__list-item">
-								<a href="#" class="menu-mobile__list-link">Главная</a>
-							</li>
-							<li aria-haspopup="true" class="menu-mobile__list-item is-active">
-								<a href="#" class="menu-mobile__list-link">Каталог</a>
-							</li>
-							<li aria-haspopup="true" class="menu-mobile__list-item">
-								<a href="#" class="menu-mobile__list-link">Доставка</a>
-							</li>
-							<li aria-haspopup="true" class="menu-mobile__list-item">
-								<a href="#" class="menu-mobile__list-link">Оплата</a>
-							</li>
-							<li aria-haspopup="true" class="menu-mobile__list-item">
-								<a href="#" class="menu-mobile__list-link">Отзывы</a>
-							</li>
-							<li aria-haspopup="true" class="menu-mobile__list-item">
-								<a href="#" class="menu-mobile__list-link">Контакты</a>
-							</li>
-							<li aria-haspopup="true" class="menu-mobile__list-item">
-								<a href="#" class="menu-mobile__list-link">Художникам</a>
-							</li>
-						</ul>
-						<div id="menuOverlay" class="menu-mobile__overlay"></div>
-					</div>
 				</div>
 				<div class="panel__right">
 					<div class="header__entrance entrance">
@@ -131,8 +102,130 @@
 					</div>
 				</div>
 			</div>
+			<div class="header__content content">
+				<div class="l-logo">
+					<a href="#">
+						<div class="header__logo"></div>
+					</a>
+				</div>
+				<div class="l-contacts">
+					<div class="content__contacts contacts">
+						<div class="contacts__icon">
+							<i class="icon icon-phone"></i>
+						</div>
+						<div class="contacts__list">
+							<span class="contacts__phone">8 (812) 425-31-59</span>
+							<a href="#" class="contacts__link">Онлайн-консультант</a>
+							<span class="contacts__sign">Работаем с 11 до 20 (пн-пт)</span>
+						</div>
+					</div>
+				</div>
+				<div class="l-cart">
+					<div class="content__cart cart">
+						<a href="#">
+							<div class="cart__icon">
+								<i class="icon icon-cart"></i>
+								<i class="icon icon-circle cart__icon-circle">
+									<span class="cart__counter">2</span>
+								</i>
+							</div>
+						</a>
+						<div class="cart__list">
+							<span class="cart__sign">в вашей корзине:</span>
+							<span class="cart__sign"><span>2</span> товара на сумму</span>
+							<span class="cart__sum">
+								<span>425</span>
+								<i class="icon icon-rub"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="l-controls">
+					<div class="content__controls controls">
+						<div class="controls__box">
+							<span class="controls__links">
+								<a href="#" class="controls__link">Посмотреть</a>
+								<a href="#" class="controls__link">или форомить заказ</a>
+							</span>
+							<span class="controls__search">
+								<input type="text" class="controls__input" placeholder="Поиск по сайту">
+								<i class="icon icon-search controls__icon-search"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__submenu submenu">
+				<ul class="submenu__list">
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Со своим дизайном</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link is-active">Новый год 2016</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Футболки</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Толстовки</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Кружки</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Чехлы</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Коврики</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Брелоки</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Украшения</a>
+					</li>
+				</ul>
+				<span class="submenu__search">
+					<span class="l-submenu-search">
+						<span class="search">
+							<input type="text" class="search__input" placeholder="Поиск по сайту">
+							<i class="icon icon-search search__icon"></i>
+						</span>
+					</span>
+				</span>
+			</div>
+		</div>
+		<div class="header__menu header__menu--mobile menu-mobile">
+			<div id="menuBtn" class="menu-mobile__btn">
+				<i id="menuBtnIcon" class="material-icons menu-mobile__icon">menu</i>
+			</div>
+			<ul id="menuContent" class="menu-mobile__list">
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Главная</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item is-active">
+					<a href="#" class="menu-mobile__list-link">Каталог</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Доставка</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Оплата</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Отзывы</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Контакты</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Художникам</a>
+				</li>
+			</ul>
+			<div id="menuOverlay" class="menu-mobile__overlay"></div>
 		</div>
 	</header>
+
 
 	<!-- bower:js -->
 	<script src="bower_components/hammerjs/hammer.js"></script>

@@ -16,10 +16,12 @@
 
 	&__list-item
 		list-style none
-		padding 0 15px
+		padding 0 13px 0 15px
+		@media (max-width: 1170px)
+			padding 0 12px
 
 	&__list-link
-		display block
+		display inline-block
 		color #a0a9b2
 		font-size calc(13 / 16 * 1em)
 		text-decoration underline
@@ -27,6 +29,9 @@
 		transition color .2s ease-in-out
 		&:hover
 			color #fff
+
+	&__list-link.is-active
+		color #fff
 
 .likearts-content .menu-mobile
 	width 100%
