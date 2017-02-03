@@ -16,6 +16,7 @@ body {
   font-weight: 400;
   background-color: #f2f2f2;
   color: #000;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
@@ -31,4 +32,9 @@ body {
   position: relative;
   max-width: 1170px;
   margin: 0 auto;
+}
+@media (max-width: 1170px) {
+  .likearts-content .main-layout {
+    max-width: 970px;
+  }
 }
