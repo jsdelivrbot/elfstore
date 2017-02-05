@@ -105,8 +105,7 @@
 }
 @media (max-width: 768px) {
   .likearts-content .header .entrance {
-    flex-flow: column wrap;
-    justify-content: center;
+    display: none;
   }
 }
 .likearts-content .header .entrance__user {

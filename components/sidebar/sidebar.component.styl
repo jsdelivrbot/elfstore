@@ -1,0 +1,174 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .aside
+	position relative
+	padding 35px 39px 80px 0
+	@media (max-width: 1170px)
+		padding 35px 30px 0 0
+	@media (max-width: 768px)
+		padding 0
+
+	&.js-is-mobile--hide
+		transition all .2s ease-in-out
+		transform-origin 50% 0
+		@media (max-width: 768px)
+			position absolute
+			opacity 0
+			transform scale(1, 0)
+	
+	&.js-is-mobile--show
+		transition all .2s ease-in-out
+		transform-origin 50% 0
+		@media (max-width: 768px)
+			position relative
+			opacity 1
+			transform scale(1, 1)
+
+.likearts-content .l-aside-toggle
+	display flex
+	justify-content center
+	padding 20px
+	@media (min-width: 768px)
+		display none
+
+.likearts-content .aside-toggle
+	background-color transparent
+	border 2px solid #000
+	border-radius 3px
+	padding 8px 16px
+	font-size calc(14 / 16 * 1em)
+	font-weight 700
+	text-transform uppercase
+	cursor pointer
+	&:active
+		transform scale(0.93)
+
+.likearts-content .l-sidebar
+	width 100%
+
+	&--bottom
+		margin 29px 0 0 0
+		@media (max-width: 1170px)
+			margin 29px 0 0 0
+
+.likearts-content .sidebar
+	position relative
+	width 100%
+
+	&__title
+		margin 0 0 19px 0
+		text-transform uppercase
+		font-size calc(20 / 16 * 1em)
+		font-weight 700
+		letter-spacing 2px
+		@media (max-width: 768px)
+			text-align center
+
+	&__content
+		position relative
+		width 100%
+		top -4px
+		border 2px solid #e5e5e5
+		border-radius 0 10px 10px 10px
+		padding 24px 18px 13px 18px
+
+	&__list
+		width 100%
+		padding 0
+		margin 0
+		list-style none
+
+	&__list-item
+		position relative
+		padding 3px 0
+		margin 0 0 2px 0
+		&:hover
+			.sidebar__list-badge
+				opacity 1
+
+	&__list-link
+		display inline-block
+		padding 6px 10px
+		text-transform uppercase
+		font-size calc(14 / 16 * 1em)
+		font-weight 700
+		color $color-text
+		border-radius 0 8px 8px 8px
+		transition background-color .2s ease-in-out
+		&:hover
+			background-color $color-primary
+
+	&__list-badge
+		position absolute
+		top 8px
+		right -4px
+		background-color #d9d9d9
+		color #fff
+		border-radius 0 3px 3px 3px
+		font-size calc(11 / 16 * 1em)
+		font-weight 700
+		padding 9px 6px
+		line-height 0
+		opacity 0
+
+.likearts-content .l-vidgets
+		margin 48px 0 48px 0
+		@media (max-width: 768px)
+			display none
+
+.likearts-content .l-news
+	@media (max-width: 768px)
+		display none
+
+.likearts-content .news
+	&__title
+		text-transform uppercase
+		font-size calc(20 / 16 * 1em)
+		font-weight 700
+		letter-spacing 2px
+		margin 0
+
+	&__content
+		position relative
+		width 100%
+
+	&__date
+		color $color-text
+		opacity 0.4
+		font-size calc(12 / 16 * 1em)
+		font-weight 900
+		letter-spacing 1px
+
+	&__text
+		margin 12px 0
+		font-size calc(14 / 16 * 1em)
+		font-weight 300
+		line-height 1.57
+
+	&__link
+		font-size calc(12 / 16 * 1em)
+		font-weight 700
+		line-height 2
+		text-decoration underline
+		text-transform uppercase
+		color $color-text
+		letter-spacing 1px
+
+	&__block
+		padding 13px 0 20px 0
+		margin-bottom 11px
+		border-bottom 2px solid #e6e6e6
