@@ -48,7 +48,7 @@
 		<div class="main-layout">
 			<div class="header__panel panel">
 				<div class="panel__left">
-					<div class="header__menu header__menu--desktop menu-desktop">
+					<nav class="header__menu header__menu--desktop menu-desktop">
 						<ul class="menu-desktop__list">
 							<li class="menu-desktop__list-item">
 								<a href="#" class="menu-desktop__list-link is-active">
@@ -86,7 +86,7 @@
 								</a>
 							</li>
 						</ul>
-					</div>
+					</nav>
 				</div>
 				<div class="panel__right">
 					<div class="header__entrance entrance">
@@ -155,7 +155,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header__submenu submenu">
+			<nav class="header__submenu submenu">
 				<ul class="submenu__list">
 					<li class="submenu__list-item">
 						<a href="#" class="submenu__list-link">Со своим дизайном</a>
@@ -193,13 +193,19 @@
 						</span>
 					</span>
 				</span>
-			</div>
+			</nav>
 		</div>
-		<div class="header__menu header__menu--mobile menu-mobile">
+		<nav class="header__menu header__menu--mobile menu-mobile">
 			<div id="menuBtn" class="menu-mobile__btn">
 				<i id="menuBtnIcon" class="material-icons menu-mobile__icon">menu</i>
 			</div>
 			<ul id="menuContent" class="menu-mobile__list">
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Выйти</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Зарегистрироваться</a>
+				</li>
 				<li aria-haspopup="true" class="menu-mobile__list-item">
 					<a href="#" class="menu-mobile__list-link">Главная</a>
 				</li>
@@ -223,8 +229,186 @@
 				</li>
 			</ul>
 			<div id="menuOverlay" class="menu-mobile__overlay"></div>
-		</div>
+		</nav>
 	</header>
+	<main>
+		<div class="main-layout">
+			<div class="flex-grid">
+				<div class="flex-item flex-item--aside">
+					<div class="l-aside-toggle">
+						<button id="aside-toggle" class="aside-toggle">
+							Дополнительно...
+						</button>
+					</div>
+					<div id="aside" class="aside js-is-mobile--hide">
+						<div class="l-sidebar l-sidebar--top">
+							<aside class="sidebar">
+								<h2 class="sidebar__title">Тематики</h2>
+								<div class="sidebar__content">
+									<ul class="sidebar__list">
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Игры</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Сериалы</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Фильмы</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Супергерои</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Мультфильмы</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Видеоблогеры</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Спорт</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Футбол</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Аниме</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Интернет-мемы</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Программирование</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Имена</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Другое</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Со своим дизайном</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="l-sidebar l-sidebar--bottom">
+							<aside class="sidebar">
+								<h2 class="sidebar__title">Категории</h2>
+								<div class="sidebar__content">
+									<ul class="sidebar__list">
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Футболки</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Толстовки</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Кружки</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Коврики</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Футболки</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Толстовки</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Футболки Lineage 2</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Коврики</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Брелоки</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Коврики</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Футболки Mountain</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Ювелирные изделия</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Кружки</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Коврики</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Брелоки</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+										<li class="sidebar__list-item">
+											<a href="#" class="sidebar__list-link">Коврики</a>
+											<span class="sidebar__list-badge">38</span>
+										</li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						<div class="l-vidgets">
+							<div id="vkGroups"></div>
+						</div>
+						<div class="l-news">
+							<div class="news">
+								<h2 class="news__title">Новости</h2>
+								<div class="news__content">
+									<div class="news__block">
+										<span class="news__date">13.12.2015</span>
+										<p class="news__text">
+											Не следует, однако забывать, что консультация с широким активом требуют определения и уточнения дальнейших направлений <br> развития.
+										</p>
+										<a href="#" class="news__link">Читать</a>
+									</div>
+									<div class="news__block">
+										<span class="news__date">13.12.2015</span>
+										<p class="news__text">
+											Не следует, однако забывать, что консультация с широким активом требуют определения и уточнения дальнейших направлений <br> развития.
+										</p>
+										<a href="#" class="news__link">Читать</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-item flex-item--content"></div>
+			</div>
+		</div>
+	</main>
 
 
 	<!-- bower:js -->
@@ -233,7 +417,15 @@
 	<!-- inject:js -->
 	<script src="shared/polyfills.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/menu/menu.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/sidebar/sidebar.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<!-- endinject -->
+	<script src="//vk.com/js/api/openapi.js?121"></script>
+	<script>
+		VK.Widgets.Group('vkGroups', {
+			mode: 3,
+			width: '213'
+		}, 33533628);
+	</script>
 </body>
 
 </html>

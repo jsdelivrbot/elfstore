@@ -25,7 +25,7 @@
 				menuOverlay.style.display = 'block';
 			} else {
 				menuIcon.style.color = '#fff';
-				menuContent.style.transform = 'translateX(-200px)';
+				menuContent.style.transform = 'translateX(-240px)';
 				menuOverlay.style.display = 'none';
 			}
 		}
@@ -33,7 +33,7 @@
 		function clickMenuOverlayHandler() {
 			click = 0;
 			menuIcon.style.color = '#fff';
-			menuContent.style.transform = 'translateX(-200px)';
+			menuContent.style.transform = 'translateX(-240px)';
 			menuOverlay.style.display = 'none';
 		}
 	};
