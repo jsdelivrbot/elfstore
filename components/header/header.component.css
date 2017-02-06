@@ -124,7 +124,7 @@
   .likearts-content .header .entrance__links {
     position: relative;
     top: 0;
-    left: 16px;
+    left: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -323,7 +323,7 @@
 @media (max-width: 1170px) {
   .likearts-content .header .l-controls {
     top: -10px;
-    left: 1px;
+    left: 0;
   }
 }
 @media (max-width: 970px) {

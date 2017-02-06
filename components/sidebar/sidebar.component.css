@@ -10,6 +10,7 @@
 @media (max-width: 768px) {
   .likearts-content .aside {
     padding: 0;
+    margin-bottom: 20px;
   }
 }
 .likearts-content .aside.js-is-mobile--hide {
@@ -70,6 +71,7 @@
 }
 .likearts-content .sidebar {
   position: relative;
+  background-color: #f2f2f2;
   width: 100%;
 }
 .likearts-content .sidebar__title {

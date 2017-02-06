@@ -1,0 +1,20 @@
+.likearts-content .elf-button {
+  background-color: #ffde13;
+  color: #000;
+  border: none;
+  border-radius: 0 12px 12px 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: calc(14 / 16 * 1em);
+  line-height: 2.57;
+  letter-spacing: 1px;
+  padding: 8px 38px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.likearts-content .elf-button:hover {
+  background-color: #ffeb3b;
+}
+.likearts-content .elf-button:focus {
+  transform: scale(0.97);
+}

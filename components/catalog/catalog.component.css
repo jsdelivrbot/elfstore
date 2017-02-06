@@ -1,0 +1,18 @@
+.likearts-content .catalog {
+  width: 100%;
+  padding: 35px 0 0 0;
+}
+@media (max-width: 768px) {
+  .likearts-content .catalog {
+    padding: 0;
+  }
+}
+.likearts-content .catalog__catalog-slider {
+  width: 100%;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .likearts-content .catalog__catalog-slider {
+    display: none;
+  }
+}
