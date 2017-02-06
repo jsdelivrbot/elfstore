@@ -1,0 +1,44 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .breadcrumbs
+	position relative
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+	align-items center
+
+	&__link
+		position relative
+		font-size calc(13 / 16 * 1em)
+		line-height 1.85
+		color $color-text
+		text-decoration none
+		margin-top -2px
+		transition all .2s ease-in-out
+		&:hover
+			color $color-text-hint
+
+	&__separator
+		&:after
+			content '/'
+			position relative
+			color $color-text
+			opacity 0.25
+			margin 0 16px
+
+	&__link.is-active
+		text-decoration underline

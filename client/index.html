@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
 	<!-- endinject -->
 	<!-- inject:css -->
 	<link rel="stylesheet" href="fonts/fonts.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
@@ -405,7 +406,87 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex-item flex-item--content"></div>
+				<div class="flex-item flex-item--content">
+					<div class="catalog">
+						<div class="catalog__breadcrumbs">
+							<div class="breadcrumbs">
+								<a href="#" class="breadcrumbs__link is-active">Главная</a>
+								<span class="breadcrumbs__separator"></span>
+								<a href="#" class="breadcrumbs__link">Каталог</a>
+							</div>
+						</div>
+						<div class="catalog__catalog-slider">
+							<div data-catalog-slider-root class="catalog-slider">
+								<div data-catalog-slider>
+									<div
+										data-catalog-slider-item
+										class="catalog-slider__item"
+										style="background-image: url('./images/catalog/slider/1.jpg')">
+										<h3 class="catalog-slider__item-title">
+											товары по мотивам
+											<br>
+											<span class="catalog-slider__item-sign">game of thrones от 750</span>
+											<i class="icon icon-rub-b catalog-slider__item-icon"></i>
+										</h3>
+										<a href="#">
+											<button class="elf-button">Смотреть</button>
+										</a>
+									</div>
+									<div
+										data-catalog-slider-item
+										class="catalog-slider__item"
+										style="background-image: url('./images/catalog/slider/1.jpg')">
+										<h3 class="catalog-slider__item-title">
+											товары по мотивам
+											<br>
+											<span class="catalog-slider__item-sign">game of thrones от 750</span>
+											<i class="icon icon-rub-b catalog-slider__item-icon"></i>
+										</h3>
+										<a href="#">
+											<button class="elf-button">Смотреть</button>
+										</a>
+									</div>
+									<div
+										data-catalog-slider-item
+										class="catalog-slider__item"
+										style="background-image: url('./images/catalog/slider/1.jpg')">
+										<h3 class="catalog-slider__item-title">
+											товары по мотивам
+											<br>
+											<span class="catalog-slider__item-sign">game of thrones от 750</span>
+											<i class="icon icon-rub-b catalog-slider__item-icon"></i>
+										</h3>
+										<a href="#">
+											<button class="elf-button">Смотреть</button>
+										</a>
+									</div>
+								</div>
+								<div class="catalog-slider__controls slider-controls">
+									<button
+										data-catalog-slider-btn-prev
+										class="slider-controls__btn slider-controls__btn--prev">
+										<i class="icon icon-prev"></i>
+									</button>
+									<span
+										data-catalog-slider-counter
+										class="slider-controls__counter">
+									</span>
+									<span class="slider-controls__all">
+										<span class="slider-controls__separator">/</span>
+										<span
+											data-catalog-slider-length
+											class="slider-controls__length"></span>
+									</span>
+									<button
+										data-catalog-slider-btn-next
+										class="slider-controls__btn slider-controls__btn--next">
+										<i class="icon icon-next"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -413,9 +494,12 @@
 
 	<!-- bower:js -->
 	<script src="bower_components/hammerjs/hammer.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/slick-carousel/slick/slick.js"></script>
 	<!-- endinject -->
 	<!-- inject:js -->
 	<script src="shared/polyfills.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/catalog-slider/catalog-slider.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/menu/menu.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/sidebar/sidebar.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<!-- endinject -->
