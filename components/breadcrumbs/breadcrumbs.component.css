@@ -13,6 +13,7 @@
   text-decoration: none;
   margin-top: -2px;
   transition: all 0.2s ease-in-out;
+  text-decoration: underline;
 }
 .likearts-content .breadcrumbs__link:hover {
   color: #aeaeae;
@@ -25,5 +26,5 @@
   margin: 0 16px;
 }
 .likearts-content .breadcrumbs__link.is-active {
-  text-decoration: underline;
+  text-decoration: none;
 }

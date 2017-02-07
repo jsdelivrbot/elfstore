@@ -1,6 +1,6 @@
 .likearts-content .catalog {
   width: 100%;
-  padding: 35px 0 0 0;
+  padding: 36px 0 0 0;
 }
 @media (max-width: 768px) {
   .likearts-content .catalog {
@@ -11,8 +11,183 @@
   width: 100%;
   margin-top: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   .likearts-content .catalog__catalog-slider {
     display: none;
   }
+}
+.likearts-content .catalog .showcase {
+  padding: 39px 0 0 0;
+}
+@media (max-width: 940px) {
+  .likearts-content .catalog .showcase {
+    padding: 8px 0 0 0;
+  }
+}
+.likearts-content .catalog .showcase__title {
+  margin: 0 0 28px 0;
+  color: #000;
+  font-size: calc(28 / 16 * 1em);
+  font-weight: 800;
+  line-height: 1.29;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.likearts-content .catalog .showcase__products {
+  padding: 5px 0 10px 0;
+  overflow: hidden;
+}
+.likearts-content .catalog .sort {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.likearts-content .catalog .sort__btn {
+  line-height: 2.5;
+  color: #797979;
+  font-size: calc(13 / 16 * 1em);
+  padding: 0 14px;
+  letter-spacing: 0;
+  background-color: transparent;
+  border: 2px solid #c1c1c1;
+  text-decoration: underline;
+  margin: 0 4px 4px 0;
+}
+@media (max-width: 640px) {
+  .likearts-content .catalog .sort__btn {
+    border-radius: 12px;
+    line-height: 2.2;
+    text-decoration: none;
+  }
+}
+.likearts-content .catalog .sort__btn:hover {
+  color: #000;
+  background-color: transparent;
+  border: 2px solid #000;
+}
+.likearts-content .catalog .sort__btn.is-active {
+  color: #000;
+  background-color: #ffde13;
+  border: 2px solid transparent;
+}
+.likearts-content .catalog .sort a {
+  text-decoration: none;
+}
+.likearts-content .catalog .products {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0 -15px;
+}
+.likearts-content .catalog .products__item {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: calc(33.3333% - 30px);
+  height: auto;
+  min-height: 325px;
+  margin: 15px 15px;
+  border-radius: 13px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+.likearts-content .catalog .products__item:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.16), 0 3px 10px rgba(0,0,0,0.23);
+}
+.likearts-content .catalog .products__item:hover:after {
+  background-color: #000;
+}
+@media (max-width: 900px) {
+  .likearts-content .catalog .products__item {
+    width: calc(50% - 30px);
+  }
+}
+@media (max-width: 640px) {
+  .likearts-content .catalog .products__item {
+    width: calc(100% - 30px);
+  }
+}
+.likearts-content .catalog .products__item:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 13px;
+  opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+}
+.likearts-content .catalog .products__item--next {
+  justify-content: center;
+  align-items: center;
+  background-color: #ffde13;
+}
+.likearts-content .catalog .products__item--next:hover:after {
+  background-color: transparent;
+}
+.likearts-content .catalog .products__item-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 13px;
+  z-index: 0;
+}
+.likearts-content .catalog .products__item-content {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  text-align: right;
+  padding: 19px 19px 14px 19px;
+}
+.likearts-content .catalog .products__item-title {
+  position: relative;
+  top: 8px;
+  color: #fff;
+  text-decoration: underline;
+  font-size: calc(15 / 16 * 1em);
+  line-height: 2.4;
+}
+.likearts-content .catalog .products__item-price {
+  position: relative;
+  top: 4px;
+  font-size: calc(18 / 16 * 1em);
+  line-height: 1.06;
+  color: #ffde13;
+  text-decoration: none;
+}
+.likearts-content .catalog .products__next-link {
+  position: relative;
+  left: -6px;
+  color: #000;
+  text-decoration: underline;
+}
+.likearts-content .catalog .products__next-sign {
+  position: relative;
+  font-size: calc(24 / 16 * 1em);
+  line-height: 1.17;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.likearts-content .catalog .products__next-sign--light {
+  font-weight: 300;
+}
+.likearts-content .catalog .products__next-icon {
+  position: relative;
+  top: 2px;
+  left: 5px;
 }

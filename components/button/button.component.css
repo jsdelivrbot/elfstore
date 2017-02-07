@@ -1,4 +1,5 @@
-.likearts-content .elf-button {
+.likearts-content .elf-btn {
+  font-family: 'ProximaNova', sans-serif;
   background-color: #ffde13;
   color: #000;
   border: none;
@@ -8,13 +9,13 @@
   font-size: calc(14 / 16 * 1em);
   line-height: 2.57;
   letter-spacing: 1px;
-  padding: 8px 38px;
+  padding: 8px 40px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.likearts-content .elf-button:hover {
+.likearts-content .elf-btn:hover {
   background-color: #ffeb3b;
 }
-.likearts-content .elf-button:focus {
+.likearts-content .elf-btn:focus {
   transform: scale(0.97);
 }

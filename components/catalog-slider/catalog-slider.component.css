@@ -19,6 +19,12 @@
   color: #fff;
   padding: 80px 55px 64px 55px;
 }
+@media (max-width: 1170px) {
+  .likearts-content .catalog-slider__item {
+    min-height: 280px;
+    padding: 50px 55px 50px 55px;
+  }
+}
 .likearts-content .catalog-slider .slider-controls {
   position: absolute;
   top: 40px;
