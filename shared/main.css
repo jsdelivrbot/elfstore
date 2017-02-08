@@ -38,3 +38,21 @@ body {
     max-width: 970px;
   }
 }
+.likearts-content .about {
+  padding: 44px 0;
+  margin-bottom: 7px;
+}
+.likearts-content .about__title {
+  color: #000;
+  font-size: calc(28 / 16 * 1em);
+  line-height: 1.29;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+.likearts-content .about__text p {
+  color: #000;
+  font-size: calc(15 / 16 * 1em);
+  line-height: 1.73;
+  margin: 25px 0 30px 0;
+}

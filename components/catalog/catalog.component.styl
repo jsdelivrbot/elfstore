@@ -30,6 +30,7 @@ $base-font = 16
 		padding 39px 0 0 0
 		@media (max-width: 940px)
 			padding 8px 0 0 0
+
 		&__title
 			margin 0 0 28px 0
 			color $color-text
@@ -38,9 +39,17 @@ $base-font = 16
 			line-height 1.29
 			text-transform uppercase
 			letter-spacing 4px
+
 		&__products
 			padding 5px 0 10px 0
 			overflow hidden
+
+		&__pagination
+			position relative
+			padding 12px 0 10px 0
+			display flex
+			justify-content space-between
+			align-items center
 
 	.sort
 		display flex
@@ -178,3 +187,13 @@ $base-font = 16
 			position relative
 			top 2px
 			left 5px
+
+	.l-repeat-btn
+		@media (max-width: 924px)
+			display none
+
+	.repeat-btn
+		background-color transparent
+		border 2px solid #d9d9d9
+		padding 6px 10px
+		line-height 1

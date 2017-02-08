@@ -17,5 +17,8 @@
   background-color: #ffeb3b;
 }
 .likearts-content .elf-btn:focus {
-  transform: scale(0.97);
+  outline: none;
+}
+.likearts-content .elf-btn:active {
+  transform: scale(0.9);
 }

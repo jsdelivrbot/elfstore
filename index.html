@@ -20,11 +20,13 @@
 	<link rel="stylesheet" href="shared/variables.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/breadcrumbs/breadcrumbs.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/button/button.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/catalog-slider/catalog-slider.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/catalog/catalog.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/catalog-slider/catalog-slider.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/footer/footer.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/grid/grid.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/header/header.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/menu/menu.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/pagination/pagination.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/sidebar/sidebar.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<!-- endinject -->
 </head>
@@ -394,10 +396,10 @@
 				<div class="flex-item flex-item--content">
 					<div class="catalog">
 						<div class="catalog__breadcrumbs">
-							<div class="breadcrumbs">
-								<a href="#" class="breadcrumbs__link">Главная</a>
-								<span class="breadcrumbs__separator"></span>
-								<a href="#" class="breadcrumbs__link is-active">Каталог</a>
+							<div class="elf-breadcrumbs">
+								<a href="#" class="elf-breadcrumbs__link">Главная</a>
+								<span class="elf-breadcrumbs__separator"></span>
+								<a href="#" class="elf-breadcrumbs__link is-active">Каталог</a>
 							</div>
 						</div>
 						<div class="catalog__catalog-slider">
@@ -670,13 +672,118 @@
 									</a>
 								</div>
 							</div>
+							<div class="showcase__pagination">
+								<div class="elf-pagination">
+									<a href="#">
+										<button class="elf-btn elf-pagination__btn elf-pagination__btn--prev">
+											<i class="icon icon-arrow-prev elf-pagination__icon"></i>
+											<span>Назад</span>
+										</button>
+									</a>
+									<a href="#" class="elf-pagination__link">1</a>
+									<a href="#" class="elf-pagination__link is-active">2</a>
+									<a href="#" class="elf-pagination__link">3</a>
+									<a href="#" class="elf-pagination__link">4</a>
+									<a href="#" class="elf-pagination__link">5</a>
+									<a href="#" class="elf-pagination__link">...</a>
+									<a href="#" class="elf-pagination__link">34</a>
+									<a href="#" class="elf-pagination__link">35</a>
+									<a href="#">
+										<button class="elf-btn elf-pagination__btn elf-pagination__btn--next">
+											<span>Вперед</span>
+											<i class="icon icon-arrow-next elf-pagination__icon"></i>
+										</button>
+									</a>
+								</div>
+								<div class="l-repeat-btn">
+									<button class="elf-btn repeat-btn">
+										<i class="icon icon-repeat"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="about">
+						<div class="about__title">О компании</div>
+						<div class="about__text">
+							<p>
+								Задача организации, в особенности же сложившаяся структура организации требуют от нас анализа модели развития. Таким образом дальнейшее развитие различных форм деятельности требуют от нас анализа форм развития. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке направлений прогрессивного развития. 
+							</p>
+							<p>
+								Идейные соображения высшего порядка, а также рамки и место обучения кадров способствует подготовки и реализации существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет выполнять важные задания по разработке новых предложений.
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
-
+	<footer class="footer">
+		<div class="main-layout">
+			<div class="panel">
+				<div class="panel__left">
+					<nav class="footer__menu menu-desktop">
+						<ul class="menu-desktop__list">
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link is-active">
+									Главная
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Каталог
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Доставка
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Оплата
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Отзывы
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Контакты
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Художникам
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__payments"></div>
+				</div>
+				<div class="panel__right">
+					<div class="footer__contacts">
+						<div class="contacts">
+							<div class="contacts__icon">
+								<i class="icon icon-phone-g"></i>
+							</div>
+							<div class="contacts__list">
+								<span class="contacts__phone">8 (812) 425-31-59</span>
+								<a href="#" class="contacts__link">help@elfmoney.ru</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__copy">
+						<div class="copy">
+							Elfstore &copy 2017
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- bower:js -->
 	<script src="bower_components/hammerjs/hammer.js"></script>

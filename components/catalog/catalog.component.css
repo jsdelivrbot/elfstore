@@ -37,6 +37,13 @@
   padding: 5px 0 10px 0;
   overflow: hidden;
 }
+.likearts-content .catalog .showcase__pagination {
+  position: relative;
+  padding: 12px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .likearts-content .catalog .sort {
   display: flex;
   flex-flow: row wrap;
@@ -190,4 +197,15 @@
   position: relative;
   top: 2px;
   left: 5px;
+}
+@media (max-width: 924px) {
+  .likearts-content .catalog .l-repeat-btn {
+    display: none;
+  }
+}
+.likearts-content .catalog .repeat-btn {
+  background-color: transparent;
+  border: 2px solid #d9d9d9;
+  padding: 6px 10px;
+  line-height: 1;
 }

@@ -1,11 +1,11 @@
-.likearts-content .breadcrumbs {
+.likearts-content .elf-breadcrumbs {
   position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
 }
-.likearts-content .breadcrumbs__link {
+.likearts-content .elf-breadcrumbs__link {
   position: relative;
   font-size: calc(13 / 16 * 1em);
   line-height: 1.85;
@@ -15,16 +15,16 @@
   transition: all 0.2s ease-in-out;
   text-decoration: underline;
 }
-.likearts-content .breadcrumbs__link:hover {
+.likearts-content .elf-breadcrumbs__link:hover {
   color: #aeaeae;
 }
-.likearts-content .breadcrumbs__separator:after {
+.likearts-content .elf-breadcrumbs__separator:after {
   content: '/';
   position: relative;
   color: #000;
   opacity: 0.25;
   margin: 0 16px;
 }
-.likearts-content .breadcrumbs__link.is-active {
+.likearts-content .elf-breadcrumbs__link.is-active {
   text-decoration: none;
 }

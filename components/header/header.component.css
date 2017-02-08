@@ -400,6 +400,9 @@
     padding: 19px;
   }
 }
+.likearts-content .header .controls__input:focus {
+  outline: none;
+}
 .likearts-content .header .controls__input::-webkit-input-placeholder {
   color: #fff !important;
 }
@@ -510,6 +513,9 @@
     max-width: none;
     padding: 19px;
   }
+}
+.likearts-content .header .search__input:focus {
+  outline: none;
 }
 .likearts-content .header .search__input::-webkit-input-placeholder {
   color: #fff !important;
