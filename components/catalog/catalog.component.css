@@ -27,7 +27,7 @@
 .likearts-content .catalog .showcase__title {
   margin: 0 0 28px 0;
   color: #000;
-  font-size: calc(28 / 16 * 1em);
+  font-size: calc(28 / 16 * 1rem);
   font-weight: 800;
   line-height: 1.29;
   text-transform: uppercase;
@@ -36,6 +36,11 @@
 .likearts-content .catalog .showcase__products {
   padding: 5px 0 10px 0;
   overflow: hidden;
+}
+@media (max-width: 1170px) {
+  .likearts-content .catalog .showcase__products {
+    padding: 14px 0 10px 0;
+  }
 }
 .likearts-content .catalog .showcase__pagination {
   position: relative;
@@ -53,7 +58,7 @@
 .likearts-content .catalog .sort__btn {
   line-height: 2.5;
   color: #797979;
-  font-size: calc(13 / 16 * 1em);
+  font-size: calc(13 / 16 * 1rem);
   padding: 0 14px;
   letter-spacing: 0;
   background-color: transparent;
@@ -89,6 +94,11 @@
   align-items: stretch;
   margin: 0 -15px;
 }
+@media (max-width: 1170px) {
+  .likearts-content .catalog .products {
+    margin: 0 -12px;
+  }
+}
 .likearts-content .catalog .products__item {
   display: flex;
   align-items: flex-end;
@@ -107,9 +117,21 @@
 .likearts-content .catalog .products__item:hover:after {
   background-color: #000;
 }
+@media (max-width: 1170px) {
+  .likearts-content .catalog .products__item {
+    width: calc(33.3333% - 24px);
+    min-height: 257px;
+    margin: 12px 12px;
+  }
+}
 @media (max-width: 900px) {
   .likearts-content .catalog .products__item {
     width: calc(50% - 30px);
+  }
+}
+@media (max-width: 768px) {
+  .likearts-content .catalog .products__item {
+    min-height: 325px;
   }
 }
 @media (max-width: 640px) {
@@ -160,18 +182,29 @@
   text-align: right;
   padding: 19px 19px 14px 19px;
 }
+@media (max-width: 1170px) {
+  .likearts-content .catalog .products__item-content {
+    padding: 13px;
+  }
+}
 .likearts-content .catalog .products__item-title {
   position: relative;
   top: 8px;
   color: #fff;
   text-decoration: underline;
-  font-size: calc(15 / 16 * 1em);
+  font-size: calc(15 / 16 * 1rem);
   line-height: 2.4;
+}
+@media (max-width: 1170px) {
+  .likearts-content .catalog .products__item-title {
+    font-size: calc(13 / 16 * 1rem);
+    line-height: 2.23;
+  }
 }
 .likearts-content .catalog .products__item-price {
   position: relative;
   top: 4px;
-  font-size: calc(18 / 16 * 1em);
+  font-size: calc(18 / 16 * 1rem);
   line-height: 1.06;
   color: #ffde13;
   text-decoration: none;
@@ -184,7 +217,7 @@
 }
 .likearts-content .catalog .products__next-sign {
   position: relative;
-  font-size: calc(24 / 16 * 1em);
+  font-size: calc(24 / 16 * 1rem);
   line-height: 1.17;
   font-weight: 700;
   text-transform: uppercase;

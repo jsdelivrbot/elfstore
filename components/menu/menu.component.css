@@ -27,7 +27,7 @@
 .likearts-content .menu-desktop__list-link {
   display: inline-block;
   color: #a0a9b2;
-  font-size: calc(13 / 16 * 1em);
+  font-size: calc(13 / 16 * 1rem);
   text-decoration: underline;
   padding: 21px 0 20px 0;
   transition: color 0.2s ease-in-out;
@@ -73,7 +73,7 @@
   list-style: none;
   padding: 50px 0 0 0;
   margin: 0;
-  font-size: calc(11 / 16 * 1em);
+  font-size: calc(11 / 16 * 1rem);
   font-weight: 500;
   text-transform: uppercase;
   overflow-y: auto;

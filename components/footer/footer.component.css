@@ -87,7 +87,7 @@
 }
 .likearts-content .footer .contacts__phone {
   font-weight: 700;
-  font-size: calc(18 / 16 * 1em);
+  font-size: calc(18 / 16 * 1rem);
   line-height: 1.3;
   color: #a0a9b2;
   margin-bottom: -4px;
@@ -100,7 +100,7 @@
 .likearts-content .footer .contacts__link {
   display: inline-block;
   color: #a0a9b2;
-  font-size: calc(12 / 16 * 1em);
+  font-size: calc(12 / 16 * 1rem);
   line-height: 1.8;
   transition: color 0.2s ease-in-out;
 }
@@ -111,7 +111,7 @@
 .likearts-content .footer .copy {
   opacity: 0.2;
   color: #fff;
-  font-size: calc(13 / 16 * 1em);
+  font-size: calc(13 / 16 * 1rem);
   font-weight: 300;
   line-height: 1.46;
   text-transform: uppercase;

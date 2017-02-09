@@ -50,7 +50,7 @@
   border: 2px solid #000;
   border-radius: 3px;
   padding: 8px 16px;
-  font-size: calc(14 / 16 * 1em);
+  font-size: calc(14 / 16 * 1rem);
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
@@ -77,7 +77,7 @@
 .likearts-content .sidebar__title {
   margin: 0 0 19px 0;
   text-transform: uppercase;
-  font-size: calc(20 / 16 * 1em);
+  font-size: calc(20 / 16 * 1rem);
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -112,7 +112,7 @@
   display: inline-block;
   padding: 6px 10px;
   text-transform: uppercase;
-  font-size: calc(14 / 16 * 1em);
+  font-size: calc(14 / 16 * 1rem);
   font-weight: 700;
   color: #000;
   border-radius: 0 8px 8px 8px;
@@ -128,7 +128,7 @@
   background-color: #d9d9d9;
   color: #fff;
   border-radius: 0 3px 3px 3px;
-  font-size: calc(11 / 16 * 1em);
+  font-size: calc(11 / 16 * 1rem);
   font-weight: 700;
   padding: 9px 6px;
   line-height: 0;
@@ -149,7 +149,7 @@
 }
 .likearts-content .news__title {
   text-transform: uppercase;
-  font-size: calc(20 / 16 * 1em);
+  font-size: calc(20 / 16 * 1rem);
   font-weight: 700;
   letter-spacing: 2px;
   margin: 0;
@@ -161,18 +161,18 @@
 .likearts-content .news__date {
   color: #000;
   opacity: 0.4;
-  font-size: calc(12 / 16 * 1em);
+  font-size: calc(12 / 16 * 1rem);
   font-weight: 900;
   letter-spacing: 1px;
 }
 .likearts-content .news__text {
   margin: 12px 0;
-  font-size: calc(14 / 16 * 1em);
+  font-size: calc(14 / 16 * 1rem);
   font-weight: 300;
   line-height: 1.57;
 }
 .likearts-content .news__link {
-  font-size: calc(12 / 16 * 1em);
+  font-size: calc(12 / 16 * 1rem);
   font-weight: 700;
   line-height: 2;
   text-decoration: underline;

@@ -49,7 +49,7 @@
   position: relative;
   top: 2px;
   color: #ffde13;
-  font-size: calc(36 / 16 * 1em);
+  font-size: calc(36 / 16 * 1rem);
   line-height: 1;
   font-weight: 800;
   letter-spacing: 3px;
@@ -59,7 +59,7 @@
   top: -6px;
   left: -3px;
   color: #fff;
-  font-size: calc(18 / 16 * 1em);
+  font-size: calc(18 / 16 * 1rem);
   line-height: 1.33;
   font-weight: 800;
 }
@@ -67,7 +67,7 @@
   margin: 0 6px;
 }
 .likearts-content .catalog-slider__item-title {
-  font-size: calc(26 / 16 * 1em);
+  font-size: calc(26 / 16 * 1rem);
   font-weight: 300;
   text-transform: uppercase;
   margin: 44px 0 24px 0;

@@ -7,7 +7,7 @@
 }
 .likearts-content .elf-breadcrumbs__link {
   position: relative;
-  font-size: calc(13 / 16 * 1em);
+  font-size: calc(13 / 16 * 1rem);
   line-height: 1.85;
   color: #000;
   text-decoration: none;

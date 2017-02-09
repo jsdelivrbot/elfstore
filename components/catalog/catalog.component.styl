@@ -34,7 +34,7 @@ $base-font = 16
 		&__title
 			margin 0 0 28px 0
 			color $color-text
-			font-size calc(28 / 16 * 1em)
+			font-size 'calc(28 / %s * 1rem)' %($base-font)
 			font-weight 800
 			line-height 1.29
 			text-transform uppercase
@@ -43,6 +43,8 @@ $base-font = 16
 		&__products
 			padding 5px 0 10px 0
 			overflow hidden
+			@media (max-width: 1170px)
+				padding 14px 0 10px 0
 
 		&__pagination
 			position relative
@@ -59,7 +61,7 @@ $base-font = 16
 		&__btn
 			line-height 2.5
 			color #797979
-			font-size calc(13 / 16 * 1em)
+			font-size 'calc(13 / %s * 1rem)' %($base-font)
 			padding 0 14px
 			letter-spacing 0
 			background-color transparent
@@ -90,6 +92,8 @@ $base-font = 16
 		justify-content flex-start
 		align-items stretch
 		margin 0 -15px
+		@media (max-width: 1170px)
+			margin 0 -12px
 		&__item
 			display flex
 			align-items flex-end
@@ -105,8 +109,14 @@ $base-font = 16
 				box-shadow: 0 3px 10px rgba(0,0,0,0.16), 0 3px 10px rgba(0,0,0,0.23);
 				&:after
 					background-color #000
+			@media (max-width: 1170px)
+				width calc(33.3333% - 24px)
+				min-height 257px
+				margin 12px 12px
 			@media (max-width: 900px)
 				width calc(50% - 30px)
+			@media (max-width: $tablet)
+				min-height 325px
 			@media (max-width: $phone)
 				width calc(100% - 30px)
 			&:after
@@ -150,19 +160,24 @@ $base-font = 16
 			z-index 1
 			text-align right
 			padding 19px 19px 14px 19px
+			@media (max-width: 1170px)
+				padding 13px
 
 		&__item-title
 			position relative
 			top 8px
 			color #fff
 			text-decoration underline
-			font-size calc(15 / 16 * 1em)
+			font-size 'calc(15 / %s * 1rem)' %($base-font)
 			line-height 2.4
+			@media (max-width: 1170px)
+				font-size 'calc(13 / %s * 1rem)' %($base-font)
+				line-height 2.23
 
 		&__item-price
 			position relative
 			top 4px
-			font-size calc(18 / 16 * 1em)
+			font-size 'calc(18 / %s * 1rem)' %($base-font)
 			line-height 1.06
 			color $color-primary
 			text-decoration none
@@ -175,7 +190,7 @@ $base-font = 16
 
 		&__next-sign
 			position relative
-			font-size calc(24 / 16 * 1em)
+			font-size 'calc(24 / %s * 1rem)' %($base-font)
 			line-height 1.17
 			font-weight 700
 			text-transform uppercase
