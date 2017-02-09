@@ -39,7 +39,7 @@ $base-font = 16
 	&__list-link
 		display inline-block
 		color #a0a9b2
-		font-size calc(13 / 16 * 1em)
+		font-size 'calc(13 / %s * 1rem)' %($base-font)
 		text-decoration underline
 		padding 21px 0 20px 0
 		transition color .2s ease-in-out
@@ -84,7 +84,7 @@ $base-font = 16
 		list-style none
 		padding 50px 0 0 0
 		margin 0
-		font-size calc(11 / 16 * 1em)
+		font-size 'calc(11 / %s * 1rem)' %($base-font)
 		font-weight 500
 		text-transform uppercase
 		overflow-y auto
