@@ -5,14 +5,18 @@
 	document.addEventListener('DOMContentLoaded', ready)
 
 	function ready() {
-		var toggle = new Hammer(document.querySelector('#aside-toggle'));
-		var aside = document.querySelector('#aside');
+		var target = document.querySelector('#aside-toggle');
 
-		toggle.on('tap', toggleHandler);
+		if (target) {
+			var toggle = new Hammer(target);
+			var aside = document.querySelector('#aside');
 
-		function toggleHandler() {
-			aside.classList.toggle('js-is-mobile--hide');
-			aside.classList.toggle('js-is-mobile--show');
+			toggle.on('tap', toggleHandler);
+
+			function toggleHandler() {
+				aside.classList.toggle('js-is-mobile--hide');
+				aside.classList.toggle('js-is-mobile--show');
+			}
 		}
 	}
 })();
