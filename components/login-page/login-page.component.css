@@ -1,0 +1,48 @@
+.likearts-content .login-page {
+  width: 100%;
+  height: auto;
+  min-height: 724px;
+  padding: 34px 0;
+}
+@media (max-width: 1170px) {
+  .likearts-content .login-page {
+    padding: 34px 15px;
+  }
+}
+.likearts-content .login-page__title {
+  color: #000;
+  font-size: calc(26 / 16 * 1rem);
+  line-height: 1.38;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 23px 0 0 0;
+  letter-spacing: 2px;
+}
+.likearts-content .login-page__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 0 0 0;
+}
+.likearts-content .login-page__form {
+  width: calc(100% - 320px);
+}
+@media (max-width: 1170px) {
+  .likearts-content .login-page__form {
+    width: 100%;
+  }
+}
+.likearts-content .login-page__social {
+  width: 270px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 1170px) {
+  .likearts-content .login-page__social {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+}

@@ -1,0 +1,50 @@
+.likearts-content .elf-social {
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+}
+.likearts-content .elf-social__title {
+  color: #000;
+  font-size: calc(16 / 16 * 1rem);
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: -2px;
+}
+.likearts-content .elf-social__item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 61px;
+  background-color: #fff;
+  margin: 18px 0;
+  border-radius: 12px;
+  padding: 0 30px;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.likearts-content .elf-social__item:hover {
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.06);
+}
+.likearts-content .elf-social__item--vk .elf-social__item-name {
+  color: #54769c;
+}
+.likearts-content .elf-social__item--fb .elf-social__item-name {
+  color: #004899;
+}
+.likearts-content .elf-social__item--ok .elf-social__item-name {
+  color: #ea5b0c;
+}
+.likearts-content .elf-social__item-name {
+  color: #000;
+  margin-left: 12px;
+  font-size: calc(15 / 16 * 1rem);
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
