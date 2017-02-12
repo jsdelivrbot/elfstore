@@ -26,7 +26,7 @@
   }
   @media ( min-width: 1170px ) {
     HTML {
-      background-image: url( "temp/pixelglass/img/register-1170.png" );
+      background-image: url( "temp/pixelglass/img/login-1170.png" );
     }
   }
 
@@ -229,20 +229,20 @@
 	</header>
 	<main>
 		<div class="main-layout">
-			<div class="register-page">
-				<div class="register-page__breadcrumbs">
+			<div class="login-page">
+				<div class="login-page__breadcrumbs">
 					<div class="elf-breadcrumbs">
 						<a href="#" class="elf-breadcrumbs__link">Главная</a>
 						<span class="elf-breadcrumbs__separator"></span>
-						<a href="#" class="elf-breadcrumbs__link is-active">Регистрация на сайте</a>
+						<a href="#" class="elf-breadcrumbs__link is-active">Войти на сайт</a>
 					</div>
 				</div>
-				<h1 class="register-page__title">Регистрация на сайте</h1>
-				<div class="register-page__content">
-					<div class="register-page__form">
+				<h1 class="login-page__title">Войти на сайт</h1>
+				<div class="login-page__content">
+					<div class="login-page__form">
 						<form class="elf-form">
 							<div class="elf-form__header">
-								<div class="elf-form__title">Данные для регистрации:</div>
+								<div class="elf-form__title">введите ваши данные</div>
 								<div class="elf-form__validation">
 									Пожалуйста, введите корректные имя пользователя и пароль.
 									Оба поля могут быть чувствительны к регистру.
@@ -269,38 +269,18 @@
 										<span class="elf-form__sign">Не менее 5 символов. Может содержать только английские буквы, цифры.</span>
 									</span>
 								</div>
-								<div class="elf-form__form-group">
-									<label for="checkPassword" class="elf-form__label">
-										Пароль (еще раз):
-										<span>*</span>
-									</label>
-									<span class="elf-form__control">
-										<input type="password" class="elf-form__input" id="checkPassword" name="checkPassword" placeholder="">
-										<span class="elf-form__sign">Подтвердите Ваш пароль.</span>
-									</span>
-								</div>
 								<div class="elf-form__control">
-									<div class="register-page__control">
-										<button type="submit" class="elf-btn elf-form__btn register-page__btn">
-											Зарегистрироваться
-											<i class="icon icon-enter"></i>
-										</button>
-										<span class="register-page__notice">
-											На ваш почтовый ящик придет письмо <br> об успешной регистрации, со ссылкой <br> для подтверждения.
-										</span>
-									</div>
-								</div>
-								<div class="register-page__links">
-									<a href="#" class="register-page__link">Вход с паролем</a>
-									<a href="#" class="register-page__link">Восстановть пароль</a>
-									<a href="#" class="register-page__link">Повторно выслать письмо с подтверждением</a>
+									<button type="submit" class="elf-btn elf-form__btn">
+										Войти
+										<i class="icon icon-enter"></i>
+									</button>
 								</div>
 							</div>
 						</form>
 					</div>
-					<div class="register-page__social">
+					<div class="login-page__social">
 						<div class="elf-social">
-							<div class="elf-social__title">Регистрация через:</div>
+							<div class="elf-social__title">войти через:</div>
 							<a href="#" class="elf-social__item elf-social__item--vk">
 								<i class="icon icon-vk"></i>
 								<span class="elf-social__item-name">контакте</span>
