@@ -1,12 +1,13 @@
 .likearts-content .login-page {
   width: 100%;
   height: auto;
-  min-height: 724px;
   padding: 34px 0;
+  margin-bottom: 102px;
 }
 @media (max-width: 1170px) {
   .likearts-content .login-page {
     padding: 34px 15px;
+    margin-bottom: 0;
   }
 }
 .likearts-content .login-page__title {
@@ -32,6 +33,9 @@
   .likearts-content .login-page__form {
     width: 100%;
   }
+}
+.likearts-content .login-page__form .elf-form {
+  min-height: 430px;
 }
 .likearts-content .login-page__social {
   width: 270px;

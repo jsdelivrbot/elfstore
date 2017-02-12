@@ -1,7 +1,6 @@
 .likearts-content .elf-form {
   width: 100%;
   height: auto;
-  min-height: 430px;
   background-color: #fff;
   border-radius: 12px;
   padding: 45px 39px;
@@ -97,7 +96,7 @@
 .likearts-content .elf-form__control {
   position: relative;
   flex-grow: 1;
-  margin-left: 150px;
+  margin-left: 180px;
 }
 @media (max-width: 640px) {
   .likearts-content .elf-form__control {
