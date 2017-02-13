@@ -58,7 +58,7 @@ $base-font = 16
 	&:active
 		transform scale(0.93)
 
-.likearts-content .l-sidebar
+.likearts-content .aside .l-sidebar
 	width 100%
 
 	&--bottom
@@ -66,7 +66,7 @@ $base-font = 16
 		@media (max-width: 1170px)
 			margin 29px 0 0 0
 
-.likearts-content .sidebar
+.likearts-content .aside .sidebar
 	position relative
 	background-color $color-bg
 	width 100%
@@ -127,16 +127,16 @@ $base-font = 16
 		line-height 0
 		opacity 0
 
-.likearts-content .l-vidgets
+.likearts-content .aside .l-vidgets
 		margin 48px 0 48px 0
 		@media (max-width: 768px)
 			display none
 
-.likearts-content .l-news
+.likearts-content .aside .l-news
 	@media (max-width: 768px)
 		display none
 
-.likearts-content .news
+.likearts-content .aside .news
 	&__title
 		text-transform uppercase
 		font-size 'calc(20 / %s * 1rem)' %($base-font)
