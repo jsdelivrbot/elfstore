@@ -5,12 +5,12 @@
 	document.addEventListener('DOMContentLoaded', ready);
 
 	function ready() {
-		var root = $('[data-catalog-slider-root]'),
-				slider = root.find('[data-catalog-slider]'),
-				prevBtn = root.find('[data-catalog-slider-btn-prev]'),
-				nextBtn = root.find('[data-catalog-slider-btn-next]'),
-				counter = root.find('[data-catalog-slider-counter]'),
-				sliderLength = root.find('[data-catalog-slider-length]'),
+		var root = $('[data-slider-root]'),
+				slider = root.find('[data-slider]'),
+				prevBtn = root.find('[data-slider-btn-prev]'),
+				nextBtn = root.find('[data-slider-btn-next]'),
+				counter = root.find('[data-slider-counter]'),
+				sliderLength = root.find('[data-slider-length]'),
 				i;
 
 			slider.slick({
@@ -50,7 +50,7 @@
 			}
 
 			function setSlideritemsLength() {
-				var items = $('[data-catalog-slider-item]');
+				var items = $('[data-slider-item]');
 
 				if (items.length) {
 					sliderLength.text(Math.abs(items.length - 2));

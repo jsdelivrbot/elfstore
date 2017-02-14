@@ -4,12 +4,12 @@
 .likearts-content .slick-list {
   border-radius: 12px !important;
 }
-.likearts-content .catalog-slider {
+.likearts-content .slider {
   position: relative;
   width: 100%;
   height: auto;
 }
-.likearts-content .catalog-slider__item {
+.likearts-content .slider__item {
   width: 100%;
   height: auto;
   min-height: 324px;
@@ -20,17 +20,17 @@
   padding: 80px 55px 64px 55px;
 }
 @media (max-width: 1170px) {
-  .likearts-content .catalog-slider__item {
+  .likearts-content .slider__item {
     min-height: 280px;
     padding: 50px 55px 50px 55px;
   }
 }
-.likearts-content .catalog-slider .slider-controls {
+.likearts-content .slider .slider-controls {
   position: absolute;
   top: 40px;
   left: 54px;
 }
-.likearts-content .catalog-slider .slider-controls__btn {
+.likearts-content .slider .slider-controls__btn {
   background-color: transparent;
   border: none;
   display: inline-flex;
@@ -39,13 +39,13 @@
   cursor: pointer;
   padding: 0;
 }
-.likearts-content .catalog-slider .slider-controls__btn--prev {
+.likearts-content .slider .slider-controls__btn--prev {
   margin-right: 7px;
 }
-.likearts-content .catalog-slider .slider-controls__btn--next {
+.likearts-content .slider .slider-controls__btn--next {
   margin-left: 1px;
 }
-.likearts-content .catalog-slider .slider-controls__counter {
+.likearts-content .slider .slider-controls__counter {
   position: relative;
   top: 2px;
   color: #ffde13;
@@ -54,7 +54,7 @@
   font-weight: 800;
   letter-spacing: 3px;
 }
-.likearts-content .catalog-slider .slider-controls__all {
+.likearts-content .slider .slider-controls__all {
   position: relative;
   top: -6px;
   left: -3px;
@@ -63,10 +63,10 @@
   line-height: 1.33;
   font-weight: 800;
 }
-.likearts-content .catalog-slider .slider-controls__separator {
+.likearts-content .slider .slider-controls__separator {
   margin: 0 6px;
 }
-.likearts-content .catalog-slider__item-title {
+.likearts-content .slider__item-title {
   font-size: calc(26 / 16 * 1rem);
   font-weight: 300;
   text-transform: uppercase;
@@ -74,9 +74,9 @@
   line-height: 1.16;
   letter-spacing: 3px;
 }
-.likearts-content .catalog-slider__item-sign {
+.likearts-content .slider__item-sign {
   font-weight: 700;
 }
-.likearts-content .catalog-slider__item-icon {
+.likearts-content .slider__item-icon {
   margin-left: -8px;
 }

@@ -20,19 +20,20 @@
 	<link rel="stylesheet" href="shared/variables.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/breadcrumbs/breadcrumbs.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/button/button.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/catalog/catalog.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/catalog-detail/catalog-detail.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/catalog-slider/catalog-slider.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/catalog-detail-page/catalog-detail-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/catalog-page/catalog-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/footer/footer.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/form/form.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/grid/grid.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/header/header.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/login-page/login-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/menu/menu.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/news/news.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/header/header.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/news-detail-page/news-detail-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/news-page/news-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/pagination/pagination.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/register-page/register-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/sidebar/sidebar.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/slider/slider.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/social/social.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/tags/tags.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<!-- endinject -->
@@ -401,85 +402,85 @@
 					</div>
 				</div>
 				<div class="flex-item flex-item--content">
-					<div class="catalog">
-						<div class="catalog__breadcrumbs">
+					<div class="catalog-page">
+						<div class="catalog-page__breadcrumbs">
 							<div class="elf-breadcrumbs">
 								<a href="#" class="elf-breadcrumbs__link">Главная</a>
 								<span class="elf-breadcrumbs__separator"></span>
 								<a href="#" class="elf-breadcrumbs__link is-active">Каталог</a>
 							</div>
 						</div>
-						<div class="catalog__catalog-slider">
-							<div data-catalog-slider-root class="catalog-slider">
-								<div data-catalog-slider>
+						<div class="catalog-page__slider">
+							<div data-slider-root class="slider">
+								<div data-slider>
 									<div
-										data-catalog-slider-item
-										class="catalog-slider__item"
+										data-slider-item
+										class="slider__item"
 										style="background-image: url('./images/catalog/slider/1.jpg')">
-										<h3 class="catalog-slider__item-title">
+										<h3 class="slider__item-title">
 											товары по мотивам
 											<br>
-											<span class="catalog-slider__item-sign">game of thrones от 750</span>
-											<i class="icon icon-rub-b catalog-slider__item-icon"></i>
+											<span class="slider__item-sign">game of thrones от 750</span>
+											<i class="icon icon-rub-b slider__item-icon"></i>
 										</h3>
 										<a href="#">
 											<button class="elf-btn">Смотреть</button>
 										</a>
 									</div>
 									<div
-										data-catalog-slider-item
-										class="catalog-slider__item"
+										data-slider-item
+										class="slider__item"
 										style="background-image: url('./images/catalog/slider/1.jpg')">
-										<h3 class="catalog-slider__item-title">
+										<h3 class="slider__item-title">
 											товары по мотивам
 											<br>
-											<span class="catalog-slider__item-sign">game of thrones от 750</span>
-											<i class="icon icon-rub-b catalog-slider__item-icon"></i>
+											<span class="slider__item-sign">game of thrones от 750</span>
+											<i class="icon icon-rub-b slider__item-icon"></i>
 										</h3>
 										<a href="#">
 											<button class="elf-btn">Смотреть</button>
 										</a>
 									</div>
 									<div
-										data-catalog-slider-item
-										class="catalog-slider__item"
+										data-slider-item
+										class="slider__item"
 										style="background-image: url('./images/catalog/slider/1.jpg')">
-										<h3 class="catalog-slider__item-title">
+										<h3 class="slider__item-title">
 											товары по мотивам
 											<br>
-											<span class="catalog-slider__item-sign">game of thrones от 750</span>
-											<i class="icon icon-rub-b catalog-slider__item-icon"></i>
+											<span class="slider__item-sign">game of thrones от 750</span>
+											<i class="icon icon-rub-b slider__item-icon"></i>
 										</h3>
 										<a href="#">
 											<button class="elf-btn">Смотреть</button>
 										</a>
 									</div>
 								</div>
-								<div class="catalog-slider__controls slider-controls">
+								<div class="slider__controls slider-controls">
 									<button
-										data-catalog-slider-btn-prev
+										data-slider-btn-prev
 										class="slider-controls__btn slider-controls__btn--prev">
 										<i class="icon icon-prev"></i>
 									</button>
 									<span
-										data-catalog-slider-counter
+										data-slider-counter
 										class="slider-controls__counter">
 									</span>
 									<span class="slider-controls__all">
 										<span class="slider-controls__separator">/</span>
 										<span
-											data-catalog-slider-length
+											data-slider-length
 											class="slider-controls__length"></span>
 									</span>
 									<button
-										data-catalog-slider-btn-next
+										data-slider-btn-next
 										class="slider-controls__btn slider-controls__btn--next">
 										<i class="icon icon-next"></i>
 									</button>
 								</div>
 							</div>
 						</div>
-						<div class="catalog__showcase">
+						<div class="catalog-page__showcase">
 							<div class="showcase">
 								<h1 class="showcase__title">Каталог</h1>
 							</div>
@@ -801,9 +802,9 @@
 	<!-- inject:js -->
 	<script src="shared/polyfills.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="shared/vk.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
-	<script src="components/catalog-slider/catalog-slider.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/menu/menu.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/sidebar/sidebar.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/slider/slider.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<!-- endinject -->
 </body>
 
