@@ -1,0 +1,149 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .news-detail-page
+	width 100%
+	padding 36px 0 40px 0
+	min-height 300px
+	@media (max-width: $tablet)
+		padding 0 0 40px 0
+
+	&__title
+		margin 0 0 28px 0
+		color $color-text
+		font-size 'calc(28 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 0.86
+		letter-spacing 0
+		@media (max-width: $phone)
+			font-size 'calc(20 / %s * 1rem)' %($base-font)
+
+	&__item
+		max-width 730px
+		@media (max-width: $tablet)
+			max-width 100%
+
+	&__shield
+		width 100%
+		margin 24px 0
+
+	&__btn
+		background-color transparent
+		border 2px solid #d9d9d9
+		display flex
+		justify-content center
+		align-items center
+		padding 7px 45px
+		@media (max-width: $phone)
+			width 100%
+		&:hover
+			border 2px solid transparent
+			background-color $color-primary
+
+	&__btn-icon
+		margin-right 4px
+
+	.l-news-detail-page-title
+		padding 17px 0 0 0
+		@media (max-width: 940px)
+			padding 15px 0 0 0
+
+	.l-news-detail-page-btn
+		margin-top 29px
+
+.likearts-content .news-detail-page .news-detail-item
+
+	&__pic
+		width 100%
+		height 100%
+		max-width 100%
+		max-height 230px
+		object-fit cover
+		margin-bottom 20px
+
+	&__text
+		margin 13px 0 29px 0
+		color $color-text
+		font-size 'calc(18 / %s * 1rem)' %($base-font)
+		font-weight 400
+		@media (max-width: $phone)
+			font-size 'calc(16 / %s * 1rem)' %($base-font)
+
+	&__list
+		padding 0
+		list-style none
+		color $color-text
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 400
+		line-height 2.38
+		@media (max-width: $phone)
+			font-size 'calc(14 / %s * 1rem)' %($base-font)
+
+	&__list-item
+		position relative
+		&:before
+			content ''
+			position relative
+			top 4px
+			display inline-block
+			width 18px
+			height 18px
+			background-image url('../../images/icons/link.png')
+			background-size cover
+			background-repeat no-repeat
+			background-position center
+			margin-right 20px
+			@media (max-width: $phone)
+				display none
+
+	&__list-link
+		color $color-text
+		transition color .2s ease-in-out
+		&:hover
+			color $color-text-hint
+
+	.l-list-btn
+		margin 12px 0
+
+	&__list-btn
+		background-color #fff
+		padding 1px 13px 0 13px
+		font-size 'calc(12 / %s * 1rem)' %($base-font)
+		line-height 3
+		letter-spacing 1px
+		&:hover
+			background-color $color-primary
+
+.likearts-content .news-detail-page .news-detail-shield
+	width calc(100% + 70px)
+	background-color #fff
+	border 3px solid $color-primary
+	border-radius 12px
+	padding 39px 37px
+	@media (max-width: 1170px)
+		width 100%
+
+	&__title
+		margin 0 0 29px 0
+		color $color-text
+		font-size 'calc(28 / %s * 1rem)' %($base-font)
+		line-height 0.86
+
+	p
+		color $color-text
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		line-height 1.13
+		margin 18px 0
