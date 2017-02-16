@@ -20,21 +20,22 @@
 	<link rel="stylesheet" href="shared/variables.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/breadcrumbs/breadcrumbs.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/button/button.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/cart-page/cart-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/catalog-detail-page/catalog-detail-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/catalog-page/catalog-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/footer/footer.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/form/form.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/grid/grid.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/header/header.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/login-page/login-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/menu/menu.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/header/header.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/news-detail-page/news-detail-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/news-page/news-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/pagination/pagination.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/register-page/register-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/sidebar/sidebar.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/slider/slider.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/social/social.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/slider/slider.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/tags/tags.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<!-- endinject -->
 </head>
@@ -381,71 +382,189 @@
 					</div>
 				</div>
 				<div class="flex-item flex-item--content">
-					<div class="news-detail-page">
-						<div class="news-detail-page__breadcrumbs">
+					<div class="cart-page">
+						<div class="cart-page__breadcrumbs">
 							<div class="elf-breadcrumbs">
 								<a href="#" class="elf-breadcrumbs__link">Главная</a>
 								<span class="elf-breadcrumbs__separator"></span>
-								<a href="#" class="elf-breadcrumbs__link">Новости</a>
-								<span class="elf-breadcrumbs__separator"></span>
-								<a href="#" class="elf-breadcrumbs__link">Новая акция</a>
+								<a href="#" class="elf-breadcrumbs__link">Корзина</a>
 							</div>
 						</div>
-						<div class="news-detail-page__content">
-							<div class="l-news-detail-page-title">
-								<h1 class="news-detail-page__title">Новая акция от Elfmoney.ru</h1>
+						<div class="cart-page__content">
+							<div class="l-cart-page-title">
+								<h1 class="cart-page__title">
+									<span class="cart-page__title-name">Моя корзина</span>
+									<span class="cart-page__title-separator">/</span>
+									<span class="cart-page__title-count">
+										Добавлено <span>3</span> товара
+									</span>
+								</h1>
 							</div>
-							<div class="news-detail-page__item">
-								<div class="news-detail-item">
-									<img class="news-detail-item__pic" src="./images/news-detail/1.jpg" alt="text">
-									<p class="news-detail-item__text">
-										Оформите заказ на игровую валюту с 11 по 13 июля в нашем интернет-магазине и получите еще 10% от общей суммы заказа бесплатно!
-									</p>
-									<ul class="news-detail-item__list">
-										<li class="news-detail-item__list-item">
-											<a href="#" class="news-detail-item__list-link">World of Warcraft (RU)</a> — от 12.4 руб.
-										</li>
-										<li class="news-detail-item__list-item">
-											<a href="#" class="news-detail-item__list-link">World of Warcraft (EU)</a> — от 35.5 руб.
-										</li>
-										<li class="news-detail-item__list-item">
-											<a href="#" class="news-detail-item__list-link">Archeage</a> — от 1.3 руб.
-										</li>
-										<li class="news-detail-item__list-item">
-											<a href="#" class="news-detail-item__list-link">Guild Wars 2</a> — от 5.65 руб.
-										</li>
-										<li class="news-detail-item__list-item">
-											<a href="#" class="news-detail-item__list-link">WildStar Online</a> — от 0.75 руб.
-										</li>
-										<li class="news-detail-item__list-item">
-											<a href="#" class="news-detail-item__list-link">The Elder Scrolls Online</a> — от 30 руб.
-										</li>
-										<li class="news-detail-item__list-item">
-											<a href="#" class="news-detail-item__list-link">Star Wars: The Old Republic</a> — от 2.47 руб.
-										</li>
-									</ul>
-									<div class="l-list-btn">
-										<button class="elf-btn news-detail-item__list-btn">и многие другие</button>
-									</div>
-									<div class="news-detail-page__shield">
-										<div class="news-detail-shield">
-											<h3 class="news-detail-shield__title">Почему мы?</h3>
-											<p>
-												Мы доставляем валюту круглосуточно, а эльфы-консультанты готовы ответить на любые ваши вопросы с 11 до 20 каждый день.
-											</p>
-											<p>
-												Наш первый магазин, Wowgold.ru, открылся 12 августа 2005 года. Elfmoney.ru был открыт 20 октября 2008 года. С тех пор мы обслужили более 100 000 клиентов.
-											</p>
-											<p>
-												Наши клиенты оставили более 23 200 отзывов.
-											</p>
+							<div class="cart-page__table">
+								<div class="table-container">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Товары</th>
+												<th>Вес</th>
+												<th>Размер</th>
+												<th>Кол-во</th>
+												<th>Цена</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="product">
+												<td>
+													<div class="flex">
+														<img src="./images/cart/1.jpg" alt="text" class="product__pic">
+														<div class="product__desc">
+															<span class="product__desc-number">1117</span>
+															<br>
+															<span class="product__desc-name">
+																Подвеска Коннора (односторонняя)
+																Assassin's Creed (серебро)
+															</span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<span class="product__weight">5,8 г.</span>
+												</td>
+												<td>
+													<span class="product__size">
+														<span class="product__size-width">43,9</span>
+														<span class="product__size-separator">x</span>
+														<span class="product__size-height">37</span>
+														<span class="product__size-unit">мм.</span>
+													</span>
+												</td>
+												<td>
+													<div class="number-picker"></div>
+												</td>
+												<td>
+													<span class="product__price">
+														1295
+														<i class="icon icon-rub-black"></i>
+													</span>
+												</td>
+											</tr>
+											<tr class="product">
+												<td>
+													<div class="flex">
+														<img src="./images/cart/2.jpg" alt="text" class="product__pic">
+														<div class="product__desc">
+															<span class="product__desc-number">660</span>
+															<br>
+															<span class="product__desc-name">
+																Кулон Dota 2 (серебро)
+															</span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<span class="product__weight">5,7 г.</span>
+												</td>
+												<td>
+													<span class="product__size">
+														<span class="product__size-width">25,7</span>
+														<span class="product__size-separator">x</span>
+														<span class="product__size-height">23,2</span>
+														<span class="product__size-unit">мм.</span>
+													</span>
+												</td>
+												<td>
+													<div class="number-picker"></div>
+												</td>
+												<td>
+													<span class="product__price">
+														2000
+														<i class="icon icon-rub-black"></i>
+													</span>
+												</td>
+											</tr>
+											<tr class="product">
+												<td>
+													<div class="flex">
+														<img src="./images/cart/3.jpg" alt="text" class="product__pic">
+														<div class="product__desc">
+															<span class="product__desc-number">2564</span>
+															<br>
+															<span class="product__desc-name">
+																Подвеска Коннора (односторонняя)
+																Assassin's Creed (серебро)
+															</span>
+														</div>
+													</div>
+												</td>
+												<td>
+													<span class="product__weight">5,8 г.</span>
+												</td>
+												<td>
+													<span class="product__size">
+														<span class="product__size-width">43,9</span>
+														<span class="product__size-separator">x</span>
+														<span class="product__size-height">37</span>
+														<span class="product__size-unit">мм.</span>
+													</span>
+												</td>
+												<td>
+													<div class="number-picker"></div>
+												</td>
+												<td>
+													<span class="product__price">
+														1295
+														<i class="icon icon-rub-black"></i>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="cart-page__controls">
+								<div class="cart-controls">
+									<div class="cart-controls__other">
+										<div class="coupon">
+											<div data-coupon-component class="coupon__input-group">
+												<input
+													data-coupon-component-input
+													type="text"
+													name="coupon"
+													placeholder="Введите код купона"
+													class="coupon__input">
+												<i data-coupon-component-btn class="icon icon-cancel coupon__input-icon"></i>
+											</div>
+											<div class="coupon__btn-container">
+												<button class="elf-btn coupon__btn">
+													<i class="icon icon-btn-next coupon__btn-icon"></i>
+												</button>
+											</div>
+										</div>
+										<div class="l-sign">
+											<div class="sign">
+												<i class="icon icon-timer sign__icon"></i>
+												<span class="sign__text">
+													Ожидаемый срок передачи заказа в службу доставки <span>— 5 дней.</span>
+													<br>
+													Срок доставки зависит от региона.
+												</span>
+											</div>
 										</div>
 									</div>
-									<div class="l-news-detail-page-btn">
-										<button class="elf-btn news-detail-page__btn">
-											<i class="icon icon-back news-detail-page__btn-icon"></i>
-											Назад
-										</button>
+									<div class="cart-controls__order">
+										<div class="cart-controls__sum">
+											<span class="cart-controls__sum-sign">Итого, без доставки:</span>
+											<span class="cart-controls__sum-count">
+												<span>4590</span>
+												<i class="icon icon-rub-black"></i>
+											</span>
+										</div>
+										<div class="cart-controls__btn-container">
+											<button class="elf-btn cart-controls__btn">
+												<span>Оформить заказ</span>
+												<i class="icon icon-confirm cart-controls__btn-icon"></i>
+											</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -531,6 +650,7 @@
 	<!-- inject:js -->
 	<script src="shared/polyfills.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="shared/vk.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/cart-page/cart-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/menu/menu.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/sidebar/sidebar.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/slider/slider.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>

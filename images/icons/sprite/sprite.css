@@ -18,27 +18,39 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-arrow-next {
   background-image: url(sprite.png);
-  background-position: -120px -76px;
+  background-position: -16px -117px;
   width: 17px;
   height: 16px;
 }
 .icon-arrow-prev {
   background-image: url(sprite.png);
-  background-position: -120px -92px;
+  background-position: -33px -117px;
   width: 17px;
   height: 15px;
 }
 .icon-arrow-r {
   background-image: url(sprite.png);
-  background-position: -60px -82px;
+  background-position: -120px 0px;
   width: 23px;
   height: 18px;
 }
 .icon-back {
   background-image: url(sprite.png);
-  background-position: -120px -39px;
+  background-position: -120px -81px;
   width: 18px;
   height: 19px;
+}
+.icon-btn-next {
+  background-image: url(sprite.png);
+  background-position: -120px -18px;
+  width: 17px;
+  height: 24px;
+}
+.icon-cancel {
+  background-image: url(sprite.png);
+  background-position: -68px -82px;
+  width: 27px;
+  height: 27px;
 }
 .icon-cart {
   background-image: url(sprite.png);
@@ -52,9 +64,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 36px;
   height: 36px;
 }
+.icon-confirm {
+  background-image: url(sprite.png);
+  background-position: -120px -100px;
+  width: 17px;
+  height: 17px;
+}
 .icon-enter {
   background-image: url(sprite.png);
-  background-position: -120px -20px;
+  background-position: -120px -62px;
   width: 19px;
   height: 19px;
 }
@@ -66,7 +84,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-next {
   background-image: url(sprite.png);
-  background-position: -72px -64px;
+  background-position: -143px -16px;
   width: 12px;
   height: 18px;
 }
@@ -90,37 +108,49 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-prev {
   background-image: url(sprite.png);
-  background-position: -72px -46px;
+  background-position: -143px -34px;
   width: 12px;
   height: 18px;
 }
 .icon-repeat {
   background-image: url(sprite.png);
-  background-position: -35px -82px;
+  background-position: -95px -82px;
   width: 25px;
   height: 18px;
 }
 .icon-rub-b {
   background-image: url(sprite.png);
-  background-position: -120px -58px;
+  background-position: 0px -117px;
   width: 16px;
   height: 18px;
 }
+.icon-rub-black {
+  background-image: url(sprite.png);
+  background-position: -143px -52px;
+  width: 12px;
+  height: 12px;
+}
 .icon-rub {
   background-image: url(sprite.png);
-  background-position: -97px -82px;
+  background-position: -143px -64px;
   width: 12px;
   height: 12px;
 }
 .icon-search {
   background-image: url(sprite.png);
-  background-position: -120px 0px;
+  background-position: -120px -42px;
   width: 20px;
   height: 20px;
 }
+.icon-timer {
+  background-image: url(sprite.png);
+  background-position: -35px -82px;
+  width: 33px;
+  height: 32px;
+}
 .icon-user {
   background-image: url(sprite.png);
-  background-position: -83px -82px;
+  background-position: -143px 0px;
   width: 14px;
   height: 16px;
 }
