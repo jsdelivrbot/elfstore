@@ -1,0 +1,30 @@
+.likearts-content .elf-breadcrumbs {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.likearts-content .elf-breadcrumbs__link {
+  position: relative;
+  font-size: calc(13 / 16 * 1rem);
+  line-height: 1.85;
+  color: #000;
+  text-decoration: none;
+  margin-top: -2px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: underline;
+}
+.likearts-content .elf-breadcrumbs__link:hover {
+  color: #aeaeae;
+}
+.likearts-content .elf-breadcrumbs__separator:after {
+  content: '/';
+  position: relative;
+  color: #000;
+  opacity: 0.25;
+  margin: 0 16px;
+}
+.likearts-content .elf-breadcrumbs__link.is-active {
+  text-decoration: none;
+}

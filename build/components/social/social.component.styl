@@ -1,0 +1,69 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .elf-social
+	width 100%
+	height auto
+	min-height 260px
+
+	&__title
+		color $color-text
+		font-size 'calc(16 / %s * 1rem)' % ($base-font)
+		font-weight 700
+		line-height 1.5
+		text-transform uppercase
+		letter-spacing 1px
+		margin-top -2px
+
+	&__item
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		width 100%
+		height auto
+		min-height 61px
+		background-color #fff
+		margin 18px 0
+		border-radius 12px
+		padding 0 30px
+		text-decoration none
+		transition box-shadow .2s ease-in-out
+		&:hover
+			box-shadow 0 1px 6px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.06)
+
+		&--vk
+			.elf-social__item-name
+				color #54769c
+
+		&--fb
+			.elf-social__item-name
+				color #004899
+
+		&--ok
+			.elf-social__item-name
+				color #ea5b0c
+
+	&__item-name
+		color $color-text
+		margin-left 12px
+		font-size 'calc(15 / %s * 1rem)' % ($base-font)
+		line-height 1.6
+		text-transform uppercase
+		font-weight 900
+		letter-spacing 1px
+
+

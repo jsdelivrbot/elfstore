@@ -1,0 +1,67 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .elf-pagination
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+	align-items center
+	@media (max-width: $phone)
+		justify-content center
+
+	&__btn
+		position relative
+		top 0
+		left 0
+		background-color transparent
+		border 2px solid #d9d9d9
+		padding 0 15px
+		letter-spacing 0
+		text-decoration none
+		@media (max-width: $phone)
+			& span
+				display none
+		&:hover
+			background-color $color-primary
+			border-color $color-primary
+			text-decoration underline
+			box-shadow 0 1px 6px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.06)
+		&--prev
+			margin-right 2px
+			.elf-pagination__icon
+				position relative
+				top 2px
+				left -3px
+				@media (max-width: $phone)
+					left 0
+		&--next
+			margin-left 2px
+			.elf-pagination__icon
+				position relative
+				top 3px
+				left 0
+
+	&__link
+		padding 5px 10px
+		line-height 1.53
+		font-weight 700
+		font-size 'calc(15 / %s * 1rem)' %($base-font)
+		background-color transparent
+		border-radius 0 3px 3px 3px
+		color $color-text
+		letter-spacing 0
+		&.is-active
+			background-color $color-primary

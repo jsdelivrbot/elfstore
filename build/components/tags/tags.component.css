@@ -1,0 +1,22 @@
+.likearts-content .tags {
+  width: 100%;
+  height: auto;
+  border: 2px solid #e6e6e6;
+  border-radius: 0 13px 13px 13px;
+  padding: 18px 25px;
+}
+.likearts-content .tags a {
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 400;
+  line-height: 1.71;
+  color: #aeaeae;
+  text-decoration: underline;
+  margin-right: 1px;
+  transition: color 0.2s ease-in-out;
+}
+.likearts-content .tags a:hover {
+  color: #757575;
+}
+.likearts-content .tags a.is-active {
+  color: #000;
+}

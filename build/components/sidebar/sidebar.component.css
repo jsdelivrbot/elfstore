@@ -1,0 +1,187 @@
+.likearts-content .aside {
+  position: relative;
+  padding: 35px 39px 80px 0;
+}
+@media (max-width: 1170px) {
+  .likearts-content .aside {
+    padding: 35px 30px 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .likearts-content .aside {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+.likearts-content .aside.js-is-mobile--hide {
+  transition: all 0.2s ease-in-out;
+  transform-origin: 50% 0;
+}
+@media (max-width: 768px) {
+  .likearts-content .aside.js-is-mobile--hide {
+    position: absolute;
+    opacity: 0;
+    transform: scale(1, 0);
+  }
+}
+.likearts-content .aside.js-is-mobile--show {
+  transition: all 0.2s ease-in-out;
+  transform-origin: 50% 0;
+}
+@media (max-width: 768px) {
+  .likearts-content .aside.js-is-mobile--show {
+    position: relative;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.likearts-content .l-aside-toggle {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .likearts-content .l-aside-toggle {
+    display: none;
+  }
+}
+.likearts-content .aside-toggle {
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.likearts-content .aside-toggle:active {
+  transform: scale(0.93);
+}
+.likearts-content .aside .l-sidebar {
+  width: 100%;
+}
+.likearts-content .aside .l-sidebar--bottom {
+  margin: 29px 0 0 0;
+}
+@media (max-width: 1170px) {
+  .likearts-content .aside .l-sidebar--bottom {
+    margin: 29px 0 0 0;
+  }
+}
+.likearts-content .aside .sidebar {
+  position: relative;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.likearts-content .aside .sidebar__title {
+  margin: 0 0 19px 0;
+  text-transform: uppercase;
+  font-size: calc(20 / 16 * 1rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+  .likearts-content .aside .sidebar__title {
+    text-align: center;
+  }
+}
+.likearts-content .aside .sidebar__content {
+  position: relative;
+  width: 100%;
+  top: -4px;
+  border: 2px solid #e5e5e5;
+  border-radius: 0 10px 10px 10px;
+  padding: 24px 18px 13px 18px;
+}
+.likearts-content .aside .sidebar__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.likearts-content .aside .sidebar__list-item {
+  position: relative;
+  padding: 3px 0;
+  margin: 0 0 2px 0;
+}
+.likearts-content .aside .sidebar__list-item:hover .sidebar__list-badge {
+  opacity: 1;
+}
+.likearts-content .aside .sidebar__list-link {
+  display: inline-block;
+  padding: 6px 10px;
+  text-transform: uppercase;
+  font-size: calc(13 / 16 * 1rem);
+  font-weight: 700;
+  color: #000;
+  border-radius: 0 8px 8px 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+.likearts-content .aside .sidebar__list-link:hover {
+  background-color: #ffde13;
+}
+.likearts-content .aside .sidebar__list-badge {
+  position: absolute;
+  top: 8px;
+  right: -4px;
+  background-color: #d9d9d9;
+  color: #fff;
+  border-radius: 0 3px 3px 3px;
+  font-size: calc(11 / 16 * 1rem);
+  font-weight: 700;
+  padding: 9px 6px;
+  line-height: 0;
+  opacity: 0;
+}
+.likearts-content .aside .l-vidgets {
+  margin: 48px 0 48px 0;
+}
+@media (max-width: 768px) {
+  .likearts-content .aside .l-vidgets {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .likearts-content .aside .l-news {
+    display: none;
+  }
+}
+.likearts-content .aside .news__title {
+  text-transform: uppercase;
+  font-size: calc(20 / 16 * 1rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.likearts-content .aside .news__content {
+  position: relative;
+  width: 100%;
+}
+.likearts-content .aside .news__date {
+  color: #000;
+  opacity: 0.4;
+  font-size: calc(12 / 16 * 1rem);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.likearts-content .aside .news__text {
+  margin: 12px 0;
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 300;
+  line-height: 1.57;
+}
+.likearts-content .aside .news__link {
+  font-size: calc(12 / 16 * 1rem);
+  font-weight: 700;
+  line-height: 2;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 1px;
+}
+.likearts-content .aside .news__block {
+  padding: 13px 0 20px 0;
+  margin-bottom: 11px;
+  border-bottom: 2px solid #e6e6e6;
+}

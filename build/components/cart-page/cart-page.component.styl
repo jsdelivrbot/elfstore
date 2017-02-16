@@ -1,0 +1,308 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .cart-page
+	position relative
+	width 100%
+	padding 36px 0 40px 0
+	min-height 300px
+	@media (max-width: $tablet)
+		padding 0 0 40px 0
+
+	&__title
+		position relative
+		margin 0 0 23px 0
+		color $color-text
+		font-size 'calc(28 / %s * 1rem)' %($base-font)
+		font-weight 800
+		letter-spacing 3px
+		line-height 1.29
+		text-transform uppercase
+		@media (max-width: $phone)
+			font-size 'calc(20 / %s * 1rem)' %($base-font)
+
+	&__title-name
+		@media (max-width: $phone)
+			display block
+
+	&__title-separator
+		position relative
+		top -2px
+		color #a3a3a3
+		font-size 'calc(22 / %s * 1rem)' %($base-font)
+		@media (max-width: $phone)
+			display none
+
+	&__title-count
+		position relative
+		top -2px
+		color #a3a3a3
+		font-size 'calc(22 / %s * 1rem)' %($base-font)
+		font-weight 400
+		line-height 1.64
+		letter-spacing 0
+		text-transform none
+		@media (max-width: $phone)
+			font-size 'calc(18 / %s * 1rem)' %($base-font)
+
+	&__table
+		margin-bottom 30px
+
+	.l-cart-page-title
+		padding 13px 0 0 0
+		@media (max-width: 940px)
+			padding 15px 0 0 0
+
+	.number-picker
+		width 60px
+		height 45px
+		margin 0 auto
+		background-color #ccc
+
+.likearts-content .cart-page .table-container
+	position relative
+	width 100%
+	height auto
+	overflow auto
+
+.likearts-content .cart-page .table
+	position relative
+	width 100%
+	border-spacing 0
+
+	thead
+		background-color #242424
+		color #fff
+
+		th
+			white-space nowrap
+			font-size 'calc(12 / %s * 1rem)' %($base-font)
+			font-weight 400
+			line-height 1
+			text-transform uppercase
+			padding 20px 29px
+			vertical-align middle
+			text-align center
+			border-right 1px solid #4b4b4c
+			&:first-child
+				text-align left
+			&:last-child
+				border-right none
+
+	tbody
+		td
+			width auto
+			padding 31px 5px
+			text-align center
+			border-bottom 3px solid #e7e7e7
+			&:first-child
+				text-align left
+
+.likearts-content .cart-page .flex
+	position relative
+	display flex
+	flex-flow row nowrap
+	justify-content flex-start
+	align-items center
+	width 451px
+	margin-left -5px
+	@media (max-width: 1024px)
+		width 350px
+
+.likearts-content .cart-page .product
+	position relative
+	color $color-text
+
+	&__pic
+		width 100%
+		height 100%
+		max-width 87px
+		max-height 86px
+		object-fit cover
+
+	&__desc
+		margin-left 16px
+		font-size 'calc(17 / %s * 1rem)' %($base-font)
+		font-weight 400
+
+	&__desc-number
+		font-weight 700
+
+	&__weight
+		font-weight 700
+		line-height 1.41
+
+	&__size
+		font-size 0
+		font-weight 700
+		line-height 1.41
+
+	&__size-width
+		font-size 'calc(17 / %s * 1rem)' %($base-font)
+
+	&__size-height
+		font-size 'calc(17 / %s * 1rem)' %($base-font)
+
+	&__size-unit
+		font-size 'calc(17 / %s * 1rem)' %($base-font)
+		margin-left 2px
+
+	&__size-separator
+		font-size 'calc(17 / %s * 1rem)' %($base-font)
+		color #8d8d8d
+
+	&__price
+		font-size 'calc(26 / %s * 1rem)' %($base-font)
+		font-weight 400
+		line-height 0.73
+
+.likearts-content .cart-page .cart-controls
+	position relative
+	display flex
+	flex-flow row wrap
+	justify-content space-between
+	align-items stretch
+	@media (max-width: $phone)
+		flex-flow column wrap
+
+	&__order
+		@media (max-width: $notebook)
+			margin-top 20px
+
+	&__sum
+		margin-top 10px
+		color $color-text 
+		font-weight 600
+
+	&__sum-sign
+		font-size 'calc(20 / %s * 1rem)' %($base-font)
+		@media (max-width: $phone)
+			display block
+			font-size 'calc(18 / %s * 1rem)' %($base-font)
+
+	&__sum-count
+		font-size 'calc(28 / %s * 1rem)' %($base-font)
+		line-height 0.68
+		margin-left 17px
+		@media (max-width: $phone)
+			position relative
+			top 6px
+			margin-left 0
+			font-size 'calc(23 / %s * 1rem)' %($base-font)
+
+	&__btn
+		position relative
+		padding 18px 56px
+		font-size 'calc(17 / %s * 1rem)' %($base-font)
+		line-height 2.12
+		letter-spacing 1px
+		box-shadow 3px 4px 5px rgba(0, 0, 0, 0.07)
+		@media (max-width: $phone)
+			width 100%
+			padding 18px 18px
+			line-height 1.5
+
+	&__btn-icon
+		position relative
+		top 2px
+		left 2px
+
+	&__btn-container
+		margin-top 49px
+		@media (max-width: $notebook)
+			margin-top 20px
+
+.likearts-content .cart-page .l-sign
+	margin-top 43px
+	@media (max-width: $notebook)
+		margin-top 30px
+
+.likearts-content .cart-page .sign
+	position relative
+	display flex
+	flex-flow row nowrap
+	justify-content flex-start
+	align-items center
+	color $color-text
+	font-size 'calc(17 / %s * 1rem)' %($base-font)
+	line-height 1.41
+	@media (max-width: $notebook)
+		font-size 'calc(14 / %s * 1rem)' %($base-font)
+
+	&__text
+		margin-left 17px
+		@media (max-width: $notebook)
+			margin-left 0
+
+		span
+			font-weight 700
+
+	&__icon
+		@media (max-width: $notebook)
+			display none
+
+.likearts-content .cart-page .coupon
+	position relative
+	display flex
+	flex-flow row nowrap
+	justify-content flex-start
+	align-items center
+	@media (max-width: $tablet)
+		flex-flow column wrap
+
+	&__input-group
+		position relative
+		display flex
+		flex-flow row nowrap
+		justify-content flex-start
+		align-items center
+
+	&__input
+		min-width 300px
+		border-radius 12px
+		background-color rgba(225, 225, 225, 0.38)
+		box-shadow inset 1px 1px 5px rgba(0, 0, 0, 0.13)
+		border none
+		padding 17px 40px 17px 27px
+		&:focus
+			outline none
+		@media (max-width: $notebook)
+			min-width 0
+
+	&__input-icon
+		position relative
+		margin-left -35px
+		cursor pointer
+
+	&__btn-container
+		margin-left 24px
+		@media (max-width: $tablet)
+			margin-top 20px
+			margin-left 0
+
+	&__btn
+		position relative
+		background-color #c9c9c9
+		padding 8px
+		width 59px
+		height 51px
+
+	&__btn-icon
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+

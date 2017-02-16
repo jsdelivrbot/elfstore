@@ -1,0 +1,134 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .elf-form
+	width 100%
+	height auto
+	background-color #fff
+	border-radius 12px
+	padding 45px 39px
+	@media (max-width: $tablet)
+		padding 30px 20px
+
+	&__header
+		margin-top -5px
+		display flex
+		flex-flow row nowrap
+		justify-content flex-start
+		align-items center
+		@media (max-width: $tablet)
+			flex-flow row wrap
+
+	&__title
+		color $color-text
+		font-size 'calc(20 / %s * 1rem)' % ($base-font)
+		font-weight 700
+		line-height 1.2
+		text-transform uppercase
+		letter-spacing 2px
+		white-space nowrap
+		@media (max-width: $tablet)
+			white-space normal
+			font-size 'calc(16 / %s * 1rem)' % ($base-font)
+
+	&__validation
+		color #ea5b0c
+		font-size 'calc(15 / %s * 1rem)' % ($base-font)
+		font-weight 300
+		padding 0 0 0 18px
+		border-left 2px solid #ea5b0c
+		margin-left 22px
+		@media (max-width: $tablet)
+			margin 15px 0 0 0
+
+	&__content
+		width 100%
+		margin 32px 0 0 0
+
+	&__form-group
+		position relative
+		width calc(100% - 142px)
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+		margin-bottom 30px
+		@media (max-width: $tablet)
+			width 100%
+		@media (max-width: $phone)
+			flex-flow column wrap
+			align-items flex-start
+
+	&__label
+		position absolute
+		top calc(50% - 0.4rem)
+		left 0
+		transform translateY(-50%)
+		color $color-text
+		font-size 'calc(15 / %s * 1rem)' % ($base-font)
+		font-weight 700
+		line-height 1.6
+		text-transform uppercase
+		@media (max-width: $phone)
+			position relative
+		span
+			color #ff581f
+		
+
+	&__control
+		position relative
+		flex-grow 1
+		margin-left 180px
+		@media (max-width: $phone)
+			margin-left 0
+			width 100%
+
+	&__input
+		width 100%
+		line-height 2.7
+		border-radius 12px
+		border-color #ececec
+		padding 0 23px
+		color #2b2b2b
+		font-size 'calc(18 / %s * 1em)' % ($base-font)
+		border-style solid
+		@media (max-width: $tablet)
+			line-height 2.5
+		&:focus
+			outline none
+			border-color $color-primary
+
+	&__sign
+		width 100%
+		position relative
+		bottom -5px
+		left 0
+		color #adadad
+		font-size 'calc(14 / %s * 1em)' % ($base-font)
+		font-weight 300
+
+	&__btn
+		display flex
+		justify-content center
+		align-items center
+		box-shadow 3px 4px 5px rgba(0, 0, 0, 0.07)
+		padding 15px 66px
+		background-image linear-gradient(to top, rgba(0, 0, 0, 0.02) 0%, rgba(255, 255, 255, 0.05) 100%)
+		@media (max-width: $phone)
+			width 100%
+
+		.icon
+			margin-left 5px

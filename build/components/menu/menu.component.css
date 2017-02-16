@@ -1,0 +1,110 @@
+.likearts-content .menu-desktop__list {
+  width: 100%;
+  height: auto;
+  min-height: 55px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 300;
+}
+@media (max-width: 970px) {
+  .likearts-content .menu-desktop__list {
+    justify-content: center;
+  }
+}
+.likearts-content .menu-desktop__list-item {
+  list-style: none;
+  padding: 0 13px 0 15px;
+}
+@media (max-width: 1170px) {
+  .likearts-content .menu-desktop__list-item {
+    padding: 0 12px;
+  }
+}
+.likearts-content .menu-desktop__list-link {
+  display: inline-block;
+  color: #a0a9b2;
+  font-size: calc(13 / 16 * 1rem);
+  text-decoration: underline;
+  padding: 21px 0 20px 0;
+  transition: color 0.2s ease-in-out;
+}
+.likearts-content .menu-desktop__list-link:hover {
+  color: #fff;
+}
+.likearts-content .menu-desktop__list-link.is-active {
+  color: #fff;
+}
+.likearts-content .menu-mobile {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #212121;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.06);
+}
+.likearts-content .menu-mobile__btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  cursor: pointer;
+}
+.likearts-content .menu-mobile__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.likearts-content .menu-mobile__list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.2s ease-in-out;
+  transform: translateX(-240px);
+  width: 240px;
+  height: 100%;
+  background-color: #ffde13;
+  list-style: none;
+  padding: 50px 0 0 0;
+  margin: 0;
+  font-size: calc(11 / 16 * 1rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  overflow-y: auto;
+}
+.likearts-content .menu-mobile__list-item {
+  border-bottom: 1px solid #ffca28;
+  transition: all 0.2s ease-in-out;
+}
+.likearts-content .menu-mobile__list-item:hover {
+  background-color: #fdd835;
+}
+.likearts-content .menu-mobile__list-item.is-active {
+  background-color: #0a0c0d;
+}
+.likearts-content .menu-mobile__list-item.is-active .menu-mobile__list-link {
+  color: #fff;
+}
+.likearts-content .menu-mobile__list-link {
+  display: block;
+  color: #000;
+  padding: 16px;
+  text-decoration: none;
+}
+.likearts-content .menu-mobile__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}

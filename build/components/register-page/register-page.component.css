@@ -1,0 +1,115 @@
+.likearts-content .register-page {
+  width: 100%;
+  height: auto;
+  padding: 34px 0;
+  margin-bottom: 65px;
+}
+@media (max-width: 1170px) {
+  .likearts-content .register-page {
+    padding: 34px 15px;
+    margin-bottom: 0;
+  }
+}
+.likearts-content .register-page__title {
+  color: #000;
+  font-size: calc(26 / 16 * 1rem);
+  line-height: 1.38;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 23px 0 0 0;
+  letter-spacing: 2px;
+}
+.likearts-content .register-page__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px 0 0 0;
+}
+.likearts-content .register-page__form {
+  width: calc(100% - 320px);
+}
+@media (max-width: 1170px) {
+  .likearts-content .register-page__form {
+    width: 100%;
+  }
+}
+.likearts-content .register-page__form .elf-form {
+  min-height: 670px;
+}
+.likearts-content .register-page__btn {
+  padding: 15px 48px;
+}
+@media (max-width: 640px) {
+  .likearts-content .register-page__btn {
+    padding: 15px 20px;
+  }
+}
+.likearts-content .register-page__social {
+  width: 270px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 1170px) {
+  .likearts-content .register-page__social {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+}
+.likearts-content .register-page__control {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .likearts-content .register-page__control {
+    flex-flow: row wrap;
+  }
+}
+.likearts-content .register-page__notice {
+  color: #adadad;
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 300;
+  padding: 20px 0 20px 25px;
+}
+@media (max-width: 900px) {
+  .likearts-content .register-page__notice {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+.likearts-content .register-page__links {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 180px;
+  margin-top: 30px;
+  border-top: 2px solid #eee;
+  padding-top: 30px;
+}
+@media (max-width: 640px) {
+  .likearts-content .register-page__links {
+    margin-left: 0;
+  }
+}
+.likearts-content .register-page__link {
+  color: #2b2b2b;
+  font-size: calc(15 / 16 * 1rem);
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  transition: color 0.2s ease-in-out;
+}
+@media (max-width: 640px) {
+  .likearts-content .register-page__link {
+    font-size: calc(14 / 16 * 1rem);
+  }
+}
+.likearts-content .register-page__link:hover {
+  color: #aeaeae;
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta
+		name="viewport" 
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+	<title>Elfstore</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+	<!-- endinject -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="fonts/fonts.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="images/icons/sprite/sprite.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="shared/helpers.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="shared/main.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="shared/variables.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/breadcrumbs/breadcrumbs.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/button/button.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/cart-page/cart-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/catalog-detail-page/catalog-detail-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/catalog-page/catalog-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/footer/footer.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/form/form.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/grid/grid.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/header/header.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/login-page/login-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/menu/menu.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/news-detail-page/news-detail-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/news-page/news-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/pagination/pagination.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/register-page/register-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/sidebar/sidebar.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/social/social.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/slider/slider.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/tags/tags.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<!-- endinject -->
+</head>
+
+<body class="likearts-content">
+	<header class="header">
+		<div class="main-layout">
+			<div class="header__panel panel">
+				<div class="panel__left">
+					<nav class="header__menu header__menu--desktop menu-desktop">
+						<ul class="menu-desktop__list">
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link is-active">
+									Главная
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Каталог
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Доставка
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Оплата
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Отзывы
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Контакты
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Художникам
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="panel__right">
+					<div class="header__entrance entrance">
+						<div class="entrance__user">
+							<i class="icon icon-user entrance__icon"></i>
+							<span class="entrance__user-mail">Konstantinovskiy@gmail.com</span>
+						</div>
+						<div class="entrance__links">
+							<a href="#" class="entrance__link">Выйти</a>
+							<span class="entrance__separator">/</span>
+							<a href="#" class="entrance__link">Зарегистрироваться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__content content">
+				<div class="l-logo">
+					<a href="#">
+						<div class="header__logo"></div>
+					</a>
+				</div>
+				<div class="l-contacts">
+					<div class="content__contacts contacts">
+						<div class="contacts__icon">
+							<i class="icon icon-phone"></i>
+						</div>
+						<div class="contacts__list">
+							<span class="contacts__phone">8 (812) 425-31-59</span>
+							<a href="#" class="contacts__link">Онлайн-консультант</a>
+							<span class="contacts__sign">Работаем с 11 до 20 (пн-пт)</span>
+						</div>
+					</div>
+				</div>
+				<div class="l-cart">
+					<div class="content__cart cart">
+						<a href="#">
+							<div class="cart__icon">
+								<i class="icon icon-cart"></i>
+								<i class="icon icon-circle cart__icon-circle">
+									<span class="cart__counter">2</span>
+								</i>
+							</div>
+						</a>
+						<div class="cart__list">
+							<span class="cart__sign">в вашей корзине:</span>
+							<span class="cart__sign"><span>2</span> товара на сумму</span>
+							<span class="cart__sum">
+								<span>425</span>
+								<i class="icon icon-rub"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="l-controls">
+					<div class="content__controls controls">
+						<div class="controls__box">
+							<span class="controls__links">
+								<a href="#" class="controls__link">Посмотреть</a>
+								<a href="#" class="controls__link">или оформить заказ</a>
+							</span>
+							<span class="controls__search">
+								<input type="text" class="controls__input" placeholder="Поиск по сайту">
+								<i class="icon icon-search controls__icon-search"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="header__submenu submenu">
+				<ul class="submenu__list">
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Со своим дизайном</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link is-active">Новый год 2016</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Футболки</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Толстовки</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Кружки</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Чехлы</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Коврики</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Брелоки</a>
+					</li>
+					<li class="submenu__list-item">
+						<a href="#" class="submenu__list-link">Украшения</a>
+					</li>
+				</ul>
+				<span class="submenu__search">
+					<span class="l-submenu-search">
+						<span class="search">
+							<input type="text" class="search__input" placeholder="Поиск по сайту">
+							<i class="icon icon-search search__icon"></i>
+						</span>
+					</span>
+				</span>
+			</nav>
+		</div>
+		<nav class="header__menu header__menu--mobile menu-mobile">
+			<div id="menuBtn" class="menu-mobile__btn">
+				<i id="menuBtnIcon" class="material-icons menu-mobile__icon">menu</i>
+			</div>
+			<ul id="menuContent" class="menu-mobile__list">
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Выйти</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Зарегистрироваться</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Главная</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item is-active">
+					<a href="#" class="menu-mobile__list-link">Каталог</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Доставка</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Оплата</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Отзывы</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Контакты</a>
+				</li>
+				<li aria-haspopup="true" class="menu-mobile__list-item">
+					<a href="#" class="menu-mobile__list-link">Художникам</a>
+				</li>
+			</ul>
+			<div id="menuOverlay" class="menu-mobile__overlay"></div>
+		</nav>
+	</header>
+	<main>
+		<div class="main-layout">
+			<div class="login-page">
+				<div class="login-page__breadcrumbs">
+					<div class="elf-breadcrumbs">
+						<a href="#" class="elf-breadcrumbs__link">Главная</a>
+						<span class="elf-breadcrumbs__separator"></span>
+						<a href="#" class="elf-breadcrumbs__link is-active">Войти на сайт</a>
+					</div>
+				</div>
+				<h1 class="login-page__title">Войти на сайт</h1>
+				<div class="login-page__content">
+					<div class="login-page__form">
+						<form class="elf-form">
+							<div class="elf-form__header">
+								<div class="elf-form__title">введите ваши данные</div>
+								<div class="elf-form__validation">
+									Пожалуйста, введите корректные имя пользователя и пароль.
+									Оба поля могут быть чувствительны к регистру.
+								</div>
+							</div>
+							<div class="elf-form__content">
+								<div class="elf-form__form-group">
+									<label for="login" class="elf-form__label">
+										Логин:
+										<span>*</span>
+									</label>
+									<span class="elf-form__control">
+										<input type="text" class="elf-form__input" id="login" name="login" placeholder="">
+										<span class="elf-form__sign">Не меньше 3 и не больше 25 символов.</span>
+									</span>
+								</div>
+								<div class="elf-form__form-group">
+									<label for="password" class="elf-form__label">
+										Пароль:
+										<span>*</span>
+									</label>
+									<span class="elf-form__control">
+										<input type="password" class="elf-form__input" id="password" name="password" placeholder="">
+										<span class="elf-form__sign">Не менее 5 символов. Может содержать только английские буквы, цифры.</span>
+									</span>
+								</div>
+								<div class="elf-form__control">
+									<button type="submit" class="elf-btn elf-form__btn">
+										Войти
+										<i class="icon icon-enter"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="login-page__social">
+						<div class="elf-social">
+							<div class="elf-social__title">войти через:</div>
+							<a href="#" class="elf-social__item elf-social__item--vk">
+								<i class="icon icon-vk"></i>
+								<span class="elf-social__item-name">контакте</span>
+							</a>
+							<a href="#" class="elf-social__item elf-social__item--fb">
+								<i class="icon icon-fb"></i>
+								<span class="elf-social__item-name">Facebook</span>
+							</a>
+							<a href="#" class="elf-social__item elf-social__item--ok">
+								<i class="icon icon-ok"></i>
+								<span class="elf-social__item-name">одноклассники</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="main-layout">
+			<div class="panel">
+				<div class="panel__left">
+					<nav class="footer__menu menu-desktop">
+						<ul class="menu-desktop__list">
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link is-active">
+									Главная
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Каталог
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Доставка
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Оплата
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Отзывы
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Контакты
+								</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">
+									Художникам
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__payments"></div>
+				</div>
+				<div class="panel__right">
+					<div class="footer__contacts">
+						<div class="contacts">
+							<div class="contacts__icon">
+								<i class="icon icon-phone-g"></i>
+							</div>
+							<div class="contacts__list">
+								<span class="contacts__phone">8 (812) 425-31-59</span>
+								<a href="#" class="contacts__link">help@elfmoney.ru</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__copy">
+						<div class="copy">
+							Elfstore &copy 2017
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- bower:js -->
+	<script src="bower_components/hammerjs/hammer.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/slick-carousel/slick/slick.js"></script>
+	<!-- endinject -->
+	<script src="https://vk.com/js/api/openapi.js?121"></script>
+	<!-- inject:js -->
+	<script src="shared/polyfills.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="shared/vk.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/cart-page/cart-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/menu/menu.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/sidebar/sidebar.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/slider/slider.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<!-- endinject -->
+</body>
+
+</html>
