@@ -66,11 +66,9 @@
     padding: 15px 0 0 0;
   }
 }
-.likearts-content .cart-page .number-picker {
-  width: 60px;
-  height: 45px;
+.likearts-content .cart-page .l-number-picker {
+  width: 70px;
   margin: 0 auto;
-  background-color: #ccc;
 }
 .likearts-content .cart-page .table-container {
   position: relative;
