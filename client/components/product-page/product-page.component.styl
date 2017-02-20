@@ -1,0 +1,105 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .product-page
+	position relative
+	width 100%
+	padding 36px 0 40px 0
+	min-height 300px
+	@media (max-width: $tablet)
+		padding 0 0 40px 0
+
+	&__title
+		margin 0 0 18px 0
+		color $color-text
+		font-size 'calc(28 / %s * 1rem)' %($base-font)
+		font-weight 800
+		line-height 1.29
+		letter-spacing 3px
+		text-transform uppercase
+		@media (max-width: $phone)
+			font-size 'calc(20 / %s * 1rem)' %($base-font)
+
+	&__detail
+		position relative
+		width 100%
+		height auto
+
+	&__feedback
+		position relative
+		width 100%
+		height auto
+
+	&__offer
+		position relative
+		width 100%
+		height auto
+
+	.l-product-page-title
+		padding 13px 0 0 0
+		@media (max-width: 940px)
+			padding 15px 0 0 0
+
+.likearts-content .product-page .detail
+	position relative
+	width 100%
+	height auto
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+	align-items stretch
+
+	&__gallery
+		width 50%
+		height auto
+		min-height 567px
+		order 0
+		@media (max-width: 1000px)
+			width 100%
+			order 0
+
+	&__info
+		width calc(50% - 0px)
+		height auto
+		min-height 567px
+		background-color #66BB6A
+		order 1
+		@media (max-width: 1000px)
+			width 100%
+			order 2
+
+	&__description
+		width 100%
+		height auto
+		min-height 124px
+		background-color #EC407A
+		order 2
+		@media (max-width: 1000px)
+			order 1
+
+.likearts-content .product-page .feedback
+	position relative
+	width 100%
+	height auto
+	min-height 400px
+	background-color #7E57C2
+
+.likearts-content .product-page .offer
+	position relative
+	width 100%
+	height auto
+	min-height 400px
+	background-color #66BB6A

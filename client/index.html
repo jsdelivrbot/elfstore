@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower_components/ez-plus/css/jquery.ez-plus.css">
 	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
 	<!-- endinject -->
 	<!-- inject:css -->
@@ -26,7 +27,7 @@
   }
   @media ( min-width: 1170px ) {
     HTML {
-      background-image: url( "temp/pixelglass/img/cart-1170.png" );
+      background-image: url( "temp/pixelglass/img/product-1170.png" );
     }
   }
 
@@ -110,7 +111,7 @@
 							<i class="icon icon-phone"></i>
 						</div>
 						<div class="contacts__list">
-							<span class="contacts__phone">8 (812) 425-31-59</span>
+							<a href="tel:+78124253159" class="contacts__phone">8 (812) 425-31-59</a>
 							<a href="#" class="contacts__link">Онлайн-консультант</a>
 							<span class="contacts__sign">Работаем с 11 до 20 (пн-пт)</span>
 						</div>
@@ -381,260 +382,70 @@
 					</div>
 				</div>
 				<div class="flex-item flex-item--content">
-					<div class="cart-page">
-						<div class="cart-page__breadcrumbs">
+					<div class="product-page">
+						<div class="product-page__breadcrumbs">
 							<div class="elf-breadcrumbs">
 								<a href="#" class="elf-breadcrumbs__link">Главная</a>
 								<span class="elf-breadcrumbs__separator"></span>
-								<a href="#" class="elf-breadcrumbs__link">Корзина</a>
+								<a href="#" class="elf-breadcrumbs__link">Каталог</a>
+								<span class="elf-breadcrumbs__separator"></span>
+								<a href="#" class="elf-breadcrumbs__link">Кружки</a>
+								<span class="elf-breadcrumbs__separator"></span>
+								<a href="#" class="elf-breadcrumbs__link">World of Warcraft</a>
 							</div>
 						</div>
-						<div class="cart-page__content">
-							<div class="l-cart-page-title">
-								<h1 class="cart-page__title">
-									<span class="cart-page__title-name">Моя корзина</span>
-									<span class="cart-page__title-separator">/</span>
-									<span class="cart-page__title-count">
-										Добавлено <span>3</span> товара
-									</span>
-								</h1>
+						<div class="product-page__content">
+							<div class="l-product-page-title">
+								<h1 class="product-page__title">Кружка Adventure Time</h1>
 							</div>
-							<div class="cart-page__table">
-								<div class="table-container">
-									<table class="table">
-										<thead>
-											<tr>
-												<th>Товары</th>
-												<th>Вес</th>
-												<th>Размер</th>
-												<th>Кол-во</th>
-												<th>Цена</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr class="product">
-												<td>
-													<div class="flex">
-														<img src="./images/cart/1.jpg" alt="text" class="product__pic">
-														<div class="product__desc">
-															<span class="product__desc-number">1117</span>
-															<br>
-															<span class="product__desc-name">
-																Подвеска Коннора (односторонняя)
-																Assassin's Creed (серебро)
-															</span>
-														</div>
-													</div>
-												</td>
-												<td>
-													<span class="product__weight">5,8 г.</span>
-												</td>
-												<td>
-													<span class="product__size">
-														<span class="product__size-width">43,9</span>
-														<span class="product__size-separator">x</span>
-														<span class="product__size-height">37</span>
-														<span class="product__size-unit">мм.</span>
-													</span>
-												</td>
-												<td>
-													<div class="l-number-picker">
-														<div data-number-picker-component class="number-picker">
-															<input
-																data-number-picker-component-input
-																type="text"
-																value="1"
-																class="number-picker__input">
-															<div class="number-picker__bg"></div>
-															<div class="number-picker__controls">
-																<div
-																	data-number-picker-component-btn
-																	data-number-picker-component-btn-up
-																	class="number-picker__controls-btn number-picker__controls-btn--up">
-																	<i class="material-icons number-picker__controls-icon">arrow_drop_up</i>
-																</div>
-																<div
-																	data-number-picker-component-btn
-																	data-number-picker-component-btn-down
-																	class="number-picker__controls-btn number-picker__controls-btn--down">
-																	<i class="material-icons number-picker__controls-icon">arrow_drop_down</i>
-																</div>
-															</div>
-														</div>
-													</div>
-												</td>
-												<td>
-													<span class="product__price">
-														1295
-														<i class="icon icon-rub-black"></i>
-													</span>
-												</td>
-											</tr>
-											<tr class="product">
-												<td>
-													<div class="flex">
-														<img src="./images/cart/2.jpg" alt="text" class="product__pic">
-														<div class="product__desc">
-															<span class="product__desc-number">660</span>
-															<br>
-															<span class="product__desc-name">
-																Кулон Dota 2 (серебро)
-															</span>
-														</div>
-													</div>
-												</td>
-												<td>
-													<span class="product__weight">5,7 г.</span>
-												</td>
-												<td>
-													<span class="product__size">
-														<span class="product__size-width">25,7</span>
-														<span class="product__size-separator">x</span>
-														<span class="product__size-height">23,2</span>
-														<span class="product__size-unit">мм.</span>
-													</span>
-												</td>
-												<td>
-													<div class="l-number-picker">
-														<div data-number-picker-component class="number-picker">
-															<input
-																data-number-picker-component-input
-																type="text"
-																value="1"
-																class="number-picker__input">
-															<div class="number-picker__bg"></div>
-															<div class="number-picker__controls">
-																<div
-																	data-number-picker-component-btn
-																	data-number-picker-component-btn-up
-																	class="number-picker__controls-btn number-picker__controls-btn--up">
-																	<i class="material-icons number-picker__controls-icon">arrow_drop_up</i>
-																</div>
-																<div
-																	data-number-picker-component-btn
-																	data-number-picker-component-btn-down
-																	class="number-picker__controls-btn number-picker__controls-btn--down">
-																	<i class="material-icons number-picker__controls-icon">arrow_drop_down</i>
-																</div>
-															</div>
-														</div>
-													</div>
-												</td>
-												<td>
-													<span class="product__price">
-														2000
-														<i class="icon icon-rub-black"></i>
-													</span>
-												</td>
-											</tr>
-											<tr class="product">
-												<td>
-													<div class="flex">
-														<img src="./images/cart/3.jpg" alt="text" class="product__pic">
-														<div class="product__desc">
-															<span class="product__desc-number">2564</span>
-															<br>
-															<span class="product__desc-name">
-																Подвеска Коннора (односторонняя)
-																Assassin's Creed (серебро)
-															</span>
-														</div>
-													</div>
-												</td>
-												<td>
-													<span class="product__weight">5,8 г.</span>
-												</td>
-												<td>
-													<span class="product__size">
-														<span class="product__size-width">43,9</span>
-														<span class="product__size-separator">x</span>
-														<span class="product__size-height">37</span>
-														<span class="product__size-unit">мм.</span>
-													</span>
-												</td>
-												<td>
-													<div class="l-number-picker">
-														<div data-number-picker-component class="number-picker">
-															<input
-																data-number-picker-component-input
-																type="text"
-																value="1"
-																class="number-picker__input">
-															<div class="number-picker__bg"></div>
-															<div class="number-picker__controls">
-																<div
-																	data-number-picker-component-btn
-																	data-number-picker-component-btn-up
-																	class="number-picker__controls-btn number-picker__controls-btn--up">
-																	<i class="material-icons number-picker__controls-icon">arrow_drop_up</i>
-																</div>
-																<div
-																	data-number-picker-component-btn
-																	data-number-picker-component-btn-down
-																	class="number-picker__controls-btn number-picker__controls-btn--down">
-																	<i class="material-icons number-picker__controls-icon">arrow_drop_down</i>
-																</div>
-															</div>
-														</div>
-													</div>
-												</td>
-												<td>
-													<span class="product__price">
-														1295
-														<i class="icon icon-rub-black"></i>
-													</span>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="cart-page__controls">
-								<div class="cart-controls">
-									<div class="cart-controls__other">
-										<div class="coupon">
-											<div data-coupon-component class="coupon__input-group">
-												<input
-													data-coupon-component-input
-													type="text"
-													name="coupon"
-													placeholder="Введите код купона"
-													class="coupon__input">
-												<i data-coupon-component-btn class="icon icon-cancel coupon__input-icon"></i>
-											</div>
-											<div class="coupon__btn-container">
-												<button class="elf-btn coupon__btn">
-													<i class="icon icon-btn-next coupon__btn-icon"></i>
-												</button>
-											</div>
-										</div>
-										<div class="l-sign">
-											<div class="sign">
-												<i class="icon icon-timer sign__icon"></i>
-												<span class="sign__text">
-													Ожидаемый срок передачи заказа в службу доставки <span>— 5 дней.</span>
-													<br>
-													Срок доставки зависит от региона.
+							<div class="product-page__detail">
+								<div class="detail">
+									<div class="detail__gallery">
+
+										<div class="zoom-gallery">
+											<img
+												id="zoom-gallery-root"
+												class="zoom-gallery__pic"
+												src="./images/product/small/1.jpg"
+												data-zoom-image="./images/product/large/1.jpg"/>
+											<div id="zoom-gallery-thumbnails" class="zoom-gallery__thumbnails">
+												<span
+													class="zoom-gallery__thumbnails-item"
+													data-image="./images/product/small/1.jpg"
+													data-zoom-image="./images/product/large/1.jpg">
+													<img src="/images/product/small/1.jpg"/>
+												</span>
+												<span
+													class="zoom-gallery__thumbnails-item"
+													data-image="./images/product/small/2.jpg"
+													data-zoom-image="./images/product/large/2.jpg">
+													<img src="/images/product/small/2.jpg"/>
+												</span>
+												<span
+													class="zoom-gallery__thumbnails-item"
+													data-image="./images/product/small/3.jpg"
+													data-zoom-image="./images/product/large/3.jpg">
+													<img src="/images/product/small/3.jpg"/>
+												</span>
+												<span
+													class="zoom-gallery__thumbnails-item"
+													data-image="./images/product/small/4.jpg"
+													data-zoom-image="./images/product/large/4.jpg">
+													<img src="/images/product/small/4.jpg"/>
 												</span>
 											</div>
 										</div>
+
 									</div>
-									<div class="cart-controls__order">
-										<div class="cart-controls__sum">
-											<span class="cart-controls__sum-sign">Итого, без доставки:</span>
-											<span class="cart-controls__sum-count">
-												<span>4590</span>
-												<i class="icon icon-rub-black"></i>
-											</span>
-										</div>
-										<div class="cart-controls__btn-container">
-											<button class="elf-btn cart-controls__btn">
-												<span>Оформить заказ</span>
-												<i class="icon icon-confirm cart-controls__btn-icon"></i>
-											</button>
-										</div>
-									</div>
+									<div class="detail__info">info</div>
+									<div class="detail__description">desc</div>
 								</div>
+							</div>
+							<div class="product-page__feedback">
+								<div class="feedback">feed</div>
+							</div>
+							<div class="product-page__offer">
+								<div class="offer">offer</div>
 							</div>
 						</div>
 					</div>
@@ -694,7 +505,7 @@
 								<i class="icon icon-phone-g"></i>
 							</div>
 							<div class="contacts__list">
-								<span class="contacts__phone">8 (812) 425-31-59</span>
+								<a href="tel:+78124253159" class="contacts__phone">8 (812) 425-31-59</a>
 								<a href="#" class="contacts__link">help@elfmoney.ru</a>
 							</div>
 						</div>
@@ -712,6 +523,7 @@
 	<!-- bower:js -->
 	<script src="bower_components/hammerjs/hammer.js"></script>
 	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/ez-plus/src/jquery.ez-plus.js"></script>
 	<script src="bower_components/slick-carousel/slick/slick.js"></script>
 	<!-- endinject -->
 	<script src="https://vk.com/js/api/openapi.js?121"></script>
@@ -721,8 +533,10 @@
 	<script src="components/cart-page/cart-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/menu/menu.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/number-picker/number-picker.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/product-page/product-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/sidebar/sidebar.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/slider/slider.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/zoom-gallery/zoom-gallery.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<!-- endinject -->
 </body>
 
