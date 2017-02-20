@@ -27,7 +27,7 @@
 				zIndex: 10,
 				responsive: true,
 				preloading: 1,
-				loadingIcon: 'https://staticfiles.gorsite.ru/static/image/loading.gif'
+				loadingIcon: 'http://loading.io/assets/img/hourglass.svg'
 			});
 		}
 
