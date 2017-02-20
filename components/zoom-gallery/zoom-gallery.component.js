@@ -26,6 +26,7 @@
 				galleryItem: 'span',
 				zIndex: 10,
 				responsive: true,
+				preloading: 0,
 				loadingIcon: 'https://d13yacurqjgara.cloudfront.net/users/19781/screenshots/2284638/elcapitan-beachball.gif'
 			});
 		}
