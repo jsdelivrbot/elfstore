@@ -27,7 +27,7 @@
 				zIndex: 10,
 				responsive: true,
 				preloading: 1,
-				loadingIcon: 'http://loading.io/assets/img/hourglass.svg'
+				loadingIcon: 'http://golovinpavel.ru/elfstore/src/ripple.gif'
 			});
 		}
 
