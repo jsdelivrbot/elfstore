@@ -26,8 +26,7 @@
 				galleryItem: 'span',
 				zIndex: 10,
 				responsive: true,
-				preloading: 1,
-				loadingIcon: 'http://golovinpavel.ru/elfstore/src/ripple.gif'
+				preloading: 1
 			});
 		}
 
