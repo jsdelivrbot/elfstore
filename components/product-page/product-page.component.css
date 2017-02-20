@@ -1,0 +1,108 @@
+.likearts-content .product-page {
+  position: relative;
+  width: 100%;
+  padding: 36px 0 40px 0;
+  min-height: 300px;
+}
+@media (max-width: 768px) {
+  .likearts-content .product-page {
+    padding: 0 0 40px 0;
+  }
+}
+.likearts-content .product-page__title {
+  margin: 0 0 18px 0;
+  color: #000;
+  font-size: calc(28 / 16 * 1rem);
+  font-weight: 800;
+  line-height: 1.29;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+@media (max-width: 640px) {
+  .likearts-content .product-page__title {
+    font-size: calc(20 / 16 * 1rem);
+  }
+}
+.likearts-content .product-page__detail {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.likearts-content .product-page__feedback {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.likearts-content .product-page__offer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.likearts-content .product-page .l-product-page-title {
+  padding: 13px 0 0 0;
+}
+@media (max-width: 940px) {
+  .likearts-content .product-page .l-product-page-title {
+    padding: 15px 0 0 0;
+  }
+}
+.likearts-content .product-page .detail {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.likearts-content .product-page .detail__gallery {
+  width: 50%;
+  height: auto;
+  min-height: 567px;
+  order: 0;
+}
+@media (max-width: 1000px) {
+  .likearts-content .product-page .detail__gallery {
+    width: 100%;
+    order: 0;
+  }
+}
+.likearts-content .product-page .detail__info {
+  width: calc(50% - 0px);
+  height: auto;
+  min-height: 567px;
+  background-color: #66bb6a;
+  order: 1;
+}
+@media (max-width: 1000px) {
+  .likearts-content .product-page .detail__info {
+    width: 100%;
+    order: 2;
+  }
+}
+.likearts-content .product-page .detail__description {
+  width: 100%;
+  height: auto;
+  min-height: 124px;
+  background-color: #ec407a;
+  order: 2;
+}
+@media (max-width: 1000px) {
+  .likearts-content .product-page .detail__description {
+    order: 1;
+  }
+}
+.likearts-content .product-page .feedback {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  background-color: #7e57c2;
+}
+.likearts-content .product-page .offer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  background-color: #66bb6a;
+}

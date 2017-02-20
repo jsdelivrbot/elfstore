@@ -9,7 +9,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  z-index: 10;
+  z-index: 1000;
 }
 @media all and (max-width: 768px) {
   .likearts-content .header__menu--desktop {
@@ -226,6 +226,11 @@
   font-weight: 700;
   font-size: calc(18 / 16 * 1rem);
   line-height: 1.3;
+  text-decoration: none;
+  color: #fff;
+}
+.likearts-content .header .contacts__phone:hover {
+  text-decoration: underline;
 }
 .likearts-content .header .contacts__link {
   display: inline-block;

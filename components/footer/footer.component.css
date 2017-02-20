@@ -91,6 +91,10 @@
   line-height: 1.3;
   color: #a0a9b2;
   margin-bottom: -4px;
+  text-decoration: none;
+}
+.likearts-content .footer .contacts__phone:hover {
+  text-decoration: underline;
 }
 @media (max-width: 1170px) {
   .likearts-content .footer .contacts__phone {
