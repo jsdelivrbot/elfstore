@@ -26,8 +26,8 @@
 				galleryItem: 'span',
 				zIndex: 10,
 				responsive: true,
-				preloading: 0,
-				loadingIcon: 'http://miacar.ru/wp-content/themes/javo-house/images/loading.gif'
+				preloading: 1,
+				loadingIcon: 'https://staticfiles.gorsite.ru/static/image/loading.gif'
 			});
 		}
 
