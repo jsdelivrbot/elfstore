@@ -24,7 +24,6 @@
 				borderSize: 2,
 				borderColour: '#ffde13',
 				galleryItem: 'span',
-				preloading: 0,
 				zIndex: 10,
 				responsive: true
 			});
