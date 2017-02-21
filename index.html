@@ -34,13 +34,15 @@
 	<link rel="stylesheet" href="components/news-page/news-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/number-picker/number-picker.componrnt.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/pagination/pagination.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/product-page/product-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/register-page/register-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/sex-picker/sex-picker.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/sidebar/sidebar.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/size-picker/size-picker.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/slider/slider.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/social/social.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/zoom-gallery/zoom-gallery.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/tags/tags.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/product-page/product-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/zoom-gallery/zoom-gallery.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<!-- endinject -->
 </head>
 
@@ -405,7 +407,6 @@
 							<div class="product-page__detail">
 								<div class="detail">
 									<div class="detail__gallery">
-
 										<div class="zoom-gallery">
 											<img
 												id="zoom-gallery-root"
@@ -439,10 +440,130 @@
 												</span>
 											</div>
 										</div>
-
 									</div>
-									<div class="detail__info">info</div>
-									<div class="detail__description">desc</div>
+									<div class="detail__info">
+										<div class="detail__info-price">
+											<span class="price">
+												1295
+												<i class="icon icon-rub-black-big price__icon"></i>
+											</span>
+											<span class="sale">
+												Скидка 7% <br>при предоплате
+											</span>
+										</div>
+										<div class="detail__info-delivery">
+											<div class="delivery">
+												<div class="delivery__title">Доставка</div>
+												<div class="delivery__desc">
+													Товар будет передан в службу доставки <br>
+													в течение 2-5 рабочих дней.
+												</div>
+												<a href="#" class="delivery__link">Узнать про сроки и способы доставки</a>
+											</div>
+										</div>
+										<div class="detail__info-select">
+											<form class="select">
+												<div class="select__size">
+													<label for="size" class="select__label">Размер:</label>
+													<div class="select__size-picker">
+														<div data-size-picker-component class="size-picker">
+															<input
+																data-size-picker-component-input
+																type="hidden"
+																name="size"
+																value="M">
+															<div
+																data-size-picker-component-btn
+																data-size-picker-component-value="S"
+																class="size-picker__item">S</div>
+															<div
+																data-size-picker-component-btn
+																data-size-picker-component-value="M"
+																class="size-picker__item js-is-active">M</div>
+															<div
+																data-size-picker-component-btn
+																data-size-picker-component-value="L"
+																class="size-picker__item">L</div>
+															<div
+																data-size-picker-component-btn
+																data-size-picker-component-value="XL"
+																class="size-picker__item">XL</div>
+															<div
+																data-size-picker-component-btn
+																data-size-picker-component-value="2XL"
+																class="size-picker__item">2XL</div>
+														</div>
+													</div>
+												</div>
+												<div class="select__sex">
+													<label for="sex" class="select__label">Пол:</label>
+													<div class="select__sex-picker">
+														<div data-sex-picker-component class="sex-picker">
+															<input
+																data-sex-picker-component-input
+																type="hidden"
+																name="sex"
+																value="Male">
+															<div
+																data-sex-picker-component-btn
+																data-sex-picker-component-value="Male"
+																class="sex-picker__item sex-picker__item--man js-is-active">
+															</div>
+															<div
+																data-sex-picker-component-btn
+																data-sex-picker-component-value="Female"
+																class="sex-picker__item sex-picker__item--woman">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="select__link-container">
+													<a href="#" class="select__link">Таблица размеров</a>
+												</div>
+												<div class="select__btn-container">
+													<button type="submit" class="elf-btn select__btn">
+														Добавить в корзину
+														<i class="material-icons select__btn-icon">done</i>
+													</button>
+												</div>
+											</form>
+										</div>
+										<div class="detail__info-tags">
+											<div class="info-tags">
+												<div class="info-tags__title">Тэги:</div>
+												<div class="info-tags__tags">
+													<a href="#">Hearthstone</a>
+													<a href="#" class="is-active">Jungle heat</a>
+													<a href="#">League Of Legends</a>
+													<a href="#">LineAge I</a>
+													<a href="#">Mario</a>
+													<a href="#">Max Payne</a>
+													<a href="#">Minecraft</a>
+													<a href="#">Natus Vincere</a>
+													<a href="#">NFS</a>
+													<a href="#">Packman</a>
+													<a href="#">Portal</a>
+													<a href="#">Quake</a>
+													<a href="#">Sonic</a>
+													<a href="#">Spore</a>
+												</div>
+											</div>
+										</div>
+										<div class="detail__info-creator">
+											<div class="creator">
+												<span class="creator__title">Xудожник:</span>
+												<span class="creator__name">Tamplier</span>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="detail__description">
+										<div class="detail__description-title">Описание товара:</div>
+										<p class="detail__description-text">
+											Кружка “Лечебное зелье” предназначена для полезных напитков. Украшает стол геймера и позволяет подкрепить силы, не отрываясь от игры. Плюс к полезности напитка и здоровью персонажа. Материал: 100% хлопок. Размер рисунка: А3 - мужские; А4 - женские.
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="product-page__feedback">
@@ -528,6 +649,7 @@
 	<script src="bower_components/hammerjs/hammer.js"></script>
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/ez-plus/src/jquery.ez-plus.js"></script>
+	<script src="bower_components/es6-promise-polyfill/promise.js"></script>
 	<script src="bower_components/slick-carousel/slick/slick.js"></script>
 	<!-- endinject -->
 	<script src="https://vk.com/js/api/openapi.js?121"></script>
@@ -537,9 +659,11 @@
 	<script src="components/cart-page/cart-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/menu/menu.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/number-picker/number-picker.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
-	<script src="components/product-page/product-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/sex-picker/sex-picker.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/sidebar/sidebar.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/size-picker/size-picker.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/slider/slider.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/product-page/product-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/zoom-gallery/zoom-gallery.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<!-- endinject -->
 </body>

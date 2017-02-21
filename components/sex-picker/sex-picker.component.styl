@@ -1,0 +1,50 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .sex-picker
+	position relative
+	width auto
+	height auto
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+	align-items center
+
+	input
+		display none
+
+	&__item
+		width 14px
+		height 30px
+		cursor pointer
+		margin-right 10px
+		transition all 0.2s ease-in-out
+		background-size cover
+		background-repeat no-repeat
+		background-position center
+		@media (max-width: $phone)
+			margin-right 15px
+
+		&--man
+			background-image url('../../images/sex-picker/man-b.png')
+
+		&--woman
+			background-image url('../../images/sex-picker/woman-b.png')
+
+	&__item.sex-picker__item--man.js-is-active
+			background-image url('../../images/sex-picker/man-y.png')
+	&__item.sex-picker__item--woman.js-is-active
+		background-image url('../../images/sex-picker/woman-y.png')

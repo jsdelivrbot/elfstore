@@ -37,7 +37,6 @@
     "commit": "0d408d5fe5a08862522af3aa1bfe1c2166fe9d8d"
   },
   "_source": "https://github.com/igorlino/elevatezoom-plus.git",
-  "_target": "^1.2.0",
-  "_originalSource": "ez-plus",
-  "_direct": true
+  "_target": "1.2.0",
+  "_originalSource": "ez-plus"
 }

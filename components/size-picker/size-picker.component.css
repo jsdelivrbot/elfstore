@@ -1,0 +1,41 @@
+.likearts-content .size-picker {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: hidden;
+}
+.likearts-content .size-picker input {
+  display: none;
+}
+.likearts-content .size-picker__item {
+  width: auto;
+  height: auto;
+  min-width: 30px;
+  min-height: 30px;
+  color: #c2c2c2;
+  font-size: calc(17 / 16 * 1rem);
+  font-weight: 400;
+  line-height: 0;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 2px solid #c2c2c2;
+  padding: 13px 6px;
+  margin-right: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+.likearts-content .size-picker__item:hover {
+  background-color: #ffde13;
+}
+.likearts-content .size-picker__item.js-is-active {
+  color: #000;
+  border-color: #000;
+}
+.likearts-content .size-picker__item.js-is-active:hover {
+  background-color: transparent;
+}

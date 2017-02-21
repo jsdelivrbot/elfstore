@@ -1,0 +1,39 @@
+.likearts-content .sex-picker {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.likearts-content .sex-picker input {
+  display: none;
+}
+.likearts-content .sex-picker__item {
+  width: 14px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 640px) {
+  .likearts-content .sex-picker__item {
+    margin-right: 15px;
+  }
+}
+.likearts-content .sex-picker__item--man {
+  background-image: url("../../images/sex-picker/man-b.png");
+}
+.likearts-content .sex-picker__item--woman {
+  background-image: url("../../images/sex-picker/woman-b.png");
+}
+.likearts-content .sex-picker__item.sex-picker__item--man.js-is-active {
+  background-image: url("../../images/sex-picker/man-y.png");
+}
+.likearts-content .sex-picker__item.sex-picker__item--woman.js-is-active {
+  background-image: url("../../images/sex-picker/woman-y.png");
+}
