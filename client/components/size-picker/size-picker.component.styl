@@ -1,0 +1,55 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .size-picker
+	position relative
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+	align-items stretch
+	overflow hidden
+
+	input
+		display none
+
+	&__item
+		width auto
+		height auto
+		min-width 30px
+		min-height 30px
+		color #c2c2c2
+		font-size 'calc(17 / %s * 1rem)' %($base-font)
+		font-weight 400
+		line-height 0
+		text-transform uppercase
+		border-radius 3px
+		border 2px solid #c2c2c2
+		padding 13px 6px
+		margin-right 5px
+		text-align center
+		user-select none
+		cursor pointer
+		background-color transparent
+		transition all .2s ease-in-out
+		&:hover
+			background-color $color-primary
+
+	&__item.js-is-active
+		color $color-text
+		border-color #000
+		&:hover
+			background-color transparent
+

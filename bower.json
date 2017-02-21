@@ -7,9 +7,10 @@
   "main": "gulpfile.js",
   "homepage": "",
   "dependencies": {
-    "normalize-css": "normalize.css#^5.0.0",
-    "hammerjs": "^2.0.8",
-    "slick-carousel": "^1.6.0",
-    "ez-plus": "^1.2.0"
+    "normalize-css": "normalize.css#5.0.0",
+    "hammerjs": "2.0.8",
+    "slick-carousel": "1.6.0",
+    "ez-plus": "1.2.0",
+    "es6-promise-polyfill": "1.2.0"
   }
 }
