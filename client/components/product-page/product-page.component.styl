@@ -115,6 +115,7 @@ $base-font = 16
 		height auto
 		order 2
 		padding 13px 0 0 0
+		margin-bottom 13px
 		@media (max-width: 1000px)
 			order 1
 
@@ -138,15 +139,165 @@ $base-font = 16
 	position relative
 	width 100%
 	height auto
-	min-height 400px
-	background-color #7E57C2
+	color $color-text
+	margin-bottom 35px
+
+	&__title
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 2.25
+		text-transform uppercase
+		letter-spacing 1px
+
+	&__list
+		margin-top 6px
+
+	&__btn-container
+		margin-top 14px
+		@media (max-width: $phone)
+			width 100%
+
+	&__btn
+		position relative
+		background-color transparent
+		border 2px solid #000
+		padding 8px 36px
+		font-size 'calc(13 / %s * 1rem)' %($base-font)
+		line-height 2.77
+		letter-spacing 0
+		@media (max-width: $phone)
+			padding 8px 16px
+			width 100%
+		&:hover
+			background-color $color-primary
+			border-color $color-primary
+			box-shadow 0 1px 6px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.06)
+			span
+				text-decoration none
+
+		span
+			text-decoration underline
+
+	&__btn-icon
+		position relative
+		top 4px
+		margin-left -14px
+		@media (max-width: $phone)
+			margin-left 0
+
+.likearts-content .product-page .feedback-item
+	position relative
+	width 100%
+	height auto
+	border-top 3px solid #dadada
+	display flex
+	flex-flow row nowrap
+	justify-content flex-start
+	align-items center
+	color $color-text
+	padding 17px 0 27px 0
+	@media (max-width: $phone)
+		flex-flow row wrap
+
+	&__text
+		flex-shrink 1
+		p
+			font-size 'calc(15 / %s * 1rem)' %($base-font)
+			font-weight 400
+			line-height 1.47
+			margin 0 0 9px 0
+
+	&__sign
+		color #a9a9a9
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 1.38
+
+	&__separator
+		margin 0 14px
+
+	&__pic
+		position relative
+		width auto
+		height auto
+		margin 15px 30px 0 0
+		flex-shrink 0
+		@media (max-width: $phone)
+			margin 15px 30px 15px 0
+
+		img
+			width 100%
+			height 100%
+			max-width 99px
+			max-height 99px
+			object-fit cover
+			border-radius 12px
+
 
 .likearts-content .product-page .offer
 	position relative
 	width 100%
 	height auto
-	min-height 400px
-	background-color #66BB6A
+	color $color-text
+
+	&__title
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 2.25
+		text-transform uppercase
+		letter-spacing 1px
+		margin-bottom 17px
+		@media (max-width: $phone)
+			line-height 1.2
+
+	&__list
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items stretch
+		overflow hidden
+		margin 0 -12px
+
+.likearts-content .product-page .offer-item
+	position relative
+	display block
+	text-decoration none
+	font-weight 400
+	margin 0 12px 30px 12px
+
+	&:hover
+		.offer-item__pic
+			box-shadow 0 3px 10px rgba(0,0,0,0.16), 0 3px 10px rgba(0,0,0,0.23)
+
+	&__pic
+		width 100%
+		height 100%
+		max-width 136px
+		max-height 130px
+		object-fit cover
+		border-radius 20px
+		transition all .2s ease-in-out
+		@media (max-width: $phone)
+			max-width 100px
+			max-height 94px
+
+	&__name
+		max-width 136px
+		color $color-text
+		font-size 'calc(14 / %s * 1rem)' %($base-font)
+		line-height 1.2
+		text-decoration underline
+		margin-top 6px
+		@media (max-width: $phone)
+			max-width 100px
+			font-size 'calc(12 / %s * 1rem)' %($base-font)
+
+	&__price
+		color $color-text
+		font-size 'calc(15 / %s * 1rem)' %($base-font)
+		line-height 1
+		margin-top 5px
+
 
 .likearts-content .product-page .price
 	position relative
@@ -280,7 +431,7 @@ $base-font = 16
 		color #fff
 		padding 14px 47px
 		@media (max-width: $phone)
-			padding 14px 30px
+			padding 14px 15px
 			width 100%
 		&:hover
 			background-color $color-primary

@@ -16,7 +16,6 @@
     "commit": "c363d8342336595ec440eb33a4f931fa9b370fb1"
   },
   "_source": "https://github.com/lahmatiy/es6-promise-polyfill.git",
-  "_target": "^1.2.0",
-  "_originalSource": "es6-promise-polyfill",
-  "_direct": true
+  "_target": "1.2.0",
+  "_originalSource": "es6-promise-polyfill"
 }
