@@ -270,6 +270,7 @@
   width: 100%;
   height: auto;
   color: #000;
+  overflow: hidden;
 }
 .likearts-content .product-page .offer__title {
   font-size: calc(16 / 16 * 1rem);
@@ -289,7 +290,6 @@
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: stretch;
-  overflow: hidden;
   margin: 0 -12px;
 }
 .likearts-content .product-page .offer-item {
