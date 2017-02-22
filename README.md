@@ -7,3 +7,4 @@
 5. [Новости](https://atellmer.github.io/elfstore/news.html)
 6. [Новость детально](https://atellmer.github.io/elfstore/news-detail.html)
 7. [Корзина](https://atellmer.github.io/elfstore/cart.html)
+8. [Продукт](https://atellmer.github.io/elfstore/product.html)
