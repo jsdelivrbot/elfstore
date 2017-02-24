@@ -1,8 +1,6 @@
 ;
 (function() {
-'use strict';
-
-	document.addEventListener('DOMContentLoaded', ready)
+	document.addEventListener('DOMContentLoaded', ready);
 
 	function ready() {
 		var target = document.querySelector('#aside-toggle');
