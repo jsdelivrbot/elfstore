@@ -39,19 +39,28 @@
   color: #fff;
 }
 .likearts-content .menu-mobile {
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #212121;
+  width: 100%;
+  height: auto;
+  min-height: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.8);
   box-shadow: 0 1px 6px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.06);
 }
 .likearts-content .menu-mobile__btn {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 50px;
   height: 50px;
   cursor: pointer;
+  z-index: 100;
 }
 .likearts-content .menu-mobile__icon {
   position: absolute;
@@ -61,6 +70,7 @@
   color: #fff;
 }
 .likearts-content .menu-mobile__list {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
