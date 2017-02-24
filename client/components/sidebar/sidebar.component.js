@@ -6,10 +6,8 @@
 		var target = document.querySelector('#aside-toggle');
 
 		if (target) {
-			var toggle = new Hammer(target);
 			var aside = document.querySelector('#aside');
-
-			toggle.on('tap', toggleHandler);
+			target.addEventListener('click', toggleHandler)
 
 			function toggleHandler() {
 				aside.classList.toggle('js-is-mobile--hide');

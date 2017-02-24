@@ -31,20 +31,20 @@ $base-font = 16
 		height 30px
 		cursor pointer
 		margin-right 10px
-		transition all 0.2s ease-in-out
 		background-size cover
 		background-repeat no-repeat
 		background-position center
+		background-image url('../../images/sex-picker/sprite.png')
 		@media (max-width: $phone)
 			margin-right 15px
 
 		&--man
-			background-image url('../../images/sex-picker/man-b.png')
+			background-position 0 0
 
 		&--woman
-			background-image url('../../images/sex-picker/woman-b.png')
+			background-position 0 -60px
 
 	&__item.sex-picker__item--man.js-is-active
-			background-image url('../../images/sex-picker/man-y.png')
+		background-position 0 -30px
 	&__item.sex-picker__item--woman.js-is-active
-		background-image url('../../images/sex-picker/woman-y.png')
+		background-position 0 -90px

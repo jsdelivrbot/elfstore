@@ -29,11 +29,11 @@ $base-font = 16
 
 	&__menu 
 		&--desktop
-			@media all and (max-width: 768px)
+			@media (max-width: 960px)
 				display none
 		&--mobile
-			@media all and (min-width: 769px)
-				display none
+			@media (min-width: 961px)
+				display none !important
 
 	&__logo
 		width 276px
@@ -42,6 +42,16 @@ $base-font = 16
 		background-size cover
 		background-position center
 		background-repeat no-repeat
+		@media (max-width: 960px)
+			width calc(276 / 1.5 * 1px)
+			height calc(57 / 1.5 * 1px)
+		@media (max-width: $tablet)
+			width calc(276 / 2 * 1px)
+			height calc(57 / 2 * 1px)
+		@media (max-width: $phone)
+			width calc(276 / 2.5 * 1px)
+			height calc(57 / 2.5 * 1px)
+
 
 	.l-logo
 		position relative
@@ -51,6 +61,8 @@ $base-font = 16
 			top 0
 			left 0
 			margin 10px 0
+		@media (max-width: 960px)
+			display none
 
 	.panel
 		display flex
@@ -63,8 +75,8 @@ $base-font = 16
 			padding 0 18px 0 8px
 		@media (max-width: 970px)
 			padding 0 8px
-		@media (max-width: 920px)
-			flex-flow column wrap
+		@media (max-width: 960px)
+			display none
 
 		&__left
 			@media (max-width: 970px)
@@ -82,7 +94,6 @@ $base-font = 16
 				justify-content center
 			@media (max-width: 768px)
 				margin-top 50px
-				padding 16px 0 0 0
 
 	.entrance
 		position relative
@@ -152,6 +163,8 @@ $base-font = 16
 		align-items center
 		@media (max-width: 970px)
 			flex-flow column wrap
+		@media (max-width: 960px)
+			padding 56px 16px 30px 16px
 
 		&__mobile-staff
 			@media (min-width: 971px)
@@ -277,6 +290,9 @@ $base-font = 16
 			top 0
 			left 0
 			margin-bottom 20px
+		@media (max-width: 960px)
+			margin-bottom 0
+			width 100%
 
 	.controls
 		position relative
@@ -291,6 +307,9 @@ $base-font = 16
 			@media (max-width: 1170px)
 				padding 0 21px
 				min-height 52px
+			@media (max-width: 960px)
+				min-height 0
+				width 100%
 
 		&__links
 			position relative
@@ -314,11 +333,13 @@ $base-font = 16
 
 		&__search
 			display flex
-			flex-flow row wrap
+			flex-flow row nowrap
 			justify-content flex-start
 			align-items center
 			@media (min-width: 1171px)
 				display none
+			@media (max-width: 960px)
+				width 100%
 
 		&__input
 			max-width 134px
@@ -330,6 +351,9 @@ $base-font = 16
 			@media (max-width: 970px)
 				max-width none
 				padding 19px
+			@media (max-width: 960px)
+				padding 12px 8px
+				width 100%
 			&:focus
 				outline none
 			&::-webkit-input-placeholder

@@ -18,21 +18,27 @@
 			click++;
 
 			if (click % 2) {
-				menuIcon.style.color = '#181818';
-				menuContent.style.transform = 'translateX(0px)';
-				menuOverlay.style.display = 'block';
+				showMenuContent();
 			} else {
-				menuIcon.style.color = '#fff';
-				menuContent.style.transform = 'translateX(-240px)';
-				menuOverlay.style.display = 'none';
+				hideMenuContent();
 			}
 		}
 
 		function clickMenuOverlayHandler() {
 			click = 0;
-			menuIcon.style.color = '#fff';
-			menuContent.style.transform = 'translateX(-240px)';
-			menuOverlay.style.display = 'none';
+			hideMenuContent();
+		}
+
+		function showMenuContent() {
+			$(menuIcon).css('color', '#181818');
+			$(menuContent).css('transform', 'translateX(0px)');
+			$(menuOverlay).css('display', 'block');
+		}
+
+		function hideMenuContent() {
+			$(menuIcon).css('color', '#fff');
+			$(menuContent).css('transform', 'translateX(-240px)');
+			$(menuOverlay).css('display', 'none');
 		}
 	};
 })();
