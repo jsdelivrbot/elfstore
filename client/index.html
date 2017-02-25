@@ -11,6 +11,7 @@
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="bower_components/ez-plus/css/jquery.ez-plus.css">
+	<link rel="stylesheet" href="bower_components/jquery-nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
 	<!-- endinject -->
 	<!-- inject:css -->
@@ -19,25 +20,25 @@
 	<link rel="stylesheet" href="dist/bundle.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<!-- endinject -->
 	<!-- Pixel Glass -->
-	<style>
-		HTML {
-			background-repeat: no-repeat;
-			background-position:  50% 0;
-			background-image: none;
-		}
-		@media ( min-width: 1170px ) {
-			HTML {
-				background-image: url( "temp/pixelglass/img/product-1170.png" );
-			}
-		}
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    background-image: none;
+  }
+  @media ( min-width: 1170px ) {
+    HTML {
+      background-image: url( "temp/pixelglass/img/checkout-1170.png" );
+    }
+  }
 
-		BODY {
-			opacity: .5;
-		}
-	</style>
-	<link rel="stylesheet" href="temp/pixelglass/styles.css">
-	<script src="temp/pixelglass/script.js"></script>
-	<!-- // Pixel Glass -->
+  BODY {
+    opacity: .5;
+  }
+</style>
+<link rel="stylesheet" href="temp/pixelglass/styles.css">
+<script src="temp/pixelglass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 
 <body class="likearts-content">
@@ -235,515 +236,91 @@
 	</header>
 	<main>
 		<div class="main-layout">
-			<div class="flex-grid">
-				<div class="flex-item flex-item--aside">
-					<div class="l-aside-toggle">
-						<button id="aside-toggle" class="aside-toggle">
-							Дополнительно...
-						</button>
-					</div>
-					<div id="aside" class="aside js-is-mobile--hide">
-						<div class="l-sidebar l-sidebar--top">
-							<aside class="sidebar">
-								<h2 class="sidebar__title">Тематики</h2>
-								<div class="sidebar__content">
-									<ul class="sidebar__list">
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Игры</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Сериалы</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Фильмы</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Супергерои</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Мультфильмы</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Видеоблогеры</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Спорт</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Футбол</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Аниме</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Интернет-мемы</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Программирование</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Имена</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Другое</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Со своим дизайном</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-									</ul>
-								</div>
-							</aside>
-						</div>
-						<div class="l-sidebar l-sidebar--bottom">
-							<aside class="sidebar">
-								<h2 class="sidebar__title">Категории</h2>
-								<div class="sidebar__content">
-									<ul class="sidebar__list">
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Футболки</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Толстовки</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Кружки</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Коврики</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Футболки</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Толстовки</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Футболки Lineage 2</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Коврики</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Брелоки</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Коврики</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Футболки Mountain</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Ювелирные изделия</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Кружки</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Коврики</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Брелоки</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-										<li class="sidebar__list-item">
-											<a href="#" class="sidebar__list-link">Коврики</a>
-											<span class="sidebar__list-badge">38</span>
-										</li>
-									</ul>
-								</div>
-							</aside>
-						</div>
-						<div class="l-vidgets">
-							<div id="vkGroups"></div>
-						</div>
-						<div class="l-news">
-							<div class="news">
-								<h2 class="news__title">Новости</h2>
-								<div class="news__content">
-									<div class="news__block">
-										<span class="news__date">13.12.2015</span>
-										<p class="news__text">
-											Не следует, однако забывать, что консультация с широким активом требуют определения и уточнения дальнейших направлений <br> развития.
-										</p>
-										<a href="#" class="news__link">Читать</a>
-									</div>
-									<div class="news__block">
-										<span class="news__date">13.12.2015</span>
-										<p class="news__text">
-											Не следует, однако забывать, что консультация с широким активом требуют определения и уточнения дальнейших направлений <br> развития.
-										</p>
-										<a href="#" class="news__link">Читать</a>
-									</div>
-								</div>
-							</div>
-						</div>
+			<div class="checkout-page">
+				<div class="checkout-page__breadcrumbs">
+					<div class="elf-breadcrumbs">
+						<a href="#" class="elf-breadcrumbs__link">Главная</a>
+						<span class="elf-breadcrumbs__separator"></span>
+						<a href="#" class="elf-breadcrumbs__link is-active">Корзина</a>
+						<span class="elf-breadcrumbs__separator"></span>
+						<a href="#" class="elf-breadcrumbs__link is-active">Оформление заказа</a>
 					</div>
 				</div>
-				<div class="flex-item flex-item--content">
-					<div class="product-page">
-						<div class="product-page__breadcrumbs">
-							<div class="elf-breadcrumbs">
-								<a href="#" class="elf-breadcrumbs__link">Главная</a>
-								<span class="elf-breadcrumbs__separator"></span>
-								<a href="#" class="elf-breadcrumbs__link">Каталог</a>
-								<span class="elf-breadcrumbs__separator"></span>
-								<a href="#" class="elf-breadcrumbs__link">Кружки</a>
-								<span class="elf-breadcrumbs__separator"></span>
-								<a href="#" class="elf-breadcrumbs__link">World of Warcraft</a>
+				<div class="checkout-page__content">
+					<div class="checkout-page__steps">
+						<div class="steps">
+							<div class="steps__item is-first">
+								<span>01 Данные о доставке</span>
+								<i class="icon icon-confirm-y steps__item-icon"></i>
 							</div>
+							<div class="steps__item is-second">02 Способ оплаты </div>
+							<div class="steps__item is-third">03 Данные получателя</div>
 						</div>
-						<div class="product-page__content">
-							<div class="l-product-page-title">
-								<h1 class="product-page__title">Кружка Adventure Time</h1>
-							</div>
-							<div class="product-page__detail">
-								<div class="detail">
-									<div class="detail__gallery">
-										<div class="zoom-gallery">
-											<img
-												id="zoom-gallery-root"
-												class="zoom-gallery__pic"
-												src="./images/product/small/1.jpg"
-												data-zoom-image="./images/product/large/1.jpg"/>
-											<div id="zoom-gallery-thumbnails" class="zoom-gallery__thumbnails">
-												<span
-													class="zoom-gallery__thumbnails-item"
-													data-image="./images/product/small/1.jpg"
-													data-zoom-image="./images/product/large/1.jpg">
-													<img src="./images/product/small/1.jpg"/>
+					</div>
+					<div class="checkout-page__detail">
+						<div class="detail">
+							<div class="detail__blank">blank</div>
+							<div class="detail__info">
+								<div class="detail__info-order">
+									<div class="order">
+										<div class="order__title">Мой заказ</div>
+										<div class="order__cost">
+											<div class="order__cost-item">
+												<span class="order__cost-name">Стоимость товаров:</span>
+												<span class="order__cost-price">
+													560
+													<i class="icon icon-rub-black"></i>
 												</span>
-												<span
-													class="zoom-gallery__thumbnails-item"
-													data-image="./images/product/small/2.jpg"
-													data-zoom-image="./images/product/large/2.jpg">
-													<img src="./images/product/small/2.jpg"/>
+											</div>
+											<div class="order__cost-item">
+												<span class="order__cost-name">Стоимость доставки:</span>
+												<span class="order__cost-price">
+													395
+													<i class="icon icon-rub-black"></i>
 												</span>
-												<span
-													class="zoom-gallery__thumbnails-item"
-													data-image="./images/product/small/3.jpg"
-													data-zoom-image="./images/product/large/3.jpg">
-													<img src="./images/product/small/3.jpg"/>
-												</span>
-												<span
-													class="zoom-gallery__thumbnails-item"
-													data-image="./images/product/small/4.jpg"
-													data-zoom-image="./images/product/large/4.jpg">
-													<img src="./images/product/small/4.jpg"/>
+											</div>
+											<div class="order__cost-item">
+												<span class="order__cost-name">Скидка:</span>
+												<span class="order__cost-price">
+													100
+													<i class="icon icon-rub-black"></i>
 												</span>
 											</div>
 										</div>
-									</div>
-									<div class="detail__info">
-										<div class="detail__info-price">
-											<span class="price">
-												1295
-												<i class="icon icon-rub-black-big price__icon"></i>
-											</span>
-											<span class="sale">
-												Скидка 7% <br>при предоплате
+										<div
+											class="order__separator"
+											style="background-image: url('./images/icons/separator.png')">
+										</div>
+										<div class="order__total">
+											<span class="order__total-name">Итого:</span>
+											<span class="order__total-price">
+												100
+												<i class="icon icon-rub-black"></i>
 											</span>
 										</div>
-										<div class="detail__info-delivery">
-											<div class="delivery">
-												<div class="delivery__title">Доставка</div>
-												<div class="delivery__desc">
-													Товар будет передан в службу доставки <br>
-													в течение 2-5 рабочих дней.
-												</div>
-												<a href="#" class="delivery__link">Узнать про сроки и способы доставки</a>
-											</div>
-										</div>
-										<div class="detail__info-select">
-											<form class="select">
-												<div class="select__size">
-													<label for="size" class="select__label">Размер:</label>
-													<div class="select__size-picker">
-														<div data-size-picker-component class="size-picker">
-															<input
-																data-size-picker-component-input
-																type="hidden"
-																name="size"
-																value="M">
-															<div
-																data-size-picker-component-btn
-																data-size-picker-component-value="S"
-																class="size-picker__item">S</div>
-															<div
-																data-size-picker-component-btn
-																data-size-picker-component-value="M"
-																class="size-picker__item js-is-active">M</div>
-															<div
-																data-size-picker-component-btn
-																data-size-picker-component-value="L"
-																class="size-picker__item">L</div>
-															<div
-																data-size-picker-component-btn
-																data-size-picker-component-value="XL"
-																class="size-picker__item">XL</div>
-															<div
-																data-size-picker-component-btn
-																data-size-picker-component-value="2XL"
-																class="size-picker__item">2XL</div>
-														</div>
-													</div>
-												</div>
-												<div class="select__sex">
-													<label for="sex" class="select__label">Пол:</label>
-													<div class="select__sex-picker">
-														<div data-sex-picker-component class="sex-picker">
-															<input
-																data-sex-picker-component-input
-																type="hidden"
-																name="sex"
-																value="Male">
-															<div
-																data-sex-picker-component-btn
-																data-sex-picker-component-value="Male"
-																class="sex-picker__item sex-picker__item--man js-is-active">
-															</div>
-															<div
-																data-sex-picker-component-btn
-																data-sex-picker-component-value="Female"
-																class="sex-picker__item sex-picker__item--woman">
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="select__link-container">
-													<a href="#" class="select__link">Таблица размеров</a>
-												</div>
-												<div class="select__btn-container">
-													<button type="submit" class="elf-btn select__btn">
-														Добавить в корзину
-														<i class="material-icons select__btn-icon">done</i>
-													</button>
-												</div>
-											</form>
-										</div>
-										<div class="detail__info-tags">
-											<div class="info-tags">
-												<div class="info-tags__title">Тэги:</div>
-												<div class="info-tags__tags">
-													<a href="#">Hearthstone</a>
-													<a href="#" class="is-active">Jungle heat</a>
-													<a href="#">League Of Legends</a>
-													<a href="#">LineAge I</a>
-													<a href="#">Mario</a>
-													<a href="#">Max Payne</a>
-													<a href="#">Minecraft</a>
-													<a href="#">Natus Vincere</a>
-													<a href="#">NFS</a>
-													<a href="#">Packman</a>
-													<a href="#">Portal</a>
-													<a href="#">Quake</a>
-													<a href="#">Sonic</a>
-													<a href="#">Spore</a>
-												</div>
-											</div>
-										</div>
-										<div class="detail__info-creator">
-											<div class="creator">
-												<span class="creator__title">Xудожник:</span>
-												<span class="creator__name">Tamplier</span>
-											</div>
-										</div>
-									</div>
-									<div class="detail__description">
-										<div class="detail__description-title">Описание товара:</div>
-										<p class="detail__description-text">
-											Кружка “Лечебное зелье” предназначена для полезных напитков. Украшает стол геймера и позволяет подкрепить силы, не отрываясь от игры. Плюс к полезности напитка и здоровью персонажа. Материал: 100% хлопок. Размер рисунка: А3 - мужские; А4 - женские.
-										</p>
 									</div>
 								</div>
-							</div>
-							<div class="product-page__feedback">
-								<div class="feedback">
-									<div class="feedback__title">Отзывы:</div>
-									<div class="feedback__list">
-										<div class="feedback-item">
-											<div class="feedback-item__text">
-												<p>
-													Крутой дизайн. Заказ пришел быстро,все хорошо упаковали так,что ни трещин,ничего подобного возникнуть не могло. <br> Спасибо!
-												</p>
-												<div class="feedback-item__sign">
-													<span class="feedback-item__date">26 октября в 16:55</span>
-													<span class="feedback-item__separator">/</span>
-													<span class="feedback-item__autor">Юлия</span>
-												</div>
+								<div class="detail__info-help">
+									<div class="help">
+										<div class="help__title">Нужна помощь?</div>
+										<div class="help__separator"></div>
+										<div class="help__contacts">
+											<div class="help__contacts-item">
+												<a href="tel:+74957814458" class="help__contacts-phone">7 495 781 44 58</a>
+												<span class="help__contacts-city">(Москва)</span>
+											</div>
+											<div class="help__contacts-item">
+												<a href="tel:+78001004458" class="help__contacts-phone">8 800 100 44 58</a>
+												<span class="help__contacts-city">(бесплатно по РФ)</span>
 											</div>
 										</div>
-										<div class="feedback-item">
-											<div class="feedback-item__text">
-												<p>
-													Кружка пришла, очень качественно сделано, душа не нарадуется, спасибо больше вам ^^
-												</p>
-												<div class="feedback-item__sign">
-													<span class="feedback-item__date">26 октября в 16:55</span>
-													<span class="feedback-item__separator">/</span>
-													<span class="feedback-item__autor">Виталий</span>
-												</div>
-											</div>
+										<a href="#" class="help__chat">
+											<i class="icon icon-chat help__chat-icon"></i>
+											<span class="help__chat-name">Чат с оператором</span>
+										</a>
+										<div class="help__sign">
+											Служба поддержки доступна с понедельника по пятницу с 11 до 20
 										</div>
-										<div class="feedback-item">
-											<a
-												href="./images/product/feed/large/1.jpg"
-												data-product-feedback-item
-												class="feedback-item__pic">
-												<img src="./images/product/feed/small/1.jpg" alt="text">
-											</a>
-											<div class="feedback-item__text">
-												<p>
-													Кружка пришла, очень качественно сделано, душа не нарадуется, спасибо больше вам ^^
-												</p>
-												<div class="feedback-item__sign">
-													<span class="feedback-item__date">26 октября в 16:55</span>
-													<span class="feedback-item__separator">/</span>
-													<span class="feedback-item__autor">Виталий</span>
-												</div>
-											</div>
-										</div>
-										<div class="feedback-item">
-											<a
-												href="./images/product/feed/large/2.jpg"
-												data-product-feedback-item
-												class="feedback-item__pic">
-												<img src="./images/product/feed/small/2.jpg" alt="text">
-											</a>
-											<div class="feedback-item__text">
-												<p>
-													Кружка пришла, очень качественно сделано, душа не нарадуется, спасибо больше вам ^^
-												</p>
-												<div class="feedback-item__sign">
-													<span class="feedback-item__date">26 октября в 16:55</span>
-													<span class="feedback-item__separator">/</span>
-													<span class="feedback-item__autor">Виталий</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="feedback__btn-container">
-										<button class="elf-btn feedback__btn">
-											<i class="icon icon-repeat-b feedback__btn-icon"></i>
-											<span>Показать еще 10 отзывов</span>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="product-page__offer">
-								<div class="offer">
-									<div class="offer__title">Другие товары с этим рисунком</div>
-									<div class="offer__list">
-										<a href="#" class="offer-item">
-											<img src="./images/product/offer/1.jpg" class="offer-item__pic" alt="text">
-											<div class="offer-item__name">Кружка Иллидана</div>
-											<div class="offer-item__price">
-												560
-												<i class="icon icon-rub-black-small"></i>
-											</div>
-										</a>
-										<a href="#" class="offer-item">
-											<img src="./images/product/offer/2.jpg" class="offer-item__pic" alt="text">
-											<div class="offer-item__name">Кружка Иллидана</div>
-											<div class="offer-item__price">
-												560
-												<i class="icon icon-rub-black-small"></i>
-											</div>
-										</a>
-										<a href="#" class="offer-item">
-											<img src="./images/product/offer/3.jpg" class="offer-item__pic" alt="text">
-											<div class="offer-item__name">Кружка Иллидана</div>
-											<div class="offer-item__price">
-												560
-												<i class="icon icon-rub-black-small"></i>
-											</div>
-										</a>
-										<a href="#" class="offer-item">
-											<img src="./images/product/offer/4.jpg" class="offer-item__pic" alt="text">
-											<div class="offer-item__name">Кружка Иллидана</div>
-											<div class="offer-item__price">
-												560
-												<i class="icon icon-rub-black-small"></i>
-											</div>
-										</a>
-										<a href="#" class="offer-item">
-											<img src="./images/product/offer/5.jpg" class="offer-item__pic" alt="text">
-											<div class="offer-item__name">Кружка Иллидана</div>
-											<div class="offer-item__price">
-												560
-												<i class="icon icon-rub-black-small"></i>
-											</div>
-										</a>
-									</div>
-									<div class="offer__title">Эти товары могут вас заинтересовать</div>
-									<div class="offer__list">
-										<a href="#" class="offer-item">
-											<img src="./images/product/offer/6.jpg" class="offer-item__pic" alt="text">
-											<div class="offer-item__name">Кружка Иллидана</div>
-											<div class="offer-item__price">
-												560
-												<i class="icon icon-rub-black-small"></i>
-											</div>
-										</a>
-										<a href="#" class="offer-item">
-											<img src="./images/product/offer/7.jpg" class="offer-item__pic" alt="text">
-											<div class="offer-item__name">Кружка Иллидана</div>
-											<div class="offer-item__price">
-												560
-												<i class="icon icon-rub-black-small"></i>
-											</div>
-										</a>
-										<a href="#" class="offer-item">
-											<img src="./images/product/offer/8.jpg" class="offer-item__pic" alt="text">
-											<div class="offer-item__name">Кружка Иллидана</div>
-											<div class="offer-item__price">
-												560
-												<i class="icon icon-rub-black-small"></i>
-											</div>
-										</a>
-										<a href="#" class="offer-item">
-											<img src="./images/product/offer/9.jpg" class="offer-item__pic" alt="text">
-											<div class="offer-item__name">Кружка Иллидана</div>
-											<div class="offer-item__price">
-												560
-												<i class="icon icon-rub-black-small"></i>
-											</div>
-										</a>
-										<a href="#" class="offer-item">
-											<img src="./images/product/offer/10.jpg" class="offer-item__pic" alt="text">
-											<div class="offer-item__name">Кружка Иллидана</div>
-											<div class="offer-item__price">
-												560
-												<i class="icon icon-rub-black-small"></i>
-											</div>
-										</a>
 									</div>
 								</div>
 							</div>
@@ -825,6 +402,7 @@
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/ez-plus/src/jquery.ez-plus.js"></script>
 	<script src="bower_components/es6-promise-polyfill/promise.js"></script>
+	<script src="bower_components/jquery-nice-select/js/jquery.nice-select.min.js"></script>
 	<script src="bower_components/slick-carousel/slick/slick.js"></script>
 	<!-- endinject -->
 	<script src="https://vk.com/js/api/openapi.js?121"></script>
@@ -833,6 +411,7 @@
 	<script src="shared/vk.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="shared/lightbox/lightbox.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/cart-page/cart-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/custom-select/custom-select.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/menu/menu.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/number-picker/number-picker.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/product-page/product-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
