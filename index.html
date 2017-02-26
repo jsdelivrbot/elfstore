@@ -24,8 +24,8 @@
 	<link rel="stylesheet" href="components/breadcrumbs/breadcrumbs.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/button/button.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/cart-page/cart-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
-	<link rel="stylesheet" href="components/catalog-page/catalog-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/catalog-detail-page/catalog-detail-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
+	<link rel="stylesheet" href="components/catalog-page/catalog-page.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/custom-select/custom-select.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/footer/footer.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
 	<link rel="stylesheet" href="components/form/form.component.css?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709">
@@ -245,7 +245,7 @@
 	</header>
 	<main>
 		<div class="main-layout">
-			<div class="checkout-page">
+			<div class="checkout-page step-1">
 				<div class="checkout-page__breadcrumbs">
 					<div class="elf-breadcrumbs">
 						<a href="#" class="elf-breadcrumbs__link">Главная</a>
@@ -268,7 +268,175 @@
 					</div>
 					<div class="checkout-page__detail">
 						<div class="detail">
-							<div class="detail__blank">blank</div>
+							<div class="detail__form">
+								<form class="delivery">
+									<div class="delivery__location">
+										<div class="delivery__title">Способ доставки</div>
+										<div class="delivery__group">
+											<label
+												for="country"
+												class="delivery__label">
+												Страна:
+											</label>
+											<div class="delivery__control">
+												<select
+													name="country"
+													class="custom-select delivery__select">
+													<option value="Россия" selected>Россия</option>
+													<option value="США">США</option>
+													<option value="Речь Посполитая">Речь Посполитая</option>
+												</select>
+											</div>
+										</div>
+										<div class="delivery__group">
+											<label
+												for="city"
+												class="delivery__label">
+												Город:
+											</label>
+											<div class="delivery__control">
+												<select
+													name="city"
+													class="custom-select delivery__select">
+													<option value="Санкт-Петербург" selected>Санкт-Петербург</option>
+													<option value="Москва">Москва</option>
+													<option value="Вашингтон">Вашингтон</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="delivery__variants">
+										<div class="delivery__title delivery__title--mb">Доступные способы доставки:</div>
+											<div class="variants">
+												<div
+													data-delivery-variants-item
+													data-value="Почта России"
+													class="variants__item">
+													<div class="variants__item-visible">
+														<div class="variants__item-half">
+															<div class="variants__item-name">
+																<span
+																	data-delivery-variants-item-trigger
+																	class="variants__item-trigger">
+																	Почта России
+																</span>
+															</div>
+														</div>
+														<div class="variants__item-half">
+															<div class="variants__item-time">1-2 недели</div>
+															<div class="variants__item-price">
+																<span>240</span>
+																<i class="icon icon-rub-black"></i>
+															</div>
+														</div>
+													</div>
+													<div class="variants__item-info">
+														Доставка Почтой обычно занимает 5-14 дней. Спустя 4 дня после отправки вы можете отслеживать посылку он-лайн по контрольному номеру. Доставка возможна только по предоплате (мы не используем оплату при получении заказа на почте - наложенный платеж).
+													</div>
+												</div>
+												<div
+													data-delivery-variants-item
+													data-value="Курьерская доставка"
+													class="variants__item">
+													<div class="variants__item-visible">
+														<div class="variants__item-half">
+															<div class="variants__item-name">
+																<span
+																	data-delivery-variants-item-trigger
+																	class="variants__item-trigger">
+																	Курьерская доставка
+																</span>
+															</div>
+														</div>
+														<div class="variants__item-half">
+															<div class="variants__item-time">2-3 дня</div>
+															<div class="variants__item-price">
+																<span>300</span>
+																<i class="icon icon-rub-black"></i>
+															</div>
+														</div>
+													</div>
+													<div class="variants__item-info">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nemo sed facilis maxime adipisci nostrum, maiores odit eligendi officiis. Quia, adipisci, quod! Provident assumenda necessitatibus praesentium at omnis quae aliquid.
+													</div>
+												</div>
+												<div
+													data-delivery-variants-item
+													data-value="Самовывоз"
+													class="variants__item">
+													<div class="variants__item-visible">
+														<div class="variants__item-half">
+															<div class="variants__item-name">
+																<span
+																	data-delivery-variants-item-trigger
+																	class="variants__item-trigger">Пункт выдачи заказов</span>
+															</div>
+														</div>
+														<div class="variants__item-half">
+															<div class="variants__item-link">
+																<i class="icon icon-map variants__item-icon"></i>
+																<span>Выберите пункт выдачи на карте</span>
+															</div>
+														</div>
+													</div>
+													<div class="variants__item-info">
+														<div class="contacts">
+															<div class="contacts__location">
+																<div class="contacts__location-map">
+																	<img src="./images/checkout/map.jpg" class="contacts__location-pic" alt="text">
+																</div>
+																<div class="contacts__location-address">
+																	<div class="contacts__location-item">
+																		<span class="contacts__label">Адрес:</span>
+																		<br>
+																		<span class="contacts__text">Маршала малиновского ул, д.6 кор.1, оф.стар</span>
+																	</div>
+																	<div class="contacts__location-item">
+																		<span class="contacts__label">Время работы:</span>
+																		<span class="contacts__text">пн.-пт. 11-20, сб. 10-16</span>
+																	</div>
+																	<div class="contacts__location-item">
+																		<span class="contacts__label">Срок доставки:</span>
+																		<span class="contacts__text">От 2 до 4 дней</span>
+																	</div>
+																	<div class="contacts__location-item">
+																		<span class="contacts__label">Стоимость:</span>
+																		<span class="contacts__text">
+																			205
+																			<i class="icon icon-rub-black-small"></i>
+																		</span>
+																	</div>
+																	<div class="contacts__location-item">
+																		<span class="contacts__text">
+																			Стоимость доставки составляет сумма, которую мы платим пункту выдачи за пересылку и выдачу
+																		</span>
+																	</div>
+																</div>
+															</div>
+															<div class="contacts__desc">
+																<div class="contacts__desc-title">Как добраться</div>
+																<div class="contacts__desc-text">
+																	м. Бульвар Дмитрия Донского, последний вагон из центра, из стеклянных дверей выйти направо и подняться налево вверх по ступенькам. ТЦ "Круг" 1 этаж,зеленая галерея. По галерее идти прямо и налево до конца, справа будет находиться Пункт выдачи заказов интернет-магазинов.
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<input
+													data-delivery-variants-input
+													type="hidden"
+													name="variant"
+													value="Почта России">
+											</div>
+									</div>
+									<div class="delivery__btn-container">
+										<button class="elf-btn delivery__btn">
+											<span>Далее</span>
+											<i class="icon icon-enter delivery__btn-icon"></i>
+										</button>
+									</div>
+								</form>
+							</div>
 							<div class="detail__info">
 								<div class="detail__info-order">
 									<div class="order">
@@ -420,6 +588,7 @@
 	<script src="shared/vk.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="shared/lightbox/lightbox.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/cart-page/cart-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
+	<script src="components/checkout-page/checkout-page.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/custom-select/custom-select.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/menu/menu.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>
 	<script src="components/number-picker/number-picker.component.js?hash=da39a3ee5e6b4b0d3255bfef95601890afd80709"></script>

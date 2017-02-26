@@ -1,6 +1,8 @@
 .likearts-content .aside {
   position: relative;
   padding: 35px 39px 80px 0;
+  transition: all 0.2s ease-in-out;
+  transform-origin: 100% 0;
 }
 @media (max-width: 1170px) {
   .likearts-content .aside {
@@ -13,20 +15,12 @@
     margin-bottom: 20px;
   }
 }
-.likearts-content .aside.js-is-mobile--hide {
-  transition: all 0.2s ease-in-out;
-  transform-origin: 50% 0;
-}
 @media (max-width: 768px) {
   .likearts-content .aside.js-is-mobile--hide {
     position: absolute;
     opacity: 0;
     transform: scale(1, 0);
   }
-}
-.likearts-content .aside.js-is-mobile--show {
-  transition: all 0.2s ease-in-out;
-  transform-origin: 50% 0;
 }
 @media (max-width: 768px) {
   .likearts-content .aside.js-is-mobile--show {
