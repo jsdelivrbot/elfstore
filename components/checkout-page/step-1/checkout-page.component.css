@@ -442,7 +442,7 @@
   border-color: #ffde13;
   background-color: #fff;
 }
-.likearts-content .checkout-page.step-1 .variants__item.js-is-active .variants__item-info {
+.likearts-content .checkout-page.step-1 .variants__item.js-is-active .variants__item-info.js-is-active {
   position: relative;
   opacity: 1;
   transform: scale(1, 1);
