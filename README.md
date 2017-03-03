@@ -8,3 +8,4 @@
 6. [Новость детально](https://atellmer.github.io/elfstore/news-detail.html)
 7. [Корзина](https://atellmer.github.io/elfstore/cart.html)
 8. [Продукт](https://atellmer.github.io/elfstore/product.html)
+8. [Чек-аут: шаг 1](https://atellmer.github.io/elfstore/checkout-1.html)
