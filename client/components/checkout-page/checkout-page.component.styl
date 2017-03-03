@@ -14,14 +14,28 @@ $desktop = 1600px
 $container-width = 1170px
 $base-font = 16
 
-//STEP 1
+//COMMON
 .likearts-content .checkout-page
 	position relative
 	width 100%
 	height auto
 	padding 34px 0
+	color $color-text
 	@media (max-width: 1170px)
 		padding 34px 15px
+
+	&__title
+		font-size 'calc(22 / %s * 1rem)' % ($base-font)
+		line-height 1.64
+		text-transform uppercase
+		font-weight 900
+		letter-spacing 2px
+		margin-bottom 22px
+		@media (max-width: $phone)
+			font-size 'calc(16 / %s * 1rem)' % ($base-font)
+
+		&--mb
+			margin-bottom 24px
 
 	&__steps
 		position relative
@@ -30,6 +44,27 @@ $base-font = 16
 
 	&__detail
 		position relative
+
+	&__btn-container
+		margin-top 32px
+		display flex
+		flex-flow row wrap
+		justify-content flex-end
+		align-items center
+
+	&__btn
+		position relative
+		font-size 'calc(16 / %s * 1rem)' % ($base-font)
+		line-height 2.25
+		padding 14px 59px
+		box-shadow 0 1px 6px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.06)
+		@media (max-width: $phone)
+			width 100%
+			padding 14px 20px
+
+	&__btn-icon
+		position relative
+		top 4px
 
 .likearts-content .checkout-page .steps
 	position relative
@@ -99,6 +134,12 @@ $base-font = 16
 			border-left-color #282a2c
 		.steps__item-icon
 			color $color-primary
+
+	&__item.is-second.active
+		background-color $color-primary
+		color $color-text
+		&:after
+			border-left-color $color-primary
 
 	&__item-icon
 		position absolute
@@ -291,240 +332,3 @@ $base-font = 16
 		font-size 'calc(16 / %s * 1rem)' % ($base-font)
 		font-weight 400
 		line-height 1.44
-
-.likearts-content .checkout-page.step-1 .delivery
-	position relative
-	width 100%
-	color $color-text
-
-	&__title
-		font-size 'calc(22 / %s * 1rem)' % ($base-font)
-		line-height 1.64
-		text-transform uppercase
-		font-weight 900
-		letter-spacing 2px
-		margin-bottom 22px
-
-		&--mb
-			margin-bottom 24px
-
-	&__location
-		margin-bottom 61px
-
-	&__group
-		width 400px
-		display flex
-		flex-flow row wrap
-		justify-content space-between
-		align-items center
-		margin-bottom 20px
-		@media (max-width: $tablet)
-			width 100%
-
-	&__label
-		font-size 'calc(15 / %s * 1rem)' % ($base-font)
-		font-weight 700
-		line-height 1.6
-		text-transform uppercase
-
-	&__control
-		@media (max-width: $tablet)
-			width 100%
-
-	&__select
-		min-width 300px
-		border 2px solid #b6b6b6
-		border-radius 12px
-		height 51px
-		line-height 48px
-		font-size 'calc(18 / %s * 1rem)' % ($base-font)
-		@media (max-width: $tablet)
-			width 100%
-
-		.list
-			min-width 300px
-			@media (max-width: $tablet)
-				width 100%
-
-	&__btn-container
-		text-align right
-		margin-top 32px
-
-	&__btn
-		position relative
-		font-size 'calc(16 / %s * 1rem)' % ($base-font)
-		line-height 2.25
-		padding 14px 59px
-		box-shadow 0 1px 6px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.06)
-		@media (max-width: $phone)
-			width 100%
-			padding 14px 20px
-
-	&__btn-icon
-		position relative
-		top 4px
-
-.likearts-content .checkout-page.step-1 .variants
-	position relative
-	color $color-text
-
-	&__item
-		position relative
-		width 100%
-		height auto
-		min-height 77px
-		border 3px solid #d9d9d9
-		border-radius 12px
-		padding 26px 34px
-		margin-bottom 20px
-		transition all .2s ease-in-out
-		@media (max-width: $phone)
-			padding 16px
-			min-height 0
-			flex-flow column wrap
-			align-items flex-start
-
-	&__item.js-is-active
-		border-color $color-primary
-		background-color #fff
-
-		.variants__item-info.js-is-active
-			position relative
-			opacity 1
-			transform scale(1, 1)
-
-	&__item-visible
-		display flex
-		flex-flow row wrap
-		justify-content space-between
-		align-items center
-		@media (max-width: $phone)
-			flex-flow column wrap
-			align-items flex-start
-
-	&__item-name
-		font-size 'calc(20 / %s * 1rem)' % ($base-font)
-		font-weight 700
-		line-height 1
-		@media (max-width: $phone)
-			line-height 1.4
-		
-	&__item-trigger
-		border-bottom 1px dashed $color-text
-		cursor pointer
-
-	&__item-time
-		font-size 'calc(20 / %s * 1rem)' % ($base-font)
-		font-weight 400
-		line-height 1
-		@media (max-width: $phone)
-			line-height 1.4
-
-	&__item-price
-		font-size 'calc(24 / %s * 1rem)' % ($base-font)
-		font-weight 400
-		line-height 1
-		@media (max-width: $phone)
-			line-height 1.4
-
-	&__item-info
-		position absolute
-		opacity 0
-		transition transform .05s ease-in-out
-		transform-origin 100% 0
-		transform scale(1, 0)
-		font-size 'calc(16 / %s * 1rem)' % ($base-font)
-		line-height 1.44
-		margin-top 17px
-
-	&__item-half
-		width 50%
-		display flex
-		flex-flow row wrap
-		justify-content space-between
-		align-items center
-		@media (max-width: $phone)
-			width 100%
-			flex-flow column wrap
-			align-items flex-start
-
-	&__item-link
-		font-size 'calc(17 / %s * 1rem)' % ($base-font)
-		font-weight 600
-		text-decoration underline
-		display flex
-		flex-flow row wrap
-		justify-content flex-start
-		align-items center
-		cursor pointer
-		@media (max-width: 1170px)
-			font-size 'calc(15 / %s * 1rem)' % ($base-font)
-		@media (max-width: $phone)
-			font-size 'calc(13 / %s * 1rem)' % ($base-font)
-			margin-top 10px
-
-	&__item-icon
-		margin-right 10px
-
-.likearts-content .checkout-page.step-1 .contacts
-	position relative
-	color $color-text
-
-	&__location
-		display flex
-		flex-flow row nowrap
-		justify-content flex-start
-		align-items flex-start
-		margin-bottom 10px
-
-	&__location-pic
-		width 100%
-		height 100%
-		max-width 335px
-		max-height 209px
-		object-fit cover
-
-	&__location-map
-		flex-shrink 0
-		@media (max-width: $phone)
-			display none
-
-	&__location-address
-		flex-shrink 1
-		padding-left 31px
-		@media (max-width: $phone)
-			padding-left 0
-
-	&__desc-title
-		font-size 'calc(13 / %s * 1rem)' % ($base-font)
-		font-weight 700
-		line-height 1.85
-		text-transform uppercase
-		margin-bottom 12px
-
-	&__desc-text
-		font-size 'calc(15 / %s * 1rem)' % ($base-font)
-		font-weight 400
-		line-height 1.33
-		color #545454
-		@media (max-width: $phone)
-			font-size 'calc(14 / %s * 1rem)' % ($base-font)
-
-	&__label
-		font-size 'calc(13 / %s * 1rem)' % ($base-font)
-		font-weight 700
-		line-height 1.85
-		text-transform uppercase
-		@media (max-width: $phone)
-			font-size 'calc(12 / %s * 1rem)' % ($base-font)
-
-	&__text
-		font-size 'calc(15 / %s * 1rem)' % ($base-font)
-		font-weight 400
-		color #545454
-		@media (max-width: $phone)
-			font-size 'calc(14 / %s * 1rem)' % ($base-font)
-
-	&__location-item
-		margin-bottom 7px
-

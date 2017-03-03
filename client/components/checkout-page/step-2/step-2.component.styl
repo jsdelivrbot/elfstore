@@ -1,0 +1,100 @@
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+//STEP 2
+.likearts-content .checkout-page.step-2 .payment
+	position relative
+	width 100%
+
+	.checkout-page__btn-container
+		justify-content space-between
+
+	.checkout-page__btn
+		@media (max-width: $phone)
+			margin-bottom 20px
+
+		&--prev
+			background-color transparent
+			border 3px solid #d9d9d9 
+			box-shadow none
+
+.likearts-content .checkout-page.step-2 .payment-item
+	position relative
+	width 100%
+	height auto
+	min-height 137px
+	border-radius 12px
+	border 3px solid #d9d9d9
+	background-color transparent
+	margin-bottom 20px
+	cursor pointer
+	display flex
+	flex-flow row nowrap
+	justify-content flex-start
+	align-items center
+	padding 0 0
+	transition all .2s ease-in-out
+	&:hover
+		border-color #BDBDBD
+		background-color #fff
+
+	&.js-is-active
+		background-color #fff
+		border-color $color-primary
+
+	&__pic-container
+		flex-shrink 0
+		flex-grow 1
+		display flex
+		flex-flow row wrap
+		justify-content center
+		align-items center
+		padding 0 27px
+		@media (max-width: $phone)
+			padding 0 20px
+			flex-shrink 1
+
+	&__pic
+		width auto
+		height auto
+		@media (max-width: $phone)
+			width 100%
+
+	&__info
+		flex-shrink 1
+		width calc(100% - 196px)
+		padding 15px 39px 15px 0
+		@media (max-width: $phone)
+			width calc(100% - 50px)
+
+	&__info-title
+		font-size 'calc(24 / %s * 1rem)' % ($base-font)
+		font-weight 600
+		line-height 1.5
+		@media (max-width: $phone)
+			font-size 'calc(18 / %s * 1rem)' % ($base-font)
+			line-height 1.2
+			margin-bottom 10px
+
+	&__info-text
+		margin 0
+		font-size 'calc(16 / %s * 1rem)' % ($base-font)
+		font-weight 400
+		color #545454
+		@media (max-width: $phone)
+			font-size 'calc(14 / %s * 1rem)' % ($base-font)
+	
+

@@ -5,6 +5,7 @@
 	function ready() {
 		itemsInit();
 		itemsInfoInit();
+		setPaymentMethod();
 	}
 
 	function itemsInit() {
@@ -65,6 +66,7 @@
 			for (i = 0; i < targets.length; i++) {
 				if (targets[i].getAttribute('data-info-target') === targetIdx) {
 					input.value = targets[i].getAttribute('data-info-target-locations');
+					console.log(input);
 					targets[i].classList.add('js-is-active');
 				}
 			}
@@ -76,6 +78,38 @@
 					}
 				}
 				el.classList.add('js-is-active');
+			}
+		}
+	}
+
+	function setPaymentMethod() {
+		var items = document.querySelectorAll('[data-payment-method-item]'),
+				input = document.querySelector('[data-payment-method-input]'),
+				i;
+
+		for (i = 0; i < items.length; i++) {
+			new Hammer(items[i]).on('tap', clickHandler);
+		}
+
+		function clickHandler(ev) {
+			var target;
+
+			if (ev.target.hasAttribute('data-payment-method-item')) {
+				target = ev.target;
+			} else {
+				target = ev.target.closest('[data-payment-method-item]');
+			}
+
+			for (i = 0; i < items.length; i++) {
+				if (items[i].classList.contains('js-is-active')) {
+					items[i].classList.remove('js-is-active');
+				}
+			}
+
+			target.classList.add('js-is-active');
+
+			if(input) {
+				input.value = target.getAttribute('data-value');
 			}
 		}
 	}
