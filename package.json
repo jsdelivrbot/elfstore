@@ -5,8 +5,10 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run build:dev\"",
-    "build:dev": "set NODE_ENV=development&& npm run bower:inject && gulp",
-    "build:prod": "set NODE_ENV=production&& npm run bower:inject && gulp",
+		"build": "npm run bower:inject && npm run inject && gulp",
+    "build:dev": "set NODE_ENV=development&& npm run build",
+    "build:prod": "set NODE_ENV=production&& npm run build",
+		"inject": "gulp inject",
     "bower:inject": "gulp inject-bower",
     "server": "lite-server -c server.config.json",
     "img:compress": "gulp img-compress"

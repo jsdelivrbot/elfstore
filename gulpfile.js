@@ -8,8 +8,7 @@ const config = require('./config');
 requireDir('./gulp-tasks');
 const defaultTasks = [
 	'styles',
-	'sprite',
-	'inject'
+	'sprite'
 ];
 
 if (config.development) {
