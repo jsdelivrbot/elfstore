@@ -36,8 +36,23 @@
 .likearts-content .news-detail-page__btn {
   background-color: transparent;
   border: 2px solid #d9d9d9;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
   display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   padding: 7px 45px;
 }
@@ -107,6 +122,8 @@
   width: 18px;
   height: 18px;
   background-image: url("../../images/icons/link.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -119,6 +136,10 @@
 }
 .likearts-content .news-detail-page .news-detail-item__list-link {
   color: #000;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
 .likearts-content .news-detail-page .news-detail-item__list-link:hover {

@@ -14,6 +14,8 @@
   height: auto;
   min-height: 324px;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -33,8 +35,23 @@
 .likearts-content .slider .slider-controls__btn {
   background-color: transparent;
   border: none;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
   display: inline-flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   cursor: pointer;
   padding: 0;

@@ -4,6 +4,7 @@
   position: fixed;
   z-index: 10000;
   touch-action: none;
+  -webkit-box-shadow: 0 0 3.125em rgba(0,0,0,0.75);
   box-shadow: 0 0 3.125em rgba(0,0,0,0.75);
 }
 /* ACTIVITY INDICATION */
@@ -22,12 +23,17 @@
   left: 50%;
   padding: 0.625em;
   margin: -1.25em 0 0 -1.25em;
+  -webkit-box-shadow: 0 0 2.5em rgba(0,0,0,0.75);
   box-shadow: 0 0 2.5em rgba(0,0,0,0.75);
 }
 #imagelightbox-loading div {
   width: 1.25em;
   height: 1.25em;
   background-color: #fff;
+  -webkit-animation: imagelightbox-loading 0.5s ease infinite;
+  -moz-animation: imagelightbox-loading 0.5s ease infinite;
+  -o-animation: imagelightbox-loading 0.5s ease infinite;
+  -ms-animation: imagelightbox-loading 0.5s ease infinite;
   animation: imagelightbox-loading 0.5s ease infinite;
 }
 /* OVERLAY */
@@ -52,6 +58,10 @@
   z-index: 10002;
   top: 2.5em;
   right: 2.5em;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 #imagelightbox-closehover,
@@ -70,9 +80,17 @@
   margin-left: -1px;
 }
 #imagelightbox-closebefore {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 #imagelightbox-closeafter {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 /* CAPTION */
@@ -97,6 +115,10 @@
   left: 50%;
   bottom: 3.75em;
   padding: 0.313em;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 #imagelightbox-nav button {
@@ -161,6 +183,10 @@
 #imagelightbox-caption,
 #imagelightbox-nav,
 .imagelightbox-arrow {
+  -webkit-animation: fade-in 0.25s linear;
+  -moz-animation: fade-in 0.25s linear;
+  -o-animation: fade-in 0.25s linear;
+  -ms-animation: fade-in 0.25s linear;
   animation: fade-in 0.25s linear;
 }
 @media (max-width: 41.25em) {
@@ -197,88 +223,176 @@
 @-moz-keyframes imagelightbox-loading {
   from {
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
     transform: scale(0.75);
   }
   50% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
   }
   to {
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
     transform: scale(0.75);
   }
 }
 @-webkit-keyframes imagelightbox-loading {
   from {
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
     transform: scale(0.75);
   }
   50% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
   }
   to {
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
     transform: scale(0.75);
   }
 }
 @-o-keyframes imagelightbox-loading {
   from {
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
     transform: scale(0.75);
   }
   50% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
   }
   to {
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
     transform: scale(0.75);
   }
 }
 @keyframes imagelightbox-loading {
   from {
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
     transform: scale(0.75);
   }
   50% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
   }
   to {
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
     transform: scale(0.75);
   }
 }
 @-moz-keyframes fade-in {
   from {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   to {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
 }
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   to {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
 }
 @-o-keyframes fade-in {
   from {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   to {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
 }
 @keyframes fade-in {
   from {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   to {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
 }
