@@ -1,0 +1,54 @@
+@import 'nib'
+
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .zoom-gallery
+	position relative
+	width 100%
+	height auto
+	overflow hidden
+	display flex
+	flex-flow column wrap
+	justify-content center
+	align-items center
+
+	&__pic
+		width 100%
+		height 455px
+		max-width 447px
+		object-fit cover
+		border-radius 12px
+		margin-bottom 8px
+		@media (max-width: $phone)
+			height 300px
+
+	&__thumbnails
+		display flex
+		flex-flow row wrap
+		justify-content center
+		align-items center
+		margin 0 -8px
+
+	&__thumbnails-item
+		cursor pointer
+		margin 8px
+		img
+			width 100px
+			height 96px
+			object-fit cover
+			border-radius 12px
+			margin 0

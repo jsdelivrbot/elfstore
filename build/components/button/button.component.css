@@ -11,6 +11,10 @@
   letter-spacing: 1px;
   padding: 8px 40px;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .likearts-content .elf-btn:hover {
@@ -20,5 +24,9 @@
   outline: none;
 }
 .likearts-content .elf-btn:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
   transform: scale(0.9);
 }

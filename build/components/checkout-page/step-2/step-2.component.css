@@ -1,0 +1,164 @@
+.likearts-content .checkout-page.step-2 .payment {
+  position: relative;
+  width: 100%;
+}
+.likearts-content .checkout-page.step-2 .payment .checkout-page__btn-container {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+@media (max-width: 640px) {
+  .likearts-content .checkout-page.step-2 .payment .checkout-page__btn {
+    margin-bottom: 20px;
+  }
+}
+.likearts-content .checkout-page.step-2 .payment .checkout-page__btn--prev {
+  background-color: transparent;
+  border: 3px solid #d9d9d9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.likearts-content .checkout-page.step-2 .payment-item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 137px;
+  border-radius: 12px;
+  border: 3px solid #d9d9d9;
+  background-color: transparent;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.likearts-content .checkout-page.step-2 .payment-item:hover {
+  border-color: #bdbdbd;
+  background-color: #fff;
+}
+.likearts-content .checkout-page.step-2 .payment-item.js-is-active {
+  background-color: #fff;
+  border-color: #ffde13;
+}
+.likearts-content .checkout-page.step-2 .payment-item__pic-container {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0 27px;
+}
+@media (max-width: 640px) {
+  .likearts-content .checkout-page.step-2 .payment-item__pic-container {
+    padding: 0 20px;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+  }
+}
+.likearts-content .checkout-page.step-2 .payment-item__pic {
+  width: auto;
+  height: auto;
+}
+@media (max-width: 640px) {
+  .likearts-content .checkout-page.step-2 .payment-item__pic {
+    width: 100%;
+  }
+}
+.likearts-content .checkout-page.step-2 .payment-item__info {
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  width: calc(100% - 196px);
+  padding: 15px 39px 15px 0;
+}
+@media (max-width: 640px) {
+  .likearts-content .checkout-page.step-2 .payment-item__info {
+    width: calc(100% - 50px);
+  }
+}
+.likearts-content .checkout-page.step-2 .payment-item__info-title {
+  font-size: calc(24 / 16 * 1rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+@media (max-width: 640px) {
+  .likearts-content .checkout-page.step-2 .payment-item__info-title {
+    font-size: calc(18 / 16 * 1rem);
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+}
+.likearts-content .checkout-page.step-2 .payment-item__info-text {
+  margin: 0;
+  font-size: calc(16 / 16 * 1rem);
+  font-weight: 400;
+  color: #545454;
+}
+@media (max-width: 640px) {
+  .likearts-content .checkout-page.step-2 .payment-item__info-text {
+    font-size: calc(14 / 16 * 1rem);
+  }
+}

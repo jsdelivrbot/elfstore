@@ -1,0 +1,157 @@
+@import 'nib'
+
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .modals
+	&__overlay
+		display none
+		position fixed
+		top 0
+		left 0
+		right 0
+		bottom 0
+		width 100%
+		height 100%
+		background-color rgba(0, 0, 0, 0.8)
+		z-index 1000
+
+	.js-is-open
+		display block
+		animation modal-motion .3s 1 ease-in-out
+		animation-fill-mode forwards
+
+.likearts-content .modal
+	display none
+	position fixed
+	top 50%
+	left 50%
+	transform translate(-50%, -50%)
+	z-index 2000
+
+	&__close-btn
+		display inline-block
+		position absolute
+		top 0
+		right 0
+		transform translate(50%, 0)
+		z-index 3000
+		@media (max-width: 900px)
+			transform translate(-50%, 0)
+			margin-top 5px
+			margin-right 10px
+
+.likearts-content .modal-body
+	position relative
+	width calc(100% - 40px)
+	max-width 831px
+	margin 0 20px
+	height auto
+	max-height calc(100vh - 40px)
+	overflow auto
+	background-color #fff
+	border-radius 12px
+
+	&__header
+		font-size 'calc(18 / %s * 1rem)' % ($base-font)
+		line-height 1.27
+		text-transform uppercase
+		font-weight 800
+		@media (max-width: $tablet)
+			font-size 'calc(16 / %s * 1rem)' % ($base-font)
+
+	&__separator
+		width 100%
+		height 7px
+		background-position left bottom
+		background-repeat repeat-x
+		margin 15px 0
+
+	&__content
+		position relative
+		display flex
+		flex-flow row nowrap
+		justify-content flex-start
+		align-items flex-start
+		min-width 280px
+		@media (max-width: $tablet)
+			flex-flow column wrap
+
+	&__list
+		width 300px
+		height auto
+		padding 30px 20px
+		@media (max-width: $tablet)
+			width 100%
+
+	&__container
+		overflow auto
+		max-height 400px
+
+	&__list-item
+		display flex
+		flex-flow row nowrap
+		justify-content flex-start
+		align-items center
+		margin-bottom 20px
+		cursor pointer
+		color #BDBDBD
+
+	&__list-item.js-is-active
+		color $color-text
+
+	&__list-icon
+		flex-shrink 0
+		margin-right 10px
+
+	&__list-address
+		flex-shrink 1
+		font-size 'calc(16 / %s * 1rem)' % ($base-font)
+		font-weight 400
+
+	&__map
+		width 671px !important
+		height 600px !important
+		background-color #ccc
+		@media (max-width: $tablet)
+			display none
+
+@keyframes modal-motion
+	0%
+		opacity 0
+	100%
+		opacity 1
+
+.likearts-content .modals .close-btn
+	position relative
+	display inline-block
+	width 33px
+	height 33px
+	border 2px solid #fff
+	border-radius 50%
+	user-select none
+	cursor pointer
+	@media (max-width: 900px)
+		border-color #000
+
+	&__icon
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		color #fff
+		@media (max-width: 900px)
+			color #000

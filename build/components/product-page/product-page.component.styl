@@ -1,0 +1,488 @@
+@import 'nib'
+
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+.likearts-content .product-page
+	position relative
+	width 100%
+	padding 36px 0 40px 0
+	min-height 300px
+	@media (max-width: $tablet)
+		padding 0 0 40px 0
+
+	&__title
+		margin 0 0 18px 0
+		color $color-text
+		font-size 'calc(28 / %s * 1rem)' %($base-font)
+		font-weight 800
+		line-height 1.29
+		letter-spacing 3px
+		text-transform uppercase
+		@media (max-width: $phone)
+			font-size 'calc(20 / %s * 1rem)' %($base-font)
+
+	&__detail
+		position relative
+		width 100%
+		height auto
+
+	&__feedback
+		position relative
+		width 100%
+		height auto
+
+	&__offer
+		position relative
+		width 100%
+		height auto
+
+	.l-product-page-title
+		padding 13px 0 0 0
+		@media (max-width: 940px)
+			padding 15px 0 0 0
+
+.likearts-content .product-page .detail
+	position relative
+	width 100%
+	height auto
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+	align-items stretch
+
+	&__gallery
+		width 50%
+		height auto
+		order 0
+		@media (max-width: 1000px)
+			width 100%
+			order 0
+
+	&__info
+		width calc(50% - 0px)
+		height auto
+		order 1
+		padding-left 51px
+		@media (max-width: 1000px)
+			width 100%
+			order 2
+			padding-left 0
+			padding 10px 0
+
+	&__info-price
+		position relative
+		top -7px
+		display flex
+		align-items center
+		@media (max-width: 1000px)
+			top 0
+		@media (max-width: $phone)
+			margin-top 15px
+
+	&__info-delivery
+		position relative
+		@media (max-width: $phone)
+			margin-top 15px
+
+	&__info-select
+		position relative
+		margin-top 30px
+		@media (max-width: $phone)
+			margin-top 15px
+
+	&__info-tags
+		position relative
+		margin-top 12px
+
+	&__info-creator
+		position relative
+		margin-top 34px
+
+	&__description
+		width 100%
+		height auto
+		order 2
+		padding 13px 0 0 0
+		margin-bottom 13px
+		@media (max-width: 1000px)
+			order 1
+
+	&__description-title
+		color $color-text
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 2.25
+		text-transform uppercase
+		letter-spacing 1px
+		margin-bottom 3px
+
+	&__description-text
+		color $color-text
+		font-size 'calc(15 / %s * 1rem)' %($base-font)
+		font-weight 400
+		line-height 1.33
+		margin 0 0 10px 0
+
+.likearts-content .product-page .feedback
+	position relative
+	width 100%
+	height auto
+	color $color-text
+	margin-bottom 35px
+
+	&__title
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 2.25
+		text-transform uppercase
+		letter-spacing 1px
+
+	&__list
+		margin-top 6px
+
+	&__btn-container
+		margin-top 14px
+		@media (max-width: $phone)
+			width 100%
+
+	&__btn
+		position relative
+		background-color transparent
+		border 2px solid #000
+		padding 8px 36px
+		font-size 'calc(13 / %s * 1rem)' %($base-font)
+		line-height 2.77
+		letter-spacing 0
+		@media (max-width: $phone)
+			padding 8px 16px
+			width 100%
+		&:hover
+			background-color $color-primary
+			border-color $color-primary
+			box-shadow 0 1px 6px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.06)
+			span
+				text-decoration none
+
+		span
+			text-decoration underline
+
+	&__btn-icon
+		position relative
+		top 4px
+		margin-left -14px
+		@media (max-width: $phone)
+			margin-left 0
+
+.likearts-content .product-page .feedback-item
+	position relative
+	width 100%
+	height auto
+	border-top 3px solid #dadada
+	display flex
+	flex-flow row nowrap
+	justify-content flex-start
+	align-items center
+	color $color-text
+	padding 17px 0 27px 0
+	@media (max-width: $phone)
+		flex-flow row wrap
+
+	&__text
+		flex-shrink 1
+		p
+			font-size 'calc(15 / %s * 1rem)' %($base-font)
+			font-weight 400
+			line-height 1.47
+			margin 0 0 9px 0
+
+	&__sign
+		color #a9a9a9
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 1.38
+
+	&__separator
+		margin 0 14px
+
+	&__pic
+		position relative
+		width auto
+		height auto
+		margin 15px 30px 0 0
+		flex-shrink 0
+		@media (max-width: $phone)
+			margin 15px 30px 15px 0
+
+		img
+			width 100%
+			height 100%
+			max-width 99px
+			max-height 99px
+			object-fit cover
+			border-radius 12px
+
+
+.likearts-content .product-page .offer
+	position relative
+	width 100%
+	height auto
+	color $color-text
+	overflow hidden
+
+	&__title
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 2.25
+		text-transform uppercase
+		letter-spacing 1px
+		margin-bottom 17px
+		@media (max-width: $phone)
+			line-height 1.2
+
+	&__list
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items stretch
+		margin 0 -12px
+
+.likearts-content .product-page .offer-item
+	position relative
+	display block
+	text-decoration none
+	font-weight 400
+	margin 0 12px 30px 12px
+
+	&:hover
+		.offer-item__pic
+			box-shadow 0 3px 10px rgba(0,0,0,0.16), 0 3px 10px rgba(0,0,0,0.23)
+
+	&__pic
+		width 100%
+		height 100%
+		max-width 136px
+		max-height 130px
+		object-fit cover
+		border-radius 20px
+		transition all .2s ease-in-out
+		@media (max-width: $phone)
+			max-width 100px
+			max-height 94px
+
+	&__name
+		max-width 136px
+		color $color-text
+		font-size 'calc(14 / %s * 1rem)' %($base-font)
+		line-height 1.2
+		text-decoration underline
+		margin-top 6px
+		@media (max-width: $phone)
+			max-width 100px
+			font-size 'calc(12 / %s * 1rem)' %($base-font)
+
+	&__price
+		color $color-text
+		font-size 'calc(15 / %s * 1rem)' %($base-font)
+		line-height 1
+		margin-top 5px
+
+
+.likearts-content .product-page .price
+	position relative
+	color $color-text
+	font-size 'calc(32 / %s * 1rem)' %($base-font)
+	font-weight 400
+	line-height 1
+
+	&__icon
+		margin-left -4px
+
+.likearts-content .product-page .sale
+	position relative
+	top -3px
+	left 10px
+	color $color-text
+	font-size 'calc(12 / %s * 1rem)' %($base-font)
+	font-weight 700
+	text-transform uppercase
+	border-radius 0 22px 22px
+	border 3px solid $color-primary
+	padding 8px 14px
+	user-select none
+	@media (max-width: 1000px)
+		top 0
+
+.likearts-content .product-page .delivery
+	position relative
+	top 2px
+
+	&__title
+		color $color-text
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 2.25
+		text-transform uppercase
+		letter-spacing 1px
+
+	&__desc
+		color $color-text
+		font-size 'calc(15 / %s * 1rem)' %($base-font)
+		font-weight 400
+		margin-bottom 12px
+
+	&__link
+		color $color-text-hint
+		font-size 'calc(15 / %s * 1rem)' %($base-font)
+		font-weight 400
+		transition all .2s ease-in-out
+		&:hover
+			color #BDBDBD
+
+.likearts-content .product-page .select
+	position relative
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+	align-items center
+	@media (max-width: $phone)
+		flex-flow column wrap
+		align-items flex-start
+
+	&__label
+		color $color-text
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 2.25
+		text-transform uppercase
+		letter-spacing 1px
+
+	&__size
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		@media (max-width: $phone)
+			flex-flow column wrap
+			align-items flex-start
+			margin-top 10px
+
+	&__sex
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		@media (max-width: $phone)
+			margin-top 10px
+
+	&__size-picker
+		margin 0 13px
+		@media (max-width: $phone)
+			margin 0
+
+	&__sex-picker
+		margin 0 0 0 12px
+
+	&__link-container
+		position relative
+		margin-top 6px
+		width 100%
+
+	&__link
+		position relative
+		color $color-text-hint
+		font-size 'calc(15 / %s * 1rem)' %($base-font)
+		font-weight 400
+		transition all .2s ease-in-out
+		&:hover
+			color #BDBDBD
+		&:after
+			content ''
+			display inline-block
+			position absolute
+			top 5px
+			right -20px
+			width 14px
+			height 11px
+			background-size cover
+			background-repeat no-repeat
+			background-position center
+			background-image url('../../images/icons/link-arrow-r.png')
+
+	&__btn-container
+		margin-top 22px
+		@media (max-width: $phone)
+			width 100%
+
+	&__btn
+		position relative
+		background-color #000
+		color #fff
+		padding 14px 47px
+		@media (max-width: $phone)
+			padding 14px 15px
+			width 100%
+		&:hover
+			background-color $color-primary
+			box-shadow 0 1px 6px rgba(0,0,0,0.06), 0 1px 4px rgba(0,0,0,0.06)
+			color #000
+			.select__btn-icon
+				transition color .2s ease-in-out
+				color #000
+
+	&__btn-icon
+		position relative
+		top 5px
+
+.likearts-content .product-page .info-tags
+	position relative
+
+	&__title
+		color $color-text
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 2.25
+		text-transform uppercase
+
+	&__tags
+		margin-top 5px
+		a
+			color $color-text-hint
+			font-size 'calc(14 / %s * 1rem)' %($base-font)
+			font-weight 400
+			line-height 1.71
+			text-decoration underline
+			margin-right 5px
+			transition color .2s ease-in-out
+			&:hover
+				color #757575
+			&.is-active
+				color $color-text
+
+.likearts-content .product-page .creator
+	position relative
+	color $color-text
+
+	&__title
+		font-size 'calc(16 / %s * 1rem)' %($base-font)
+		font-weight 700
+		line-height 2.25
+		text-transform uppercase
+
+	&__name
+		font-size 'calc(15 / %s * 1rem)' %($base-font)
+		font-weight 400
+		margin-left 8px
