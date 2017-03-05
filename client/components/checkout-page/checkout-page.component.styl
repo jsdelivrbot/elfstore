@@ -143,6 +143,20 @@ $base-font = 16
 		&:after
 			border-left-color $color-primary
 
+	&__item.is-second.previous
+		background-color #1e1f1f
+		color #fff
+		&:before
+			display none
+		&:after
+			border-left-color #1e1f1f
+
+	&__item.is-third.active
+		background-color $color-primary
+		color $color-text
+		&:after
+			border-left-color $color-primary
+
 	&__item-icon
 		position absolute
 		top 50%
