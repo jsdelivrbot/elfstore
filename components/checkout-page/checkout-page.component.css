@@ -226,6 +226,23 @@
 .likearts-content .checkout-page .steps__item.is-second.active:after {
   border-left-color: #ffde13;
 }
+.likearts-content .checkout-page .steps__item.is-second.previous {
+  background-color: #1e1f1f;
+  color: #fff;
+}
+.likearts-content .checkout-page .steps__item.is-second.previous:before {
+  display: none;
+}
+.likearts-content .checkout-page .steps__item.is-second.previous:after {
+  border-left-color: #1e1f1f;
+}
+.likearts-content .checkout-page .steps__item.is-third.active {
+  background-color: #ffde13;
+  color: #000;
+}
+.likearts-content .checkout-page .steps__item.is-third.active:after {
+  border-left-color: #ffde13;
+}
 .likearts-content .checkout-page .steps__item-icon {
   position: absolute;
   top: 50%;

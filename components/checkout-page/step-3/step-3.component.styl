@@ -1,0 +1,192 @@
+@import 'nib'
+
+//colors
+$color-primary = #ffde13
+$color-bg = #f2f2f2
+$color-text = #000
+$color-text-hint = #aeaeae
+
+//resolutions
+$phone = 640px
+$tablet = 768px
+$notebook = 1024px
+$desktop = 1600px
+
+//params
+$container-width = 1170px
+$base-font = 16
+
+//STEP 3
+.likearts-content .checkout-page.step-3 .personal
+	position relative
+	width 100%
+	height auto
+
+	&__container
+		width 100%
+		height auto
+		max-width 517px
+		min-height 686px
+		@media (max-width: $notebook)
+			max-width none
+
+	&__group
+		width 500px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+		margin-bottom 20px
+		@media (max-width: $notebook)
+			width 100%
+
+	&__control
+		display flex
+		flex-flow row nowrap
+		justify-content flex-start
+		align-items center
+		@media (max-width: $notebook)
+			width 100%
+			flex-flow row wrap
+
+	&__label
+		font-size 'calc(15 / %s * 1rem)' % ($base-font)
+		font-weight 700
+		line-height 1.6
+		text-transform uppercase
+
+		&--housing
+			margin-right 10px
+			@media (max-width: $notebook)
+				margin-right 0
+
+		&--apartment
+			margin-right 10px
+			@media (max-width: $notebook)
+				margin-right 0
+
+	&__input
+		width 100%
+		min-width 369px
+		border 2px solid #b6b6b6
+		border-radius 12px
+		height 51px
+		line-height 48px
+		font-size 'calc(18 / %s * 1rem)' % ($base-font)
+		padding 0 12px
+		font-weight 400
+		color #2b2b2b
+		transition border-color .2s ease-in-out, background-color .2s ease-in-out
+		background-color transparent
+		text-align left
+		@media (max-width: $notebook)
+			min-width 0
+			padding 0 23px
+		&:focus
+			outline none
+			border-color $color-primary
+			background-color #fff
+
+		&--city
+			min-width 0
+			max-width 229px
+			margin-right 60px
+			@media (max-width: $notebook)
+				max-width none
+				margin-right 0
+
+		&--zipcode
+			min-width 0
+			max-width 147px
+			margin-right 60px
+			@media (max-width: $notebook)
+				max-width none
+				margin-right 0
+
+		&--house
+			min-width 0
+			max-width 69px
+			margin-right 10px
+			text-align center
+			@media (max-width: $notebook)
+				max-width none
+				margin-right 0
+				text-align left
+
+		&--housing
+			min-width 0
+			max-width 59px
+			margin-right 10px
+			text-align center
+			@media (max-width: $notebook)
+				max-width none
+				margin-right 0
+				text-align left
+
+		&--apartment
+			min-width 0
+			max-width 59px
+			text-align center
+			@media (max-width: $notebook)
+				max-width none
+				text-align left
+
+	&__textarea
+		width 100%
+		min-width 369px
+		border 2px solid #b6b6b6
+		border-radius 12px
+		height 131px
+		line-height 1.2
+		font-size 'calc(18 / %s * 1rem)' % ($base-font)
+		padding 12px
+		font-weight 400
+		color #2b2b2b
+		transition border-color .2s ease-in-out, background-color .2s ease-in-out
+		background-color transparent
+		resize none
+		text-align left
+		@media (max-width: $notebook)
+			width 100%
+			min-width 0
+			padding 23px
+		&:focus
+			outline none
+			border-color $color-primary
+			background-color #fff
+
+	&__link
+		display inline-block
+		font-size 'calc(18 / %s * 1rem)' % ($base-font)
+		font-weight 400
+		color #2b2b2b
+		text-decoration none
+		border-bottom 1px dashed #2b2b2b
+		transition color .2s ease-in-out, border-color .2s ease-in-out
+		&:hover
+			color $color-text-hint
+			border-color $color-text-hint
+		@media (max-width: $notebook)
+			margin-top 5px
+
+	&__delivery-info
+		margin-bottom 35px
+
+	&__personal-info
+		margin-bottom 35px
+		@media (max-width: $notebook)
+			margin-bottom 48px
+
+	.checkout-page__btn-container
+		justify-content space-between
+
+	.checkout-page__btn
+		@media (max-width: $phone)
+			margin-bottom 20px
+
+		&--prev
+			background-color transparent
+			border 3px solid #d9d9d9 
+			box-shadow none
+
+

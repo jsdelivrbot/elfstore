@@ -1,0 +1,290 @@
+.likearts-content .checkout-page.step-3 .personal {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.likearts-content .checkout-page.step-3 .personal__container {
+  width: 100%;
+  height: auto;
+  max-width: 517px;
+  min-height: 686px;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__container {
+    max-width: none;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__group {
+  width: 500px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__group {
+    width: 100%;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__control {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__control {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__label {
+  font-size: calc(15 / 16 * 1rem);
+  font-weight: 700;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+.likearts-content .checkout-page.step-3 .personal__label--housing {
+  margin-right: 10px;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__label--housing {
+    margin-right: 0;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__label--apartment {
+  margin-right: 10px;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__label--apartment {
+    margin-right: 0;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__input {
+  width: 100%;
+  min-width: 369px;
+  border: 2px solid #b6b6b6;
+  border-radius: 12px;
+  height: 51px;
+  line-height: 48px;
+  font-size: calc(18 / 16 * 1rem);
+  padding: 0 12px;
+  font-weight: 400;
+  color: #2b2b2b;
+  -webkit-transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -moz-transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  background-color: transparent;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__input {
+    min-width: 0;
+    padding: 0 23px;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__input:focus {
+  outline: none;
+  border-color: #ffde13;
+  background-color: #fff;
+}
+.likearts-content .checkout-page.step-3 .personal__input--city {
+  min-width: 0;
+  max-width: 229px;
+  margin-right: 60px;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__input--city {
+    max-width: none;
+    margin-right: 0;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__input--zipcode {
+  min-width: 0;
+  max-width: 147px;
+  margin-right: 60px;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__input--zipcode {
+    max-width: none;
+    margin-right: 0;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__input--house {
+  min-width: 0;
+  max-width: 69px;
+  margin-right: 10px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__input--house {
+    max-width: none;
+    margin-right: 0;
+    text-align: left;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__input--housing {
+  min-width: 0;
+  max-width: 59px;
+  margin-right: 10px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__input--housing {
+    max-width: none;
+    margin-right: 0;
+    text-align: left;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__input--apartment {
+  min-width: 0;
+  max-width: 59px;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__input--apartment {
+    max-width: none;
+    text-align: left;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__textarea {
+  width: 100%;
+  min-width: 369px;
+  border: 2px solid #b6b6b6;
+  border-radius: 12px;
+  height: 131px;
+  line-height: 1.2;
+  font-size: calc(18 / 16 * 1rem);
+  padding: 12px;
+  font-weight: 400;
+  color: #2b2b2b;
+  -webkit-transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -moz-transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -o-transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  background-color: transparent;
+  resize: none;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 23px;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__textarea:focus {
+  outline: none;
+  border-color: #ffde13;
+  background-color: #fff;
+}
+.likearts-content .checkout-page.step-3 .personal__link {
+  display: inline-block;
+  font-size: calc(18 / 16 * 1rem);
+  font-weight: 400;
+  color: #2b2b2b;
+  text-decoration: none;
+  border-bottom: 1px dashed #2b2b2b;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.likearts-content .checkout-page.step-3 .personal__link:hover {
+  color: #aeaeae;
+  border-color: #aeaeae;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__link {
+    margin-top: 5px;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal__delivery-info {
+  margin-bottom: 35px;
+}
+.likearts-content .checkout-page.step-3 .personal__personal-info {
+  margin-bottom: 35px;
+}
+@media (max-width: 1024px) {
+  .likearts-content .checkout-page.step-3 .personal__personal-info {
+    margin-bottom: 48px;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal .checkout-page__btn-container {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+@media (max-width: 640px) {
+  .likearts-content .checkout-page.step-3 .personal .checkout-page__btn {
+    margin-bottom: 20px;
+  }
+}
+.likearts-content .checkout-page.step-3 .personal .checkout-page__btn--prev {
+  background-color: transparent;
+  border: 3px solid #d9d9d9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
